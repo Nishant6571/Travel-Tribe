@@ -5,60 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mblayang-Travel-Blog-Agency-Website</title>
     <link rel="stylesheet" href="Home.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Open+Sans:wght@500&family=Pixelify+Sans:wght@400;500&family=Poppins:wght@300;400&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&family=Rubik+Pixels&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Open+Sans:wght@500&family=Pixelify+Sans:wght@400;500&family=Poppins:wght@300;400&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&family=Rubik+Pixels&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   </head>
   <body>
     <!-- Surbhi -->
-    <nav>
-      <div id="navLinksContainer">
-        <a href="#" id="logo"
-          ><img src="logoImg.jpg" alt="Logo" width="80%" height="90%"
-        /></a>
-        <a href="#">Find Talent</a>
-        <a href="#">Insipiration</a>
-        <div class="dropdown">
-          <button class="dropbtn">
-            Learn design<span class="material-symbols-outlined"
-              >keyboard_arrow_down</span
-            >
-          </button>
-          <div class="dropdown-content">
-            <a href="#">
-              <p>UX Diploma</p>
-              <p>In partnership with UX Design Interview</p>
-            </a>
-            <a href="#">
-              <p>Live interactive workshop</p>
-              <p>with design professions</p>
-            </a>
+    <header>
+      <div id="fadeCont"></div>
+    </header>
+    <div id="alignCont">
+      <nav>
+        <div id="logoCont"><a href="./Home.html"><img src="Website-Logo (1).jpeg" alt="Logo" ></a></div>
+        <div id="pageLinksCont">
+          <a href="./Home.html">HOME</a>
+          <a href="#">ABOUT US</a>
+          <a href="#">CONTACT US</a>
+          <a href="#">BLOG</a>
+        </div>
+        <div id="navBtnCont">
+          <button id="logInBtn">Log in</button>
+          <button id="signInBtn">Sign up</button>
+        </div>
+      </nav>
+    </div>
+    <section id="headingInpContainer">
+      <h1>Travel around the world</h1>
+      <h3>Enjoy our services for your trip anywhere and anytime</h3>
+      <div id="inputCont">
+        <div>
+          <label for="placeNameInp" class="labels">Location</label>
+          <input type="text" name="placeName" id="placeNameInp" placeholder="Where to go">
+        </div>
+        <div>
+          <label for="checkInDate" class="labels">Check in</label>
+          <input type="date" name="checkInDate" id="checkInDate" placeholder="Choose a date">
+        </div>
+        <div>
+          <label for="visitor" class="labels">Visitor</label>
+          <input type="text" name="placeName" id="visitor" placeholder="Add guest">
+        </div>
+        <div>
+          <button><span  class="material-symbols-outlined">search</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="alignContainer">
+      <div>
+        <div>
+          <div class="packageLogoCont"><img src="" alt="logo"></div>
+          <div class="packageNames">Kona Package</div>
+        </div>
+        <div>
+          <div class="packageLogoCont"><img src="" alt="logo"></div>
+          <div class="packageNames">Historical Destination</div>
+        </div>
+        <div>
+          <div class="packageLogoCont"><img src="" alt="logo"></div>
+          <div class="packageNames">Camping Package</div>
+        </div>
+        <div>
+          <div class="packageLogoCont"><img src="" alt="logo"></div>
+          <div class="packageNames">Asia Destination</div>
+        </div>
+        <div>
+          <div class="packageLogoCont"><img src="" alt="logo"></div>
+          <div class="packageNames">Desert Oasis Package</div>
+        </div>
+        <div>
+          <div class="packageLogoCont"><img src="" alt="logo"></div>
+          <div class="packageNames">Hiking Package</div>
+        </div>
+        <div>
+          <div class="packageLogoCont"><img src="" alt="">logo</div>
+          <div class="packageNames">Europa Destination</div>
+        </div>
+        <div>
+          <div class="packageLogoCont"><img src="" alt="">logo</div>
+          <div class="packageNames">Beach Package</div>
+        </div>
+      </div>
+    </section>
+
+    <div id="blankCont"></div>
+
+    <div class="alignCont3">
+      <section id="transparentCont">
+        <h1>TRAVEL PARTNER</h1>
+      </section>
+    </div>
+    <div id="alignCont4">
+      <section id="overlapCont">
+        <h2>OUR TRAVEL PARTNER</h2>
+      </section>
+    </div>
+    
+    <div class="alignCont5">
+      <section id="partnerSection">
+        <article>
+          <p>We collaborate with several other travel service provide to increase your comfort when using our services</p>
+        </article>
+        <div>
+          <div>
+            <div><img src="" alt="logo"></div>
+            <h5>BEBEGIAN</h5>
+          </div>
+          <div>
+            <div><img src="" alt="logo"></div>
+            <h5>BEBEGIAN</h5>
+          </div>
+          <div>
+            <div><img src="" alt="logo"></div>
+            <h5>BEBEGIAN</h5>
+          </div>
+          <div>
+            <div><img src="" alt="logo"></div>
+            <h5>BEBEGIAN</h5>
           </div>
         </div>
-        <a href="#">Jobs</a>
-        <a href="#">Go Pro</a>
-      </div>
 
-      <div id="navBtnContainer">
-        <input
-          type="text"
-          name="searchBar"
-          id="searchBar"
-          placeholder="Search..."
-        />
-        <button id="loginBtn">Log in</button>
-        <button id="signBtn">Sign up</button>
-      </div>
-    </nav>
+      </section>
 
-  
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
