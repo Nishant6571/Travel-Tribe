@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#Nmidbody-conatiner {
+  width: 100%;
+  height: 457px;
+}
+/* footer css */
+.Nabout-Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  background-color: black;
+}
+
+.Ncontent-Footer {
+  display: grid;
+  height: 200px;
+  width: 80%;
+  /* margin-left: 30px; */
+  /* background-color: bisque; */
+  display: grid;
+  /* grid-template-rows: (1, 1fr); */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  /* margin-bottom: 100px; */
+}
+.Ncontent-Footer > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 54px;
+
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  /* color: white; */
+  /* justify-content: space-evenly; */
+  gap: 30px;
+  /* background-color: rgb(129, 151, 151); */
+}
+.Ncontent-Footer > :nth-child(2),
+.Ncontent-Footer > :nth-child(3),
+.Ncontent-Footer > :nth-child(4) {
+  margin-left: 60px;
+}
+
+.Ncontent-Footer p {
+  margin: 0px;
+}
+#Nmargin-for-this {
+  margin-top: 42px;
+}
+
+.Nfooter-Bold {
+  color: white;
+  font-size: larger;
+  text-decoration: none;
+  font-size: 14px;
+}
+.Nfooter-Grey {
+  color: rgb(159, 156, 156);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.Nsocial-footer {
+  display: flex;
+  gap: 20px;
+  margin-top: -10px;
+}
+.Nfacebookimg {
+  width: 25px;
+  height: 35px;
+}
+
+.Ntwitterimg {
+  width: 25px;
+  height: 35px;
+}
+
+.Ninstaimg {
+  width: 25px;
+  height: 35px;
+}
+.Nline-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  height: 72px;
+  width: 100%;
+  background-color: black;
+}
+
+#Nline-footer {
+  width: 78%;
+  margin-left: 140px;
+  height: 0.1px;
+  border-radius: 10px;
+  background-color: rgb(159, 156, 156);
+}
+.Nafter-line {
+  display: flex;
+  justify-content: space-between;
+  width: 78%;
+  margin-top: 10px;
+  margin-left: 141px;
+  margin-right: 24px;
+  align-items: center;
+}
+.Nfooter-Grey2 {
+  color: rgb(159, 156, 156);
+  text-decoration: none;
+  font-size: 10px;
+}
