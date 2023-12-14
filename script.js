@@ -13,7 +13,7 @@ async function fetchdata(url, limit, page){
 fetchdata(url, 6, 1);
 
 function  displaydata(data){
-  
+  document.getElementById("Sh-data-main-container1").innerHTML = "";
   data.forEach((ele)=>{
     let card = document.createElement("div");
     card.classList.add("subdiv");
