@@ -41,10 +41,9 @@ nav > div{
     box-sizing: border-box;
 }
 #Sh-logoCont > a > img{
-    width: 50%;
-    border-radius: 50%;
-    border: 1px solid white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 60%;
+    height: 90%;
+
 }
 #Sh-pageLinksCont{
     width: 65%;
@@ -81,18 +80,18 @@ nav > div{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #Sh-signInBtn{
-    background-color: white;
+    background-color: rgb(252, 101, 54);
     border: none;
-    color: black;
+    color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #Sh-logInBtn:hover{
-    background-color: white;
-    color: black;
+    background-color: rgb(252, 101, 54);
+    color: white;
 }
 #Sh-signInBtn:hover{
-    background: none;
-    color: white;
+    background: white;
+    color: rgb(252, 101, 54);
 }
 #Sh-headingInpContainer{
     top: 20vh;
@@ -138,7 +137,7 @@ nav > div{
     padding: 1%;
 }
 #Sh-headingInpContainer > div > div > input {
-    padding: 5% 20% 5% 1%;
+    padding: 5% 10% 5% 1%;
     border: none;
     outline: none;
     font-size: 15px;
@@ -202,12 +201,12 @@ nav > div{
 .Sh-packageNames{
     width: 80%;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;  
 }
 .Sh-packageNames > a{
     text-decoration: none;
-    color: rgb(87, 84, 84);
+    color: rgb(133, 127, 127);
 }
 #Sh-blankCont{
     width: 100%;
@@ -323,7 +322,7 @@ nav > div{
 #Sh-aboutSection > div > h3, #Sh-ServiceCont > h3{
     font-size: 400%;
     margin: 0;
-    color: rgb(65, 19, 19);
+    color: black;
 }
 #Sh-aboutSection > div > h4, #Sh-ServiceCont > h4{
     font-size: 200%;
@@ -333,13 +332,14 @@ nav > div{
 
 #Sh-aboutSection > div > p{
     font-size: 120%;
-    color: rgb(75, 59, 59);
+    color: rgb(159, 156, 156);
     padding-right: 20%;
     margin: 0;
     letter-spacing: 1px;
 }
 #Sh-aboutSection > div > button, #Sh-ServiceCont > button{
-    background-color: rgb(48, 24, 24);
+    background-color: rgb(252, 101, 54);
+    border: none;
     color: white;
     font-size: 20px;
     letter-spacing: 1px;
@@ -404,7 +404,7 @@ nav > div{
 
 #Sh-ServiceCont > p{
     font-size: 130%;
-    color: rgb(75, 59, 59);
+    color: rgb(159, 156, 156);
     padding-left: 15%;
     text-align: right;
     margin: 0;
@@ -426,7 +426,7 @@ nav > div{
 /* --------------------data wrapper styling-------------------------- */
 #Sh-alignCont9{
     width: 100%;
-    height: fit-content;
+    height: 220vh;
     display: flex;
     justify-content: center;
 }
@@ -461,7 +461,7 @@ nav > div{
   .place-detail{
     margin: 0;
     padding: 0 2%;
-    color: rgb(99, 94, 94);
+    color: rgb(159, 156, 156);
   }
   .subdiv>img{
     width:100%;
@@ -521,7 +521,7 @@ nav > div{
 
   #seeMoreCardBtn{
     color:white;
-    background-color: rgb(95, 161, 34); 
+    background-color: rgb(252, 101, 54); 
     padding: 2% 3%;
     border : none;
     border-radius: 10px;
@@ -533,8 +533,8 @@ nav > div{
   }
   #seeMoreCardBtn:hover{
     background-color: white;
-    border: 2px solid green;
-    color: green;
+    border: 2px solid rgb(252, 101, 54);;;
+    color: rgb(252, 101, 54);;;
   }
 
 
@@ -585,51 +585,101 @@ nav > div{
 #Sh-testimonialCont > div:nth-child(2) > p{
     font-size: 120%;
     padding-left: 20%;
-    color: rgb(107, 98, 98);
+    color: rgb(159, 156, 156);
 }
 
 /* footer Styling */
   /* footer css */
+  /* after mid */
+.Nafter-mid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 160px;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .Njoin-membership {
+    background-image: url("./Aboutimages/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 400px;
+    width: 80%;
+    background-color: honeydew;
+    border-radius: 20px;
+  }
+  
+  .Njoin-membership p {
+    margin-top: 30px;
+    color: rgb(252, 101, 54);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Poppins;
+  }
+  
+  .Nmidcontainh3 {
+    width: 800px;
+    display: flex;
+    text-align: center;
+  }
+  .Njoin-membership h3 {
+    color: black;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 900;
+  }
+  
+  .Nafter-mid-button {
+    background-color: rgb(252, 101, 54);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    height: 60px;
+    width: 200px;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 900;
+  }
+  /* footer css */
   .Nabout-Footer {
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 200px;
     width: 100%;
     background-color: black;
   }
   
   .Ncontent-Footer {
     display: grid;
-    height: 200px;
+    height: 250px;
     width: 80%;
-    /* margin-left: 30px; */
-    /* background-color: bisque; */
     display: grid;
-    /* grid-template-rows: (1, 1fr); */
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    /* margin-bottom: 100px; */
   }
   .Ncontent-Footer > div {
     display: flex;
     flex-direction: column;
-    margin-top: 54px;
-  
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* justify-content: space-around; */
-    /* color: white; */
-    /* justify-content: space-evenly; */
+    margin-top: 80px;
     gap: 30px;
-    /* background-color: rgb(129, 151, 151); */
-  }
-  .Ncontent-Footer > :nth-child(2),
-  .Ncontent-Footer > :nth-child(3),
-  .Ncontent-Footer > :nth-child(4) {
-    margin-left: 60px;
   }
   
+  .Ncontent-Footer > :nth-child(2),
+  .Ncontent-Footer > :nth-child(3) {
+    margin-left: 80px;
+  }
+  
+  .Ncontent-Footer > :nth-child(4) {
+    margin-left: 150px;
+  }
   .Ncontent-Footer p {
     margin: 0px;
   }
@@ -641,12 +691,14 @@ nav > div{
     color: white;
     font-size: larger;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
+    font-family: Poppins;
   }
   .Nfooter-Grey {
     color: rgb(159, 156, 156);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
+    font-family: Poppins;
   }
   
   .Nsocial-footer {
@@ -672,15 +724,14 @@ nav > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    height: 72px;
+    align-items: center;
+    height: 100px;
     width: 100%;
     background-color: black;
   }
   
   #Nline-footer {
-    width: 78%;
-    margin-left: 140px;
+    width: 80%;
     height: 0.1px;
     border-radius: 10px;
     background-color: rgb(159, 156, 156);
@@ -688,15 +739,13 @@ nav > div{
   .Nafter-line {
     display: flex;
     justify-content: space-between;
-    width: 78%;
+    width: 80%;
     margin-top: 10px;
-    margin-left: 141px;
-    margin-right: 24px;
     align-items: center;
   }
   .Nfooter-Grey2 {
     color: rgb(159, 156, 156);
     text-decoration: none;
-    font-size: 10px;
+    font-size: 13px;
+    font-family: Poppins;
   }
-  
