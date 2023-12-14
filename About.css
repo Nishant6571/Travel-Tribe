@@ -42,10 +42,8 @@ nav > div {
   box-sizing: border-box;
 }
 #NlogoCont > a > img {
-  width: 50%;
-  border-radius: 50%;
-  border: 1px solid white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 60%;
+  height: 90%;
 }
 #NpageLinksCont {
   width: 65%;
@@ -57,7 +55,7 @@ nav > div {
 #NpageLinksCont > a {
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 #NnavBtnCont {
@@ -69,31 +67,31 @@ nav > div {
 }
 #NnavBtnCont > button {
   padding: 5%;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
   border-radius: 30px;
   cursor: pointer;
 }
-#NlogInBtn {
+#Sh-logInBtn {
   background: none;
   color: white;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#NsignInBtn {
-  background-color: white;
+#Sh-signInBtn {
+  background-color: rgb(252, 101, 54);
   border: none;
-  color: black;
+  color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#NlogInBtn:hover {
-  background-color: white;
-  color: black;
-}
-#NsignInBtn:hover {
-  background: none;
+#Sh-logInBtn:hover {
+  background-color: rgb(252, 101, 54);
   color: white;
+}
+#Sh-signInBtn:hover {
+  background: white;
+  color: rgb(252, 101, 54);
 }
 #NheadingInpContainer {
   top: 20vh;
@@ -130,7 +128,7 @@ nav > div {
   justify-content: space-between;
   align-items: center;
 }
-.NSh-labelCont {
+.NlabelCont {
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   height: 90%;
@@ -139,8 +137,9 @@ nav > div {
   padding: 1%;
 }
 #NheadingInpContainer > div > div > input {
-  padding: 5% 30% 5% 1%;
+  padding: 5% 10% 5% 1%;
   border: none;
+  outline: none;
   font-size: 15px;
 }
 .Nlabels {
@@ -148,13 +147,13 @@ nav > div {
   font-size: 20px;
   font-weight: 600;
 }
-#NSh-btnCont {
+#Sh-btnCont {
   width: 10%;
   height: 90%;
 }
 #Sh-searchBtn {
   border-radius: 20px;
-  padding: 15% 8%;
+  padding: 10% 8%;
   border: 1px solid white;
   background-color: white;
   cursor: pointer;
@@ -201,62 +200,67 @@ nav > div {
 }
 .NpackageNames {
   width: 80%;
-  font-size: 20px;
+  font-family: Poppins;
+  font-size: 17px;
   font-weight: 600;
 }
 .NpackageNames > a {
   text-decoration: none;
-  color: rgb(87, 84, 84);
+  color: rgb(133, 127, 127);
 }
 #NblankCont {
   width: 100%;
   height: 10vh;
 }
-.NalignCont3 {
+.NcommonAlignCont {
   width: 100%;
   height: 30vh;
   display: flex;
   justify-content: center;
 }
-#NtransparentCont {
+.NtransparentCont {
   height: 30vh;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-#NtransparentCont > h1 {
-  font-size: 700%;
-  font-weight: 900;
+.NtransparentCont > h1 {
+  font-size: 600%;
   margin: 0;
   opacity: 0.1;
 }
-#NalignCont4 {
+.NcommoneAlignforOverlapCont {
   width: 100%;
   height: 1px;
   display: flex;
   justify-content: center;
 }
-#NoverlapCont {
+#Noverlap1stCont {
   top: 130vh;
   position: absolute;
   height: 30vh;
   width: 80%;
+  font-family: Poppins;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-#NoverlapCont > h2 {
+.NoverlapCont > h2 {
   font-size: 300%;
+  letter-spacing: 1px;
 }
+
+/* ------------------partner Section---------------- */
+
 .NalignCont5 {
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 #NpartnerSection {
-  height: 45vh;
+  height: 50vh;
   width: 80%;
   text-align: center;
   font-family: Poppins;
@@ -276,7 +280,7 @@ nav > div {
   box-sizing: border-box;
 }
 #NpartnerSection > article > p {
-  font-size: 200%;
+  font-size: 150%;
   letter-spacing: 1px;
   color: gray;
 }
@@ -292,7 +296,6 @@ nav > div {
   font-size: 150%;
   letter-spacing: 1px;
 }
-
 /* mid-container-about */
 .Nmid-container {
   display: flex;
