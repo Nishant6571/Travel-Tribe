@@ -17,7 +17,7 @@ function  displaydata(data){
   data.forEach((ele)=>{
     let card = document.createElement("div");
     card.classList.add("subdiv");
-     let img = document.createElement("img");
+    let img = document.createElement("img");
     img.setAttribute("src", ele.Image);
  
     let buttonR = document.createElement("button");
@@ -29,6 +29,7 @@ function  displaydata(data){
     head.innerText = ele.Location;
     let para = document.createElement("p");
     para.innerText = ele.Detail;
+    para.className = "place-detail";
     
     let lastdiv = document.createElement("div");
     lastdiv.classList.add("last");
@@ -42,7 +43,7 @@ function  displaydata(data){
     let bookdiv = document.createElement("div");
     bookdiv.classList.add("bookdiv")
     let parap = document.createElement("h2");
-    parap.innerText = ele.Price;
+    parap.innerText = `$ ${ele.Price}`;
     
     let book = document.createElement("button");
     book.innerText = "BOOK NOW";

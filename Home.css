@@ -56,7 +56,7 @@ nav > div{
 #Sh-pageLinksCont > a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 #Sh-navBtnCont{
@@ -68,7 +68,7 @@ nav > div{
 }
 #Sh-navBtnCont > button{
     padding: 5%;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
     border-radius: 30px;
@@ -80,17 +80,17 @@ nav > div{
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#signInBtn{
+#Sh-signInBtn{
     background-color: white;
     border: none;
     color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#logInBtn:hover{
+#Sh-logInBtn:hover{
     background-color: white;
     color: black;
 }
-#signInBtn:hover{
+#Sh-signInBtn:hover{
     background: none;
     color: white;
 }
@@ -138,8 +138,9 @@ nav > div{
     padding: 1%;
 }
 #Sh-headingInpContainer > div > div > input {
-    padding: 5% 30% 5% 1%;
+    padding: 5% 20% 5% 1%;
     border: none;
+    outline: none;
     font-size: 15px;
 }
 .Sh-labels{
@@ -153,7 +154,7 @@ nav > div{
 }
 #Sh-searchBtn{
     border-radius: 20px;
-    padding: 15% 8%;
+    padding: 10% 8%;
     border: 1px solid white;
     background-color: white;
     cursor: pointer;
@@ -200,6 +201,7 @@ nav > div{
 }
 .Sh-packageNames{
     width: 80%;
+    font-family: Poppins;
     font-size: 20px;
     font-weight: 600;  
 }
@@ -225,7 +227,7 @@ nav > div{
     align-items: flex-end;
 }
 .Sh-transparentCont > h1{
-    font-size: 700%;
+    font-size: 600%;
     margin: 0;
     opacity: 0.1;
 }
@@ -279,7 +281,7 @@ nav > div{
     box-sizing: border-box;
 }
 #Sh-partnerSection > article > p{
-    font-size: 200%;
+    font-size: 150%;
     letter-spacing: 1px;
     color: gray;
 }
@@ -298,14 +300,14 @@ nav > div{
 
 /* --------------------------------------------- */
 #Sh-alignCont6{
-    height: 70vh;
+    height: 75vh;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 #Sh-aboutSection{
-    height: 70vh;
+    height: 100%;
     width: 80%;
     display: grid;
     font-family: Poppins;
@@ -330,7 +332,7 @@ nav > div{
 }
 
 #Sh-aboutSection > div > p{
-    font-size: 150%;
+    font-size: 120%;
     color: rgb(75, 59, 59);
     padding-right: 20%;
     margin: 0;
@@ -355,7 +357,7 @@ nav > div{
 /* --------------------Our service section styling------------------- */
 #Sh-alignCont7{
     width: 100%;
-    height: 60vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
 }
@@ -401,7 +403,7 @@ nav > div{
 }
 
 #Sh-ServiceCont > p{
-    font-size: 150%;
+    font-size: 130%;
     color: rgb(75, 59, 59);
     padding-left: 15%;
     text-align: right;
@@ -411,7 +413,7 @@ nav > div{
 /* --------------price heading-------------------- */
 
 #Sh-overlap2ndCont{
-    top: 340vh;
+    top: 360vh;
     position: absolute;
     height: 30vh;
     width: 80%;
@@ -439,33 +441,31 @@ nav > div{
     width: 100%;
     padding: 6% 0;
     height:fit-content;
-}
-
-#Sh-data-main-container1{
-    width:85%;
-  /*  border:2px solid green; */
-    
     display:grid;
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows:auto;
     gap:4%;
     justify-content: center; 
     margin: auto;
-  }
+}
   .subdiv{
     width:100%;
-    height : 455px;
+    /* height : 455px; */
   /*   border:1px solid red; */
-  border-radius: 7%;
-    text-align:center;
+    border-radius: 7%;
+    text-align: center;
+    font-family: Poppins;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  .place-detail{
+    padding: 0 5%;
+    color: rgb(99, 94, 94);
   }
   .subdiv>img{
     width:100%;
     height:42%;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 25px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
   
    .btnR{
@@ -475,8 +475,9 @@ nav > div{
     border : none;
     border-radius:10px;
     position :relative;
-     top: -20px;
-     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    top: -20px;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   } 
   
   .last{
@@ -494,16 +495,17 @@ nav > div{
   }
   
   .booknow{
-   color:white;
-    background-color: blue; 
+    color:white;
+    background-color: rgb(17, 17, 88); 
     padding:9px;
     border : none;
-     border-radius:10px;
-   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius:10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
 
   #btnContainer{
-    height: 10vh;
+    height: 30vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -513,14 +515,18 @@ nav > div{
   #seeMoreCardBtn{
     color:white;
     background-color: rgb(95, 161, 34); 
-    padding: 15px;
+    padding: 2% 3%;
     border : none;
-     border-radius:10px;
-   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
 /* -------------------------------------------------------------- */
 
-#Sh-overlap3ndCont{
+/* #Sh-overlap3ndCont{
     top: 550vh;
     position: absolute;
     height: 30vh;
@@ -529,8 +535,8 @@ nav > div{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-}
-/* ------------------2nd Data Container--------------------------------- */
+} */
+/* ------------------2nd Data Container---------------------------------
 
 #Sh-alignCont11{
     width: 100%;
@@ -542,7 +548,7 @@ nav > div{
     width: 80%;
     height: 100%;
     border: 2px solid green;
-}
+} */
 /* ------------------------------------------------------- */
 
 #Sh-alignCont12{
@@ -590,7 +596,7 @@ nav > div{
     color: rgb(46, 45, 45);
 }
 #Sh-testimonialCont > div:nth-child(2) > p{
-    font-size: 150%;
+    font-size: 120%;
     padding-left: 20%;
     color: rgb(107, 98, 98);
 }
