@@ -1,13 +1,13 @@
     
     
-   body{
+  body{
     margin: 0;
     padding: 0;
 }
 header{
     width: 100%;
     height: 120vh;
-    background-image: url("./headerBackGroundImg.jpg");
+    background-image: url("./Blogs/world.jpg");
     background-size: cover;
 }
 #Sh-fadeCont{
@@ -43,10 +43,9 @@ nav > div{
     box-sizing: border-box;
 }
 #Sh-logoCont > a > img{
-    width: 50%;
-    border-radius: 50%;
-    border: 1px solid white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 60%;
+    height: 90%;
+
 }
 #Sh-pageLinksCont{
     width: 65%;
@@ -58,7 +57,7 @@ nav > div{
 #Sh-pageLinksCont > a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 #Sh-navBtnCont{
@@ -70,7 +69,7 @@ nav > div{
 }
 #Sh-navBtnCont > button{
     padding: 5%;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
     border-radius: 30px;
@@ -82,19 +81,19 @@ nav > div{
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#signInBtn{
-    background-color: white;
+#Sh-signInBtn{
+    background-color: rgb(252, 101, 54);
     border: none;
-    color: black;
+    color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#logInBtn:hover{
-    background-color: white;
-    color: black;
-}
-#signInBtn:hover{
-    background: none;
+#Sh-logInBtn:hover{
+    background-color: rgb(252, 101, 54);
     color: white;
+}
+#Sh-signInBtn:hover{
+    background: white;
+    color: rgb(252, 101, 54);
 }
 #Sh-headingInpContainer{
     top: 20vh;
@@ -140,8 +139,9 @@ nav > div{
     padding: 1%;
 }
 #Sh-headingInpContainer > div > div > input {
-    padding: 5% 30% 5% 1%;
+    padding: 5% 10% 5% 1%;
     border: none;
+    outline: none;
     font-size: 15px;
 }
 .Sh-labels{
@@ -155,7 +155,7 @@ nav > div{
 }
 #Sh-searchBtn{
     border-radius: 20px;
-    padding: 15% 8%;
+    padding: 10% 8%;
     border: 1px solid white;
     background-color: white;
     cursor: pointer;
@@ -202,16 +202,174 @@ nav > div{
 }
 .Sh-packageNames{
     width: 80%;
-    font-size: 20px;
+    font-family: Poppins;
+    font-size: 17px;
     font-weight: 600;  
 }
 .Sh-packageNames > a{
     text-decoration: none;
-    color: rgb(87, 84, 84);
-} 
+    color: rgb(133, 127, 127);
+}
+#Sh-blankCont{
+    width: 100%;
+    height: 10vh;
+}
+.Sh-commonAlignCont{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+.Sh-transparentCont{
+    height: 30vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.Sh-transparentCont > h1{
+    font-size: 600%;
+    margin: 0;
+    opacity: 0.1;
+}
+.Sh-commoneAlignforOverlapCont{
+    width: 100%;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+}
+#Sh-overlap1stCont{
+    top: 130vh;
+    position: absolute;
+    height: 30vh;
+    width: 80%;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.Sh-overlapCont > h2{
+    font-size: 300%;
+    letter-spacing: 1px;
+}
     
     
     
+/* --------------------data wrapper styling-------------------------- */
+#Sh-alignCont9{
+    width: 100%;
+    /* height: 300vh; */
+    display: flex;
+    justify-content: center;
+     /* border: 1px solid red;  */
+}
+#data-Button-cont{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Sh-data-main-container1{
+    width: 100%;
+    padding: 6% 0;
+    height:fit-content;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:auto;
+    gap:4%;
+    justify-content: center; 
+    margin: auto;
+}
+  .subdiv{
+    width:100%;
+    /* height : 455px; */
+  /*   border:1px solid red; */
+    border-radius: 7%;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: Poppins;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  .place-detail{
+    margin: 0;
+    padding: 0 2%;
+    color: rgb(159, 156, 156);
+  }
+  .subdiv>img{
+    width:100%;
+    height:42%;
+    border-radius: 25px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  
+   .btnR{
+    color:white;
+    background-color: red;
+    padding:12px;
+    border : none;
+    border-radius:10px;
+    position :relative;
+    top: -20px;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  } 
+  
+  .last{
+    display:flex;
+    justify-content:space-around;
+    /* border: 1px solid green; */
+  }
+  
+  .bookdiv{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+  /*   border:1px solid green; */
+    height : 10%;
+  }
+  
+  .booknow{
+    color:white;
+    background-color: rgb(17, 17, 88); 
+    padding:9px;
+    border : none;
+    border-radius:10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .booknow:hover{
+    color: rgb(17, 17, 88);
+    background-color: white;
+    border: 2px solid rgb(17, 17, 88);
+  }
+
+  #btnContainer{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 2%;
+  }
+
+  #seeMoreCardBtn{
+    color:white;
+    background-color: rgb(252, 101, 54); 
+    padding: 2% 3%;
+    border : none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  #seeMoreCardBtn:hover{
+    background-color: white;
+    border: 2px solid rgb(252, 101, 54);;;
+    color: rgb(252, 101, 54);;;
+  }
     
     
     /* after last*/
