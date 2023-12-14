@@ -43,7 +43,7 @@ function  displaydata(data){
     let bookdiv = document.createElement("div");
     bookdiv.classList.add("bookdiv")
     let parap = document.createElement("h2");
-    parap.innerText = `$ ${ele.Price}`;
+    parap.innerText = `Rs. ${ele.Price}`;
     
     let book = document.createElement("button");
     book.innerText = "BOOK NOW";
