@@ -9,7 +9,7 @@ header{
     background-size: cover;
 }
 #fadeCont{
-    background-color: rgb(97, 71, 61);
+    background-color: rgb(71, 47, 37);
     width: 100%;
     height: 100%;
     opacity: 0.3;
@@ -43,7 +43,7 @@ nav > div{
 #logoCont > a > img{
     width: 50%;
     border-radius: 50%;
-    border: 1px solid rgb(228, 88, 38);;
+    border: 1px solid white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #pageLinksCont{
@@ -55,7 +55,7 @@ nav > div{
 }
 #pageLinksCont > a{
     text-decoration: none;
-    color: rgb(255, 51, 0);
+    color: white;
     font-size: 20px;
     font-weight: 600;
 }
@@ -76,27 +76,23 @@ nav > div{
 }
 #logInBtn{
     background: none;
-    color: rgb(238, 56, 11);
-    text-shadow: 1px 1px white;
+    color: white;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #signInBtn{
-    background-color: rgb(228, 88, 38);
+    background-color: white;
     border: none;
-    color: white;
-    text-shadow: 1px 1px black;
+    color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #logInBtn:hover{
-    background-color:rgb(228, 88, 38);
-    color: white;
-    text-shadow: 1px 1px black;
+    background-color: white;
+    color: black;
 }
 #signInBtn:hover{
     background: none;
-    color: rgb(238, 56, 11);
-    text-shadow: 1px 1px white;
+    color: white;
 }
 #headingInpContainer{
     top: 20vh;
@@ -125,23 +121,43 @@ nav > div{
 #headingInpContainer > div{
     margin-top: 3%;
     height: 15%;
-    width: 65%;
+    width: 57%;
     background-color: white;
     border-radius: 20px;
     display: flex;
+    padding: 0 1.5% 0 1%;
+    justify-content: space-between;
+    align-items: center;
 }
-#headingInpContainer > div > div{
-    height: 100%;
-    width: fit-content;
-    margin: auto;
+.Sh-labelCont{
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 90%;
+    border-radius: 20px;
+    width: 30%;
+    padding: 1%;
 }
 #headingInpContainer > div > div > input {
-    padding: 8%;
+    padding: 5% 30% 5% 1%;
+    border: none;
+    font-size: 15px;
 }
 .labels{
     display: block;
     font-size: 20px;
     font-weight: 600;
+}
+#Sh-btnCont{
+    width: 10%;
+    height: 90%;
+}
+#Sh-searchBtn{
+    border-radius: 20px;
+    padding: 15% 8%;
+    border: 1px solid white;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .alignContainer{
@@ -169,15 +185,26 @@ nav > div{
     justify-content: center;
     align-items: center;
     gap: 5%;
+    padding-left: 3%;
+    border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .packageLogoCont{
-    width: 30%;
+    width: 20%;
     height: 80%;
 }
+.packageLogoCont > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+}
 .packageNames{
+    width: 80%;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 600;  
+}
+.packageNames > a{
+    text-decoration: none;
     color: rgb(87, 84, 84);
 }
 #blankCont{
@@ -195,11 +222,12 @@ nav > div{
     width: 80%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 #transparentCont > h1{
     font-size: 700%;
     font-weight: 900;
+    margin: 0;
     opacity: 0.1;
 }
 #alignCont4{
@@ -215,7 +243,7 @@ nav > div{
     width: 80%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 #overlapCont > h2{
     font-size: 300%;
@@ -227,11 +255,13 @@ nav > div{
     justify-content: center;
 }
 #partnerSection{
-    height: 40vh;
+    height: 45vh;
     width: 80%;
     text-align: center;
+    font-family: Poppins;
 }
 #partnerSection > div{
+    margin-top: 5%;
     height: 20vh;
     width: 100%;
     display: grid;
@@ -254,6 +284,10 @@ nav > div{
     justify-content: center;
     align-items: center;
     gap: 5%;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
+}
+#partnerSection > div > div > h5{
+    font-size: 150%;
+    letter-spacing: 1px;
 }
