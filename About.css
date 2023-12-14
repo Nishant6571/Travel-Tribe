@@ -2,52 +2,436 @@ body {
   margin: 0;
   padding: 0;
 }
-
-#Nmidbody-conatiner {
+/* <!-- uppermost conatiner --> */
+header {
   width: 100%;
-  height: 457px;
+  height: 120vh;
+  background-image: url("./Aboutimages/singaporefinal.webp");
+  background-size: cover;
 }
-/* footer css */
-.Nabout-Footer {
+#NfadeCont {
+  background-color: rgb(71, 47, 37);
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+#NalignCont {
+  height: 20vh;
+  width: 100%;
+  top: 0;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
+}
+nav {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  letter-spacing: 1px;
+  font-family: Poppins;
+}
+nav > div {
+  height: 100%;
+}
+#NlogoCont {
+  width: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+#NlogoCont > a > img {
+  width: 50%;
+  border-radius: 50%;
+  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#NpageLinksCont {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+#NpageLinksCont > a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+#NnavBtnCont {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8%;
+}
+#NnavBtnCont > button {
+  padding: 5%;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#NlogInBtn {
+  background: none;
+  color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#NsignInBtn {
+  background-color: white;
+  border: none;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#NlogInBtn:hover {
+  background-color: white;
+  color: black;
+}
+#NsignInBtn:hover {
+  background: none;
+  color: white;
+}
+#NheadingInpContainer {
+  top: 20vh;
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  letter-spacing: 2px;
+}
+#NheadingInpContainer > h3 {
+  color: white;
+  font-size: 200%;
+  margin: 0;
+  text-shadow: 1px 1px black;
+}
+#NheadingInpContainer > h1 {
+  color: white;
+  font-size: 400%;
+  margin: 1%;
+  text-shadow: 1px 1px black;
+}
+#NheadingInpContainer > div {
+  margin-top: 3%;
+  height: 15%;
+  width: 57%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  padding: 0 1.5% 0 1%;
+  justify-content: space-between;
+  align-items: center;
+}
+.NSh-labelCont {
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 90%;
+  border-radius: 20px;
+  width: 30%;
+  padding: 1%;
+}
+#NheadingInpContainer > div > div > input {
+  padding: 5% 30% 5% 1%;
+  border: none;
+  font-size: 15px;
+}
+.Nlabels {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+}
+#NSh-btnCont {
+  width: 10%;
+  height: 90%;
+}
+#Sh-searchBtn {
+  border-radius: 20px;
+  padding: 15% 8%;
+  border: 1px solid white;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.NalignContainer {
+  width: 100%;
+  height: 20vh;
+  top: 110vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+.NalignContainer > div {
+  width: 80%;
+  height: 20vh;
+  display: grid;
+  background-color: white;
+  border-radius: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.NalignContainer > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding-left: 3%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.NpackageLogoCont {
+  width: 20%;
+  height: 80%;
+}
+.NpackageLogoCont > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30%;
+}
+.NpackageNames {
+  width: 80%;
+  font-size: 20px;
+  font-weight: 600;
+}
+.NpackageNames > a {
+  text-decoration: none;
+  color: rgb(87, 84, 84);
+}
+#NblankCont {
+  width: 100%;
+  height: 10vh;
+}
+.NalignCont3 {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+}
+#NtransparentCont {
+  height: 30vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#NtransparentCont > h1 {
+  font-size: 700%;
+  font-weight: 900;
+  margin: 0;
+  opacity: 0.1;
+}
+#NalignCont4 {
+  width: 100%;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+}
+#NoverlapCont {
+  top: 130vh;
+  position: absolute;
+  height: 30vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#NoverlapCont > h2 {
+  font-size: 300%;
+}
+.NalignCont5 {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#NpartnerSection {
+  height: 45vh;
+  width: 80%;
+  text-align: center;
+  font-family: Poppins;
+}
+#NpartnerSection > div {
+  margin-top: 5%;
+  height: 20vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2%;
+}
+#NpartnerSection > article {
+  height: fit-content;
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+#NpartnerSection > article > p {
+  font-size: 200%;
+  letter-spacing: 1px;
+  color: gray;
+}
+#NpartnerSection > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+#NpartnerSection > div > div > h5 {
+  font-size: 150%;
+  letter-spacing: 1px;
+}
+
+/* mid-container-about */
+.Nmid-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  width: 100%;
+  height: 1200px;
+}
+
+.Nmid-container-content {
+  height: 1200px;
+  width: 80%;
+  display: grid;
+  grid-template: 33% 33% 33% / 50% 50%;
+  gap: 20px;
+}
+
+.Nmid-container-content > div {
+  height: 100%;
+  width: 95%;
+}
+.Nmid-container-content > div > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border-bottom-left-radius: 500px 100px;
+  border-bottom-right-radius: 500px 100px;
+}
+.Nmid-container-div2,
+.Nmid-container-div4,
+.Nmid-container-div6 {
+  margin-left: 26px;
+}
+.Nmid-container-content h4 {
+  margin-top: 5px;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.Nmid-container-content p {
+  margin-top: -10px;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(159, 156, 156);
+}
+
+/* after mid */
+.Nafter-mid-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+  width: 100%;
+  height: 400px;
+}
+
+.Njoin-membership {
+  background-image: url("./Aboutimages/background3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 400px;
+  width: 80%;
+  background-color: honeydew;
+  border-radius: 20px;
+}
+
+.Njoin-membership p {
+  margin-top: 30px;
+  color: rgb(252, 101, 54);
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Poppins;
+}
+
+.Nmidcontainh3 {
+  width: 800px;
+  display: flex;
+  text-align: center;
+}
+.Njoin-membership h3 {
+  color: black;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.Nafter-mid-button {
+  background-color: rgb(252, 101, 54);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  height: 60px;
+  width: 200px;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 900;
+}
+/* footer css */
+.Nabout-Footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
   width: 100%;
   background-color: black;
 }
 
 .Ncontent-Footer {
   display: grid;
-  height: 200px;
+  height: 250px;
   width: 80%;
-  /* margin-left: 30px; */
-  /* background-color: bisque; */
   display: grid;
-  /* grid-template-rows: (1, 1fr); */
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  /* margin-bottom: 100px; */
 }
 .Ncontent-Footer > div {
   display: flex;
   flex-direction: column;
-  margin-top: 54px;
-
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* justify-content: space-around; */
-  /* color: white; */
-  /* justify-content: space-evenly; */
+  margin-top: 80px;
   gap: 30px;
-  /* background-color: rgb(129, 151, 151); */
-}
-.Ncontent-Footer > :nth-child(2),
-.Ncontent-Footer > :nth-child(3),
-.Ncontent-Footer > :nth-child(4) {
-  margin-left: 60px;
 }
 
+.Ncontent-Footer > :nth-child(2),
+.Ncontent-Footer > :nth-child(3) {
+  margin-left: 80px;
+}
+
+.Ncontent-Footer > :nth-child(4) {
+  margin-left: 150px;
+}
 .Ncontent-Footer p {
   margin: 0px;
 }
@@ -59,12 +443,14 @@ body {
   color: white;
   font-size: larger;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
+  font-family: Poppins;
 }
 .Nfooter-Grey {
   color: rgb(159, 156, 156);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
+  font-family: Poppins;
 }
 
 .Nsocial-footer {
@@ -90,15 +476,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-  height: 72px;
+  align-items: center;
+  height: 100px;
   width: 100%;
   background-color: black;
 }
 
 #Nline-footer {
-  width: 78%;
-  margin-left: 140px;
+  width: 80%;
   height: 0.1px;
   border-radius: 10px;
   background-color: rgb(159, 156, 156);
@@ -106,14 +491,13 @@ body {
 .Nafter-line {
   display: flex;
   justify-content: space-between;
-  width: 78%;
+  width: 80%;
   margin-top: 10px;
-  margin-left: 141px;
-  margin-right: 24px;
   align-items: center;
 }
 .Nfooter-Grey2 {
   color: rgb(159, 156, 156);
   text-decoration: none;
-  font-size: 10px;
+  font-size: 13px;
+  font-family: Poppins;
 }
