@@ -8,13 +8,13 @@ header{
     background-image: url("./headerBackGroundImg.jpg");
     background-size: cover;
 }
-#fadeCont{
+#Sh-fadeCont{
     background-color: rgb(71, 47, 37);
     width: 100%;
     height: 100%;
     opacity: 0.3;
 }
-#alignCont{
+#Sh-alignCont{
     height: 20vh;
     width: 100%;
     top: 0;
@@ -33,40 +33,40 @@ nav{
 nav > div{
     height: 100%;
 }
-#logoCont{
+#Sh-logoCont{
     width: 15%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
 }
-#logoCont > a > img{
+#Sh-logoCont > a > img{
     width: 50%;
     border-radius: 50%;
     border: 1px solid white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#pageLinksCont{
+#Sh-pageLinksCont{
     width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5%;
 }
-#pageLinksCont > a{
+#Sh-pageLinksCont > a{
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-weight: 600;
 }
-#navBtnCont{
+#Sh-navBtnCont{
     width: 20%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 8%;
 }
-#navBtnCont > button{
+#Sh-navBtnCont > button{
     padding: 5%;
     font-size: 20px;
     font-weight: 600;
@@ -74,7 +74,7 @@ nav > div{
     border-radius: 30px;
     cursor: pointer;
 }
-#logInBtn{
+#Sh-logInBtn{
     background: none;
     color: white;
     border: none;
@@ -94,7 +94,7 @@ nav > div{
     background: none;
     color: white;
 }
-#headingInpContainer{
+#Sh-headingInpContainer{
     top: 20vh;
     position: absolute;
     height: 90vh;
@@ -106,19 +106,19 @@ nav > div{
     font-family: Poppins;
     letter-spacing: 2px;
 }
-#headingInpContainer > h3{
+#Sh-headingInpContainer > h3{
     color: white;
     font-size: 200%;
     margin: 0;
     text-shadow: 1px 1px black;
 }
-#headingInpContainer > h1{
+#Sh-headingInpContainer > h1{
     color: white;
     font-size: 400%;
     margin: 1%;
     text-shadow: 1px 1px black;   
 }
-#headingInpContainer > div{
+#Sh-headingInpContainer > div{
     margin-top: 3%;
     height: 15%;
     width: 57%;
@@ -137,12 +137,12 @@ nav > div{
     width: 30%;
     padding: 1%;
 }
-#headingInpContainer > div > div > input {
+#Sh-headingInpContainer > div > div > input {
     padding: 5% 30% 5% 1%;
     border: none;
     font-size: 15px;
 }
-.labels{
+.Sh-labels{
     display: block;
     font-size: 20px;
     font-weight: 600;
@@ -160,7 +160,7 @@ nav > div{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.alignContainer{
+.Sh-alignContainer{
     width: 100%;
     height: 20vh;
     top: 110vh;
@@ -169,7 +169,7 @@ nav > div{
     justify-content: center;
     border-radius: 20px;
 }
-.alignContainer > div{
+.Sh-alignContainer > div{
     width: 80%;
     height: 20vh;
     display: grid;
@@ -180,7 +180,7 @@ nav > div{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.alignContainer > div > div{
+.Sh-alignContainer > div > div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,78 +189,82 @@ nav > div{
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.packageLogoCont{
+.Sh-packageLogoCont{
     width: 20%;
     height: 80%;
 }
-.packageLogoCont > img{
+.Sh-packageLogoCont > img{
     width: 100%;
     height: 100%;
     border-radius: 30%;
 }
-.packageNames{
+.Sh-packageNames{
     width: 80%;
     font-size: 20px;
     font-weight: 600;  
 }
-.packageNames > a{
+.Sh-packageNames > a{
     text-decoration: none;
     color: rgb(87, 84, 84);
 }
-#blankCont{
+#Sh-blankCont{
     width: 100%;
     height: 10vh;
 }
-.alignCont3{
+.Sh-commonAlignCont{
     width: 100%;
     height: 30vh;
     display: flex;
     justify-content: center;
 }
-#transparentCont{
+.Sh-transparentCont{
     height: 30vh;
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
-#transparentCont > h1{
+.Sh-transparentCont > h1{
     font-size: 700%;
-    font-weight: 900;
     margin: 0;
     opacity: 0.1;
 }
-#alignCont4{
+.Sh-commoneAlignforOverlapCont{
     width: 100%;
     height: 1px;
     display: flex;
     justify-content: center;
 }
-#overlapCont{
+#Sh-overlap1stCont{
     top: 130vh;
     position: absolute;
     height: 30vh;
     width: 80%;
+    font-family: Poppins;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
-#overlapCont > h2{
+.Sh-overlapCont > h2{
     font-size: 300%;
+    letter-spacing: 1px;
 }
-.alignCont5{
-    height: 40vh;
+
+/* ------------------partner Section---------------- */
+
+.Sh-alignCont5{
+    height: 50vh;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-#partnerSection{
-    height: 45vh;
+#Sh-partnerSection{
+    height: 50vh;
     width: 80%;
     text-align: center;
     font-family: Poppins;
 }
-#partnerSection > div{
+#Sh-partnerSection > div{
     margin-top: 5%;
     height: 20vh;
     width: 100%;
@@ -268,18 +272,18 @@ nav > div{
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2%;
 }
-#partnerSection > article{
+#Sh-partnerSection > article{
     height: fit-content;
     width: 100%;
     padding: 0 5%;
     box-sizing: border-box;
 }
-#partnerSection > article > p{
+#Sh-partnerSection > article > p{
     font-size: 200%;
     letter-spacing: 1px;
     color: gray;
 }
-#partnerSection > div > div{
+#Sh-partnerSection > div > div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,7 +291,334 @@ nav > div{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
 }
-#partnerSection > div > div > h5{
+#Sh-partnerSection > div > div > h5{
     font-size: 150%;
     letter-spacing: 1px;
 }
+
+/* --------------------------------------------- */
+#Sh-alignCont6{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#Sh-aboutSection{
+    height: 70vh;
+    width: 80%;
+    display: grid;
+    font-family: Poppins;
+    grid-template-columns: repeat(2, 1fr);
+}
+#Sh-aboutSection > div{
+    display: flex;
+    padding: 15% 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#Sh-aboutSection > div > h3, #Sh-ServiceCont > h3{
+    font-size: 400%;
+    margin: 0;
+    color: rgb(65, 19, 19);
+}
+#Sh-aboutSection > div > h4, #Sh-ServiceCont > h4{
+    font-size: 200%;
+    color: rgb(100, 90, 90);
+    margin: 0;
+}
+
+#Sh-aboutSection > div > p{
+    font-size: 150%;
+    color: rgb(75, 59, 59);
+    padding-right: 20%;
+    margin: 0;
+    letter-spacing: 1px;
+}
+#Sh-aboutSection > div > button, #Sh-ServiceCont > button{
+    background-color: rgb(48, 24, 24);
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 3%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#Sh-aboutSection > div > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* --------------------Our service section styling------------------- */
+#Sh-alignCont7{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+#Sh-alignCont7 > section{
+    width: 80%;
+    height: 100%;
+    font-family: Poppins;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#Sh-gridCont{
+    padding: 10% 0;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 3%;
+   grid-row-gap: 3%;
+}
+#Sh-gridCont > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-sizing: border-box;
+}
+#Sh-gridCont > div > h3{
+    font-size: 350%;
+    margin: 0;
+}
+#Sh-gridCont > div > h4{
+    font-size: 120%;
+    margin: 0;
+    color: gray;
+}
+
+#Sh-ServiceCont{
+    display: flex;
+    padding: 10% 0;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#Sh-ServiceCont > p{
+    font-size: 150%;
+    color: rgb(75, 59, 59);
+    padding-left: 15%;
+    text-align: right;
+    margin: 0;
+}
+
+/* --------------price heading-------------------- */
+
+#Sh-overlap2ndCont{
+    top: 340vh;
+    position: absolute;
+    height: 30vh;
+    width: 80%;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* --------------------data wrapper styling-------------------------- */
+#Sh-alignCont9{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+}
+#Sh-data-main-container1{
+    width: 80%;
+    height: 100%;
+    border: 2px solid green;
+}
+/* -------------------------------------------------------------- */
+
+#Sh-overlap3ndCont{
+    top: 550vh;
+    position: absolute;
+    height: 30vh;
+    width: 80%;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* ------------------2nd Data Container--------------------------------- */
+
+#Sh-alignCont11{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#Sh-data-main-container2{
+    width: 80%;
+    height: 100%;
+    border: 2px solid green;
+}
+/* ------------------------------------------------------- */
+
+#Sh-alignCont12{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+#Sh-testimonialCont{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    font-family: Poppins;
+    letter-spacing: 1px;
+    grid-template-columns: repeat(2, 1fr);
+}
+#Sh-testimonialCont > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Sh-testimonialCont > div:nth-child(1) > img{
+    width: 100%;
+    height: 80%;
+}
+#Sh-testimonialCont > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+#Sh-testimonialCont > div:nth-child(2) > h3{
+    font-size: 300%;
+}
+#Sh-profileNameCont{
+    height: 5vh;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+#Sh-profileNameCont > h5{
+    font-size: 110%;
+    color: rgb(46, 45, 45);
+}
+#Sh-testimonialCont > div:nth-child(2) > p{
+    font-size: 150%;
+    padding-left: 20%;
+    color: rgb(107, 98, 98);
+}
+
+/* footer Styling */
+  /* footer css */
+  .Nabout-Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .Ncontent-Footer {
+    display: grid;
+    height: 200px;
+    width: 80%;
+    /* margin-left: 30px; */
+    /* background-color: bisque; */
+    display: grid;
+    /* grid-template-rows: (1, 1fr); */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    /* margin-bottom: 100px; */
+  }
+  .Ncontent-Footer > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 54px;
+  
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    /* color: white; */
+    /* justify-content: space-evenly; */
+    gap: 30px;
+    /* background-color: rgb(129, 151, 151); */
+  }
+  .Ncontent-Footer > :nth-child(2),
+  .Ncontent-Footer > :nth-child(3),
+  .Ncontent-Footer > :nth-child(4) {
+    margin-left: 60px;
+  }
+  
+  .Ncontent-Footer p {
+    margin: 0px;
+  }
+  #Nmargin-for-this {
+    margin-top: 42px;
+  }
+  
+  .Nfooter-Bold {
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .Nfooter-Grey {
+    color: rgb(159, 156, 156);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .Nsocial-footer {
+    display: flex;
+    gap: 20px;
+    margin-top: -10px;
+  }
+  .Nfacebookimg {
+    width: 25px;
+    height: 35px;
+  }
+  
+  .Ntwitterimg {
+    width: 25px;
+    height: 35px;
+  }
+  
+  .Ninstaimg {
+    width: 25px;
+    height: 35px;
+  }
+  .Nline-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: 72px;
+    width: 100%;
+    background-color: black;
+  }
+  
+  #Nline-footer {
+    width: 78%;
+    margin-left: 140px;
+    height: 0.1px;
+    border-radius: 10px;
+    background-color: rgb(159, 156, 156);
+  }
+  .Nafter-line {
+    display: flex;
+    justify-content: space-between;
+    width: 78%;
+    margin-top: 10px;
+    margin-left: 141px;
+    margin-right: 24px;
+    align-items: center;
+  }
+  .Nfooter-Grey2 {
+    color: rgb(159, 156, 156);
+    text-decoration: none;
+    font-size: 10px;
+  }
+  
