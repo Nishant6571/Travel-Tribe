@@ -48,6 +48,15 @@ function  displaydata(data){
     let book = document.createElement("button");
     book.innerText = "BOOK NOW";
     book.classList.add("booknow");
+
+    // ========================================
+    // add eventlistner on book get id of card
+    book.addEventListener('click', (e)=>{
+      getcardid(ele);
+    })
+   
+
+
     book.setAttribute("id", ele.id);
     bookdiv.append(parap, book);
     
@@ -62,10 +71,17 @@ seeMoreBtn.addEventListener('click', () => {
     fetchdata(url, 6, pageCount++);
 });
 
-// -------------------dropdown menu Click functionality--------------------------------------
+
+// to store a id in local storage 
+function  getcardid(ele){
+localStorage.setItem("id", ele.id);
+}
+
+// ----------------------Dropdown menu functionality----------------------------------------
 
 let button = document.getElementById("menuBtn");
     button.addEventListener('click', () => {
       let dropdown = document.getElementById("myDropdown");
       dropdown.classList.toggle("show");
 });
+

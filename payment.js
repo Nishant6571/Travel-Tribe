@@ -1,9 +1,44 @@
+// input tag taking
+let date = document.getElementById('date');
+let country = document.getElementById('country');
+let people = document.getElementById('people');
+let places = document.getElementById('places');
+let price = document.getElementById('price');
+// ===========================================
 
-let poppara = document.getElementById("poppara");
-let popup = document.getElementById("popup");
 let url = `https://mock-api-templates-za9u.onrender.com/country`
 
+async function fetchdata2(url) {
+    let localid = localStorage.getItem('id')
+    try {
+        let res = await fetch(`${url}/${localid}`);
 
+        let data = await res.json();
+        displaydata2(data);
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+fetchdata2(url)
+// fetchdata(url)
+
+
+// fetchdata(url);
+//displaey data in input tag
+function displaydata2(data) {
+    date.value = data.Date;
+    country.value = data.Location;
+    people.value = 1
+    places.value = data.Details;
+    price.value=data.Price
+}
+
+//  expolore more places
+
+let maincontainer = document.getElementById('Sh-data-main-container1');
+
+// fetch data function
 async function fetchdata(url, limit, page){
     try{
       let res = await fetch(`${url}?_limit=${limit}&_page=${page}`);
@@ -15,10 +50,10 @@ async function fetchdata(url, limit, page){
   console.log(error);
 }
 }
-fetchdata(url, 9, 1);
+fetchdata(url, 6, 1);
 
 function  displaydata(data){
-  // document.getElementById("Sh-data-main-container1").innerHTML = "";
+  document.getElementById("Sh-data-main-container1").innerHTML = "";
   data.forEach((ele)=>{
     let card = document.createElement("div");
     card.classList.add("subdiv");
@@ -29,16 +64,6 @@ function  displaydata(data){
     buttonR.classList.add("btnR")
     buttonR.setAttribute("id", ele.id);
     buttonR.innerText = "Read More";
-    buttonR.addEventListener("click", ()=>{
-      document.getElementById('overlay').style.display = 'block';
-      document.getElementById('popup').style.display = 'block';
-      document.getElementById('popup').style.color = "white";
-      document.getElementById('popup').style.fontSize = "20px"
-      poppara.innerText = ele.Details;
-      document.getElementById('popup').style.backgroundImage =  `url(${ele.Image})`;
-    
-      document.getElementById('popup').style.backgroundSize = "cover";
-    })
   
     let head = document.createElement("h2");
     head.innerText = ele.Location;
@@ -58,57 +83,45 @@ function  displaydata(data){
     let bookdiv = document.createElement("div");
     bookdiv.classList.add("bookdiv")
     let parap = document.createElement("h2");
-
     parap.innerText = `Rs. ${ele.Price}`;
     
     let book = document.createElement("button");
     book.innerText = "BOOK NOW";
     book.classList.add("booknow");
-    book.setAttribute("id", ele.id);
-    book.addEventListener("click", ()=>{
-      booknow(ele);
+
+    // ========================================
+    // add eventlistner on book get id of card
+    book.addEventListener('click', (e)=>{
+      getcardid(ele);
     })
+   
+
+
+    book.setAttribute("id", ele.id);
     bookdiv.append(parap, book);
     
     card.append(img, buttonR, head, para, lastdiv, bookdiv);
     document.getElementById("Sh-data-main-container1").append(card);
   })
 }
-
-
-function closePopup() {
-  document.getElementById('overlay').style.display = 'none';
-  document.getElementById('popup').style.display = 'none';
-}
-
-
 let pageCount = 1;
 let seeMoreBtn = document.getElementById("seeMoreCardBtn");
 
 seeMoreBtn.addEventListener('click', () => {
-  console.log("ok")
-  document.getElementById("Sh-data-main-container1").style.paddingBottom = "48%";
-  document.getElementById("Sh-data-main-container1").style.paddingTop = "0%"
-    fetchdata(url, 9, ++pageCount);
+    fetchdata(url, 6, pageCount++);
 });
 
 
-// ADD CARD
-let arr = JSON.parse(localStorage.getItem("key"))||[]
 
-function booknow(ele){
-  if(arr.includes(ele)) {
-    alert("Already Add")
-  } else {
-    arr.push(ele);
-  }
- 
-  localStorage.setItem("key", JSON.stringify(arr));
+// to store a id in local storage 
+function  getcardid(ele){
+localStorage.setItem("id", ele.id);
+fetchdata2(url)
 }
-// ---------------------dropdown menu functionality----------------------------------
 
-let button = document.getElementById("menuBtn");
-    button.addEventListener('click', () => {
-      let dropdown = document.getElementById("myDropdown");
-      dropdown.classList.toggle("show");
-});
+
+
+
+
+
+

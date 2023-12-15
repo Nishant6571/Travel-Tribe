@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* nishant-signup-navbar */
+#NalignCont {
+  height: 20vh;
+  width: 100%;
+  top: 0;
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+nav {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  letter-spacing: 1px;
+  font-family: Poppins;
+}
+nav > div {
+  height: 100%;
+}
+#NlogoCont {
+  width: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+#NlogoCont > a > img {
+  width: 60%;
+  height: 90%;
+}
+#NpageLinksCont {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+#NpageLinksCont > a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+#NnavBtnCont {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8%;
+}
+#NnavBtnCont > button {
+  padding: 5%;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#Sh-logInBtn {
+  background: none;
+  color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#Sh-signInBtn {
+  background-color: rgb(252, 101, 54);
+  border: none;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#Sh-logInBtn:hover {
+  background-color: rgb(252, 101, 54);
+  color: white;
+}
+#Sh-signInBtn:hover {
+  background: white;
+  color: rgb(252, 101, 54);
+}
+
+/* nishant-signup-content */
+.Nsignup-main-container {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  width: 100%;
+  font-family: Poppins;
+  align-items: center;
+  justify-items: center;
+}
+
+.Nsignup-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 470px;
+  width: 80%;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  gap: 20px;
+}
+.Nsignup-inner-container div {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  height: 100px;
+  width: 80%;
+  display: grid;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nsignup-main-container h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.Nsignup-main-container label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.Nsignup-main-container input {
+  width: 280px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid black;
+}
+
+.Nsinup-inner-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Nsign-id {
+  margin-top: 140px;
+  background-color: rgb(252, 101, 54);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  height: 50px;
+  width: 109px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* nishant-signup-footer */
+.Nabout-Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-color: black;
+}
+
+.Ncontent-Footer {
+  display: grid;
+  height: 250px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.Ncontent-Footer > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  gap: 30px;
+}
+
+.Ncontent-Footer > :nth-child(2),
+.Ncontent-Footer > :nth-child(3) {
+  margin-left: 80px;
+}
+
+.Ncontent-Footer > :nth-child(4) {
+  margin-left: 150px;
+}
+.Ncontent-Footer p {
+  margin: 0px;
+}
+#Nmargin-for-this {
+  margin-top: 42px;
+}
+
+.Nfooter-Bold {
+  color: white;
+  font-size: larger;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Poppins;
+}
+.Nfooter-Grey {
+  color: rgb(159, 156, 156);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Poppins;
+}
+
+.Nsocial-footer {
+  display: flex;
+  gap: 20px;
+  margin-top: -10px;
+}
+.Nfacebookimg {
+  width: 25px;
+  height: 35px;
+}
+
+.Ntwitterimg {
+  width: 25px;
+  height: 35px;
+}
+
+.Ninstaimg {
+  width: 25px;
+  height: 35px;
+}
+.Nline-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+}
+
+#Nline-footer {
+  width: 80%;
+  height: 0.1px;
+  border-radius: 10px;
+  background-color: rgb(159, 156, 156);
+}
+.Nafter-line {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 10px;
+  align-items: center;
+}
+.Nfooter-Grey2 {
+  color: rgb(159, 156, 156);
+  text-decoration: none;
+  font-size: 13px;
+  font-family: Poppins;
+}
