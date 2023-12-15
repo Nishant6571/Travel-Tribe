@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/* <!-- uppermost conatiner --> */
+/* <!--nishant - uppermost conatiner --> */
 header {
   width: 100%;
   height: 120vh;
@@ -296,7 +296,7 @@ nav > div {
   font-size: 150%;
   letter-spacing: 1px;
 }
-/* mid-container-about */
+/*nishant- mid-container-about */
 .Nmid-container {
   display: flex;
   align-items: center;
@@ -345,7 +345,7 @@ nav > div {
   color: rgb(159, 156, 156);
 }
 
-/* after mid */
+/*nishant - after mid */
 .Nafter-mid-container {
   display: flex;
   align-items: center;
@@ -401,7 +401,7 @@ nav > div {
   font-family: Poppins;
   font-weight: 900;
 }
-/* footer css */
+/* nishant - footer css */
 .Nabout-Footer {
   margin-top: 100px;
   display: flex;
