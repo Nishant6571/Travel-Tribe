@@ -101,9 +101,19 @@ nav > div{
 
 
 /* input from */
+.inputform{
+/* width: 80%;
+margin: auto;
+background-color: rgb(231, 223, 223);
+height: 70vh; */
+/* display: flex;
+align-items: center; */
+
+}
+
 
 form {
-  max-width: 400px;
+ max-width: 400px;
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
@@ -367,7 +377,7 @@ button:hover {
 #packegeheading{
   height: 10vh;
   /* border: 2px solid red; */
-  background-color: rgb(100, 100, 100);
+  background-color: rgb(255, 255, 255);
   width: 80%;
   margin: 50px auto 0px auto;
   letter-spacing: 7px;
@@ -375,8 +385,12 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
-
+  color: rgb(7, 7, 7);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.exploremoreline{
+  color: black;
 }
 
 /* /////////////////////////////// */
