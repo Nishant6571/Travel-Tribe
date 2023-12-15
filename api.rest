@@ -1,0 +1,12 @@
+
+
+GET https://mock-api-templates-za9u.onrender.com/country
+
+
+### 
+PATCH https://mock-api-templates-za9u.onrender.com/country/16
+Content-Type : application/json
+
+{
+  "Image" : "https://webunwto.s3.eu-west-1.amazonaws.com/2020-10/statistics-day-page.jpg"
+}
