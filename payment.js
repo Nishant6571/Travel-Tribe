@@ -1,4 +1,44 @@
+// input tag taking
+let date = document.getElementById('date');
+let country = document.getElementById('country');
+let people = document.getElementById('people');
+let places = document.getElementById('places');
+let price = document.getElementById('price');
+// ===========================================
+
 let url = `https://mock-api-templates-za9u.onrender.com/country`
+
+async function fetchdata2(url) {
+    let localid = localStorage.getItem('id')
+    try {
+        let res = await fetch(`${url}/${localid}`);
+
+        let data = await res.json();
+        displaydata2(data);
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+fetchdata2(url)
+// fetchdata(url)
+
+
+// fetchdata(url);
+//displaey data in input tag
+function displaydata2(data) {
+    date.value = data.Date;
+    country.value = data.Location;
+    people.value = 1
+    places.value = data.Details;
+    price.value=data.Price
+}
+
+//  expolore more places
+
+let maincontainer = document.getElementById('Sh-data-main-container1');
+
+// fetch data function
 async function fetchdata(url, limit, page){
     try{
       let res = await fetch(`${url}?_limit=${limit}&_page=${page}`);
@@ -72,10 +112,16 @@ seeMoreBtn.addEventListener('click', () => {
 });
 
 
+
 // to store a id in local storage 
 function  getcardid(ele){
 localStorage.setItem("id", ele.id);
+fetchdata2(url)
 }
+
+
+
+
 
 
 
