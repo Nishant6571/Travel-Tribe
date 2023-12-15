@@ -1,4 +1,9 @@
+
+let poppara = document.getElementById("poppara");
+let popup = document.getElementById("popup");
 let url = `https://mock-api-templates-za9u.onrender.com/country`
+
+
 async function fetchdata(url, limit, page){
     try{
       let res = await fetch(`${url}?_limit=${limit}&_page=${page}`);
@@ -13,7 +18,7 @@ async function fetchdata(url, limit, page){
 fetchdata(url, 9, 1);
 
 function  displaydata(data){
-  document.getElementById("Sh-data-main-container1").innerHTML = "";
+  // document.getElementById("Sh-data-main-container1").innerHTML = "";
   data.forEach((ele)=>{
     let card = document.createElement("div");
     card.classList.add("subdiv");
@@ -24,6 +29,16 @@ function  displaydata(data){
     buttonR.classList.add("btnR")
     buttonR.setAttribute("id", ele.id);
     buttonR.innerText = "Read More";
+    buttonR.addEventListener("click", ()=>{
+      document.getElementById('overlay').style.display = 'block';
+      document.getElementById('popup').style.display = 'block';
+      document.getElementById('popup').style.color = "white";
+      document.getElementById('popup').style.fontSize = "20px"
+      poppara.innerText = ele.Details;
+      document.getElementById('popup').style.backgroundImage =  `url(${ele.Image})`;
+    
+      document.getElementById('popup').style.backgroundSize = "cover";
+    })
   
     let head = document.createElement("h2");
     head.innerText = ele.Location;
@@ -50,15 +65,43 @@ function  displaydata(data){
     book.innerText = "BOOK NOW";
     book.classList.add("booknow");
     book.setAttribute("id", ele.id);
+    book.addEventListener("click", ()=>{
+      booknow(ele);
+    })
     bookdiv.append(parap, book);
     
     card.append(img, buttonR, head, para, lastdiv, bookdiv);
     document.getElementById("Sh-data-main-container1").append(card);
   })
 }
+
+
+function closePopup() {
+  document.getElementById('overlay').style.display = 'none';
+  document.getElementById('popup').style.display = 'none';
+}
+
+
 let pageCount = 1;
 let seeMoreBtn = document.getElementById("seeMoreCardBtn");
 
 seeMoreBtn.addEventListener('click', () => {
-    fetchdata(url, 9, pageCount++);
+  console.log("ok")
+  document.getElementById("Sh-data-main-container1").style.paddingBottom = "48%";
+  document.getElementById("Sh-data-main-container1").style.paddingTop = "0%"
+    fetchdata(url, 9, ++pageCount);
 });
+
+
+// ADD CARD
+let arr = JSON.parse(localStorage.getItem("key"))||[]
+
+function booknow(ele){
+  if(arr.includes(ele)) {
+    alert("Already Add")
+  } else {
+    arr.push(ele);
+  }
+ 
+  localStorage.setItem("key", JSON.stringify(arr));
+}
