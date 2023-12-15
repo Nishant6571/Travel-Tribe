@@ -26,37 +26,53 @@
       <div id="Sh-pageLinksCont">
         <a href="./Home.html">HOME</a>
         <a href="./About.html">ABOUT US</a>
-        <a href="#">CONTACT US</a>
-        <a href="#">BLOG</a>
+        <a href="./blog.html">BLOG</a>
+        <a href="./payment.html">BOOKINGS</a>
+        <a href="./contact.html">CONTACT US</a>
       </div>
       <div id="Sh-navBtnCont">
         <button id="Sh-logInBtn">Log in</button>
         <button id="Sh-signInBtn">Sign up</button>
       </div>
-    </nav>
-  </div>
-  <section id="Sh-headingInpContainer">
-    <h1>Travel around the world</h1>
-    <h3>Enjoy our services for your trip anywhere and anytime</h3>
-    <div id="Sh-inputCont">
-      <div class="Sh-labelCont">
-        <label for="placeNameInp" class="Sh-labels">Location</label>
-        <input type="text" name="placeName" id="placeNameInp" placeholder="Where to go">
-      </div>
-      <div class="Sh-labelCont">
-        <label for="checkInDate" class="Sh-labels">Check in</label>
-        <input type="date" name="checkInDate" id="checkInDate" placeholder="Choose a date">
-      </div>
-      <div class="Sh-labelCont">
-        <label for="visitor" class="Sh-labels">Visitor</label>
-        <input type="text" name="placeName" id="visitor" placeholder="Add guest">
-      </div>
-      <div class="Sh-btnCont">
-        <button id="Sh-searchBtn"><span style="font-size: 70px;"
-            class="material-symbols-outlined">search</span></button>
+<!-- //////////////////////Dropdown menu///////////////////////////////  -->
+      <div class="dropdown">
+        <button id="menuBtn" class="dropdown-btn"><img src="./home-images/menu-icon.jpg" width="45px" alt="menu"></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a class="dropdown-item" href="./Home.html">HOME</a>
+          <a class="dropdown-item" href="./About.html">ABOUT US</a>
+          <a class="dropdown-item" href="./blog.html">BLOG</a>
+          <a class="dropdown-item" href="./payment.html">BOOKINGS</a>
+          <a class="dropdown-item" href="./contact.html">CONTACT US</a>
       </div>
     </div>
-  </section>
+
+    </nav>
+  </div>
+
+  <div id="headerAlignCont">
+    <section id="Sh-headingInpContainer">
+      <h1>Travel around the world</h1>
+      <h3>Enjoy our services for your trip anywhere and anytime</h3>
+      <div id="Sh-inputCont">
+        <div class="Sh-labelCont">
+          <label for="placeNameInp" class="Sh-labels">Location</label>
+          <input type="text" name="placeName" id="placeNameInp" size="13" placeholder="Where to go">
+        </div>
+        <div class="Sh-labelCont">
+          <label for="checkInDate" class="Sh-labels">Check in</label>
+          <input type="date" name="checkInDate" id="checkInDate" placeholder="Choose a date">
+        </div>
+        <div class="Sh-labelCont">
+          <label for="visitor" class="Sh-labels">Visitor</label>
+          <input type="text" name="placeName" id="visitor" size="10" placeholder="Add guest">
+        </div>
+        <div class="Sh-btnCont">
+          <button id="Sh-searchBtn"><span id="searchIcon" style="font-size: 450%; color: white;"
+              class="material-symbols-outlined">search</span></button>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <section class="Sh-alignContainer">
     <div>
@@ -139,7 +155,6 @@
       <div>
         <h3>ABOUT US</h3>
         <h4>Travel Tribe</h4>
-        <!-- <button id="addfetch">See More</button> -->
         <p>Travel Tribe is a travel agency located in Karnataka, India. The reason we created this travel agency is...
         </p>
         <button>See more</button>
@@ -194,9 +209,9 @@
   </div>
 
   <!-- --------------------------PRICING PARA---------------------------------- -->
-  <div style="width: 100%; height: 30vh; display: flex; justify-content: center;">
-    <div style="width: 80%; height: 100%; text-align: center; padding: 0 10%; box-sizing: border-box;">
-      <p style="font-size: 150%; color: rgb(109, 95, 95); font-family: Poppins;">We provide several choices of travel
+  <div style="width: 100%; height: 30vh; display: flex; justify-content: center;" > 
+    <div class="paraGraph">
+      <p>We provide several choices of travel
         packages that we have talored for you equipped with the best in class comfort</p>
     </div>
   </div>
@@ -221,7 +236,7 @@
           <img src="./home-images/testimonial-person-profile-icon.webp" alt="profileLogo" width="30px">
           <h5>Rohit Devnath</h5>
         </div>
-        <p style="text-align:right;">Travel Tribe is everyone's dream travel agency, affordable prizes and customizable
+        <p>Travel Tribe is everyone's dream travel agency, affordable prizes and customizable
           travel options are it's main advantages. You should try to travel with Travel Tribe</p>
       </div>
     </div>
@@ -324,6 +339,10 @@
     </div>
   </div>
   <script src="script.js"></script>
+  <script>
+    
+</script>
+
 </body>
 
 </html>

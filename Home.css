@@ -35,6 +35,7 @@ nav > div{
 }
 #Sh-logoCont{
     width: 15%;
+    height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -42,7 +43,7 @@ nav > div{
 }
 #Sh-logoCont > a > img{
     width: 60%;
-    height: 90%;
+    height: 100%;
 
 }
 #Sh-pageLinksCont{
@@ -93,11 +94,61 @@ nav > div{
     background: white;
     color: rgb(252, 101, 54);
 }
-#Sh-headingInpContainer{
+/* /////////////////////////dropdown menu CSS////////////////////////////////// */
+
+.dropdown {
+    position: relative;
+    margin-top: 4.5%;
+    display: none;
+  }
+
+  /* Style for the dropdown button */
+  .dropdown-btn {
+    background-color: rgb(44, 25, 25);
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Style for the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(252, 101, 54);
+    min-width: 16vh;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Style for the dropdown items */
+  .dropdown-item {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  /* Change color on hover */
+  .dropdown-item:hover {
+    background-color: black;
+  }
+
+/* ----------------------header part---------------------------------- */
+#headerAlignCont{
+    width: 100%;
+    height: 90vh;
     top: 20vh;
     position: absolute;
-    height: 90vh;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Sh-headingInpContainer{
+    height: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,47 +170,51 @@ nav > div{
 }
 #Sh-headingInpContainer > div{
     margin-top: 3%;
-    height: 15%;
+    height: 14%;
     width: 57%;
     background-color: white;
     border-radius: 20px;
     display: flex;
-    padding: 0 1.5% 0 1%;
-    justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
 }
 .Sh-labelCont{
     box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: 90%;
-    border-radius: 20px;
-    width: 30%;
-    padding: 1%;
+    box-shadow: rgba(92, 89, 89, 0.35) 0px 5px 15px;
+    height: 100%;
+    border-radius: 10px;
+    width: 31%;
+    padding: 2%;
+    box-sizing: border-box;
 }
 #Sh-headingInpContainer > div > div > input {
-    padding: 5% 10% 5% 1%;
+    padding: 8% 0;
     border: none;
+    background: none;
     outline: none;
     font-size: 15px;
 }
 .Sh-labels{
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 #Sh-btnCont{
-    width: 10%;
-    height: 90%;
+    width: 13%;
+    height: 100%;
+    box-sizing: border-box;
 }
 #Sh-searchBtn{
-    border-radius: 20px;
-    padding: 10% 8%;
-    border: 1px solid white;
-    background-color: white;
+    border-radius: 10px;
+    padding-top: 18%;
+    padding-bottom: 18%;
+    width: 100%;
+    border: none;
+    background-color: rgb(252, 101, 54);
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
+/* -------------------------package cards CSS-------------------------------------- */
 .Sh-alignContainer{
     width: 100%;
     height: 20vh;
@@ -297,7 +352,7 @@ nav > div{
     letter-spacing: 1px;
 }
 
-/* --------------------------------------------- */
+/* ------------------About section CSS--------------------------- */
 #Sh-alignCont6{
     height: 75vh;
     width: 100%;
@@ -421,6 +476,13 @@ nav > div{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+.paraGraph{
+    width: 80%; height: 100%; text-align: center; padding: 0 10%; box-sizing: border-box;
+}
+.paraGraph > p{
+    font-size: 150%; color: rgb(109, 95, 95); font-family: Poppins;
 }
 
 /* --------------------data wrapper styling-------------------------- */
@@ -585,19 +647,17 @@ nav > div{
 #Sh-testimonialCont > div:nth-child(2) > p{
     font-size: 120%;
     padding-left: 20%;
+    text-align:right;
     color: rgb(159, 156, 156);
 }
 
 /* footer Styling */
-  /* footer css */
-  /* after mid */
 .Nafter-mid-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 160px;
     width: 100%;
-    height: 400px;
+    height: 80vh;
   }
   
   .Njoin-membership {
@@ -609,7 +669,7 @@ nav > div{
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    height: 400px;
+    height: 80%;
     width: 80%;
     background-color: honeydew;
     border-radius: 20px;
@@ -646,9 +706,8 @@ nav > div{
     font-family: Poppins;
     font-weight: 900;
   }
-  /* footer css */
+  /* footer css -----------------------------------------*/
   .Nabout-Footer {
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -749,3 +808,274 @@ nav > div{
     font-size: 13px;
     font-family: Poppins;
   }
+
+
+  /* ------------------------For-Responsiveness-Queries--------------------------- */
+
+@media screen and (min-width: 450px) and (max-width: 675px){
+    header{
+        width: 100vw;
+        height: 70vh;
+    }
+    #Sh-alignCont{
+        height: 15vh;
+    }
+    nav{
+        width: 90%;
+    }
+    #Sh-logoCont > a > img{
+        width: 100%;
+    }
+    #Sh-pageLinksCont, #Sh-navBtnCont{
+        display: none;
+    }
+    /* /////////////////////////dropdown menu CSS////////////////////////////////// */
+ 
+    .dropdown{
+        width: 85%;
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    } 
+
+    .show {
+        display: block; /* Use !important to override inline styles */
+        top: 10vh;
+        position: absolute;
+    }
+    /* ----------------------header part---------------------------------- */
+    #headerAlignCont{
+        height: 40vh;
+    }
+    #Sh-headingInpContainer{
+        width: 90%;
+    }
+    #Sh-headingInpContainer > h3{
+        font-size: 130%;
+        text-align: center;
+    }
+    #Sh-headingInpContainer > h1{
+        font-size: 250%;
+        text-align: center;
+    }
+    #Sh-headingInpContainer > div{
+        height: 20%;
+        width: 90%;
+        padding-right: 5%;
+    }
+    .Sh-labels{
+        font-size: 16px;
+    }
+    #Sh-searchBtn{
+        padding-top: 11%;
+        padding-bottom: 11%;
+    }
+/*---------------------package media queries-------------------------- */
+    .Sh-alignContainer{
+        height: 35vh;
+        top: 60vh;
+    }
+    .Sh-alignContainer > div{
+        width: 90%;
+        height: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    #Sh-blankCont{
+        height: 25vh;
+    }
+    .Sh-commonAlignCont{
+        height: 15vh;
+    }
+    .Sh-transparentCont{
+        height: 100%;
+        width: 90%;
+        align-items: flex-end;
+    }
+    .Sh-transparentCont > h1{
+        font-size: 280%;
+    }
+    #Sh-overlap1stCont{
+        top: 95vh;
+        height: 15vh;
+        width: 90%;
+        align-items: flex-end;
+    }
+    .Sh-overlapCont > h2{
+        font-size: 180%;
+    }   
+    /* ------------------partner Section---------------- */
+    
+    .Sh-alignCont5{
+        height: 50vh;
+    }
+    #Sh-partnerSection{
+        height: 100%;
+        width: 90%;
+    }
+    #Sh-partnerSection > div{
+        margin-top: 10%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #Sh-partnerSection > article > p{
+        font-size: 130%;
+    }
+    /* -----------------About section media queries---------------------------- */
+
+    #Sh-alignCont6{
+        height: 50vh;
+    }
+    
+    #Sh-aboutSection{
+        width: 90%;
+    }
+    #Sh-aboutSection > div{
+        justify-content: space-around;
+    }
+    #Sh-aboutSection > div > h3, #Sh-ServiceCont > h3{
+        font-size: 250%;
+    }
+    #Sh-aboutSection > div > h4, #Sh-ServiceCont > h4{
+        font-size: 150%;
+    }
+    #Sh-aboutSection > div > p{
+        font-size: 110%;
+        padding-right: 15%;
+    }
+    
+    #Sh-aboutSection > div > img{
+        height: 95%;
+    }
+    
+    /* --------------------Our service section styling------------------- */
+    
+    #Sh-alignCont7 > section{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    #Sh-gridCont > div > h3{
+        font-size: 280%;
+    }
+    #Sh-ServiceCont{
+        padding: 5% 0;
+        align-items: center;
+    } 
+    #Sh-ServiceCont > p{
+        padding-left: 0%;
+        text-align: center;
+    }
+    
+    /* --------------price heading-------------------- */
+    
+    #Sh-overlap2ndCont{
+        top: 285vh;
+        height: 15vh;
+        width: 90%;
+    }
+    
+    .paraGraph{
+        width: 90%; padding: 0;
+    }
+    /* --------------------data wrapper styling-------------------------- */
+    #Sh-alignCont9{
+        height: 202vh;
+    }
+    #data-Button-cont{
+        width: 90%;
+    }
+    #Sh-data-main-container1{
+        grid-template-columns:repeat(2, 1fr);
+        height: 175vh;
+        grid-row-gap: 1%;
+    }
+      .place-detail{
+        padding: 0 1%;
+      }
+      .subdiv>img{
+        height:38%;
+      }
+      #btnContainer{
+        height: 20vh;
+      }
+/* ---------------------testimonial section media queries--------------------------- */
+    #Sh-alignCont12{
+        height: 75vh;
+    }
+    #Sh-testimonialCont{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #Sh-testimonialCont > div:nth-child(1) > img{
+        height: 100%;
+    }
+    #Sh-testimonialCont > div:nth-child(2){
+        align-items: center;
+    }
+    #Sh-testimonialCont > div:nth-child(2) > h3{
+        font-size: 250%;
+    }
+    #Sh-profileNameCont{
+        width: 100%;
+        justify-content: center;
+    }
+    #Sh-testimonialCont > div:nth-child(2) > p{
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    /* membership container medie queries*/
+    .Nafter-mid-container {
+        height: 50vh;
+      }
+      .Njoin-membership {
+        width: 90%;
+      }  
+      .Njoin-membership p {
+        font-size: 150%;
+      }
+      .Njoin-membership h3 {
+        font-size: 200%;
+        padding: 0 5%;
+      }
+      .Nmidcontainh3 {
+        width: 100%;
+      }
+      /* footer css -----------------------------------------*/
+
+      .Nabout-Footer {
+        height: 40vh;
+      }
+      
+      .Ncontent-Footer {
+        height: 90%;
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2%;
+      }
+      .Ncontent-Footer > div {
+        margin-top: 0;
+        padding-top: 5%;
+        letter-spacing: 1px;
+      }
+      
+      .Ncontent-Footer > :nth-child(2),
+      .Ncontent-Footer > :nth-child(3) {
+        margin-left: 0;
+      }
+      
+      .Ncontent-Footer > :nth-child(4) {
+        margin-left: 0;
+      }
+      #Nline-footer {
+        width: 90%;
+      }
+      .Nafter-line {
+        width: 90%;
+      }
+      .Nfooter-Grey2 {
+        font-size: 15px;
+      }
+
+}
