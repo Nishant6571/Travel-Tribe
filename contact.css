@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: white;
+}
+.contactUs_49{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactUs_49 .title_49
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.contactUs_49 .title_49 h2{
+    color: black;
+    font-weight: 500;
+}
+.form
+{
+    grid-area: form;
+
+}
+.info
+{
+    grid-area: info;
+}
+.map
+{
+    grid-area: map;
+}
+.contact{
+    padding: 40px;
+    background:  white;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+
+}
+.box_49
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.contact h3 
+{
+    color: rgb(252, 101, 52);
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+/* form */
+.formBox49{
+    position: relative;
+    width: 100%;
+}
+.formBox49 .row50 
+{
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox49
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox49 .row100 .inputBox49 {
+    width: 100%;
+}
+.inputBox49 span 
+{
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputBox49 input
+{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputBox49 textarea
+{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox49 input[type="submit"]
+{
+    background: rgb(252, 101, 52);
+    color: #333;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox49 ::placeholder
+{
+    color: rgb(159, 156, 156);
+}
+/* info*/
+.info
+{
+    background: rgb(255, 210, 195);
+}
+.info h3
+{
+    color: black;
+
+}
+.info .infoBox49 div
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.info .infoBox49 span
+{
+    min-width:40px;
+    height: 40px;
+    color:#333;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox49 div p 
+{
+    color: rgb(159,156,156);
+    font-size: 1.1em;
+}
+.info .infoBox49 div a
+{
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.Social49
+{
+    margin-top: 40px;
+    display: flex;
+}
+.Social49 li
+{
+    list-style: none;
+    margin-right: 15px;
+}
+.Social49 li a
+{
+    color: #333;
+    font-size: 2em;
+    color: #333;
+}
+.map
+{
+    padding: 0;
+
+}
+.map iframe
+{
+  width: 100%;
+  height: 100%;  
+}
+/* Footer Styles */
+.Nabout-Footer {
+    background-color: #141414;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+  }
+  
+  .Ncontent-Footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .Ncontent-footer-col1,
+  .Ncontent-footer-col2,
+  .Ncontent-footer-col3,
+  .Ncontent-footer-col4 {
+    flex: 1;
+  }
+  
+  .Ncontent-footer-col1 a,
+  .Ncontent-footer-col2 a,
+  .Ncontent-footer-col3 a,
+  .Ncontent-footer-col4 a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .Ncontent-footer-col1 a:hover,
+  .Ncontent-footer-col2 a:hover,
+  .Ncontent-footer-col3 a:hover,
+  .Ncontent-footer-col4 a:hover {
+    color: #f9ab00;
+  }
+  
+  .Ncontent-footer-col2 p,
+  .Ncontent-footer-col4 p {
+    margin-bottom: 10px;
+  }
+  
+  .Nsocial-footer {
+    margin-top: 20px;
+  }
+  
+  .Nsocial-footer a {
+    margin-right: 20px;
+  }
+  
+  .Nfacebookimg,
+  .Ntwitterimg,
+  .Ngoogleimg {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+  }
+  
+  .Ndivider-Footer {
+    height: 1px;
+    background-color: #454545;
+    margin: 30px 0;
+  }
+  
+  .Nbottom-footer {
+    background-color: #0d0d0d;
+    padding: 20px 0;
+  }
+  
+  .Ncontent-bottom-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .Ncopy-text,
+  .Nprivacy-text {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .Nprivacy-text {
+    margin-top: 10px;
+  }
+  
+
+@media (max-width: 767px) {
+    .box_49 {
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+            "form"
+            "info"
+            "map";
+    }
+
+    .form,
+    .info,
+    .map {
+        width: 100%; 
+    }
+
+    .formBox49 .row50,
+    .formBox49 .row100 .inputBox49 {
+        flex-direction: column; 
+    }
+
+    .inputBox49 {
+        width: 100%;
+        margin-bottom: 10px; 
+    }
+
+    .formBox49 .row50 .inputBox49,
+    .formBox49 .row100 .inputBox49 {
+        width: 100%; 
+    }
+
+    .info,
+    .map {
+        padding: 20px; 
+    }
+}
