@@ -15,6 +15,7 @@ async function fetchdata2(url) {
 
     let data = await res.json();
     displaydata2(data);
+   
     console.log(data);
   } catch (error) {
     console.log(error);

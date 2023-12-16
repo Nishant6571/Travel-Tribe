@@ -105,3 +105,10 @@ function booknow(ele){
  
   localStorage.setItem("key", JSON.stringify(arr));
 }
+// ---------------------dropdown menu functionality----------------------------------
+
+let button = document.getElementById("menuBtn");
+    button.addEventListener('click', () => {
+      let dropdown = document.getElementById("myDropdown");
+      dropdown.classList.toggle("show");
+});

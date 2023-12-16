@@ -1,3 +1,6 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
 body{
   margin: 0;
   padding: 0;
@@ -7,6 +10,7 @@ body{
   width: 500px;
   border: 2px solid red;
 }
+
 header{
   width: 100%;
   height: 20vh;
@@ -21,12 +25,13 @@ header{
   height: 100%;
   opacity: 0.3;
 }
+
+
 #Sh-alignCont{
   height: 20vh;
   width: 100%;
-  top: 0;
-  position: absolute;
   display: flex;
+  background-color: black;
   justify-content: center;
   align-items: center;
 }
@@ -35,13 +40,13 @@ nav{
   width: 80%;
   display: flex;
   letter-spacing: 1px;
-  font-family: Poppins;
 }
 nav > div{
   height: 100%;
 }
 #Sh-logoCont{
   width: 15%;
+  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -49,7 +54,7 @@ nav > div{
 }
 #Sh-logoCont > a > img{
   width: 60%;
-  height: 90%;
+  height: 100%;
 
 }
 #Sh-pageLinksCont{
@@ -62,6 +67,7 @@ nav > div{
 #Sh-pageLinksCont > a{
   text-decoration: none;
   color: white;
+  font-family: Poppins;
   font-size: 18px;
   font-weight: 600;
 }
@@ -100,9 +106,50 @@ nav > div{
   background: white;
   color: rgb(252, 101, 54);
 }
+/* /////////////////////////dropdown menu CSS////////////////////////////////// */
+
+.dropdown {
+  position: relative;
+  margin-top: 4.5%;
+  display: none;
+}
+
+/* Style for the dropdown button */
+.dropdown-btn {
+  background-color: rgb(44, 25, 25);
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(252, 101, 54);
+  min-width: 16vh;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style for the dropdown items */
+.dropdown-item {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Change color on hover */
+.dropdown-item:hover {
+  background-color: black;
+}
 
 
-/* input from */
+
+/* input from //////////////////////*/
 
 
 
@@ -491,3 +538,4 @@ button:hover {
   font-size: 13px;
   font-family: Poppins;
 }
+
