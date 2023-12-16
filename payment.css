@@ -10,8 +10,10 @@ body{
 header{
   width: 100%;
   height: 20vh;
-  background-image: url("https://cdn.pixabay.com/photo/2018/08/16/08/39/hallstatt-3609863_1280.jpg");
-  background-size: cover;
+  /* background-image: url("https://cdn.pixabay.com/photo/2018/08/16/08/39/hallstatt-3609863_1280.jpg");
+  
+  background-size: cover; */
+  background-color: black;
 }
 #Sh-fadeCont{
   background-color: rgb(71, 47, 37);
