@@ -4,9 +4,9 @@ let popup = document.getElementById("popup");
 let url = `https://mock-api-templates-za9u.onrender.com/country`
 
 
-async function fetchdata(url, limit, page){
+async function fetchdata(url, limit, page, par=""){
     try{
-      let res = await fetch(`${url}?_limit=${limit}&_page=${page}`);
+      let res = await fetch(`${url}?_limit=${limit}&_page=${page}&${par}`);
         
   let data = await res.json();
       displaydata(data);
@@ -18,7 +18,8 @@ async function fetchdata(url, limit, page){
 fetchdata(url, 9, 1);
 
 function  displaydata(data){
-  // document.getElementById("Sh-data-main-container1").innerHTML = "";
+  //  document.getElementById("Sh-data-main-container1").innerHTML = "Loding...";
+  //  document.getElementById("Sh-data-main-container1").innerHTML = "";
   data.forEach((ele)=>{
     let card = document.createElement("div");
     card.classList.add("subdiv");
@@ -86,8 +87,8 @@ let pageCount = 1;
 let seeMoreBtn = document.getElementById("seeMoreCardBtn");
 
 seeMoreBtn.addEventListener('click', () => {
-  console.log("ok")
-  document.getElementById("Sh-data-main-container1").style.paddingBottom = "48%";
+  // document.getElementById("Sh-data-main-container1").innerHTML = "Loding...";
+  document.getElementById("Sh-data-main-container1").style.paddingBottom = "32%";
   document.getElementById("Sh-data-main-container1").style.paddingTop = "0%"
     fetchdata(url, 9, ++pageCount);
 });
@@ -105,3 +106,15 @@ function booknow(ele){
  
   localStorage.setItem("key", JSON.stringify(arr));
 }
+
+// Search
+
+let location = document.getElementById("placeNameInp");
+let check = document.getElementById("checkInDate");
+let visitor = document.getElementById("visitor");
+
+let search = document.getElementById("Sh-searchBtn");
+
+search.addEventListener("click", ()=>{
+  console.log("ok");
+})

@@ -10,3 +10,39 @@ Content-Type : application/json
 {
   "Image" : "https://webunwto.s3.eu-west-1.amazonaws.com/2020-10/statistics-day-page.jpg"
 }
+
+
+###
+
+GET https://mock-api-templates-za9u.onrender.com/country
+
+###
+
+PATCH https://mock-api-templates-za9u.onrender.com/country/16
+Content-Type : application/json
+
+{
+  "Price" : "140000"
+}
+
+###
+DELETE https://mock-api-templates-za9u.onrender.com/country/16
+
+###
+GET https://mock-api-templates-za9u.onrender.com/country
+
+###
+PATCH https://mock-api-templates-za9u.onrender.com/country/3
+Content-Type: application/json
+
+{
+    "Image": "https://resources.thomascook.in/images/holidays/PKG004846/5506_Statue_Liberty_New_York_USA_SRP.jpg",
+    "Price": 100000,
+    "Details": "A universal symbol of freedom, the Statue of Liberty is America's most familiar icon and the largest statue in the world. Standing proudly in New York Harbor, visitors can admire the statue from various points around the city, particularly Battery Park, or take a ferry right to the statue.",
+    "Time": "6 mins read",
+    "Date": "29-May-2019"
+  }
+  
+
+###
+GET https://mock-api-templates-za9u.onrender.com/country
