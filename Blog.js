@@ -1,12 +1,15 @@
 
+
 let poppara = document.getElementById("poppara");
 let popup = document.getElementById("popup");
 let url = `https://mock-api-templates-za9u.onrender.com/country`
 
+let close = document.getElementById("close");
 
-async function fetchdata(url, limit, page){
+
+async function fetchdata(url, limit, page, par=""){
     try{
-      let res = await fetch(`${url}?_limit=${limit}&_page=${page}`);
+      let res = await fetch(`${url}?_limit=${limit}&_page=${page}&${par}`);
         
   let data = await res.json();
       displaydata(data);
@@ -18,7 +21,8 @@ async function fetchdata(url, limit, page){
 fetchdata(url, 9, 1);
 
 function  displaydata(data){
-  // document.getElementById("Sh-data-main-container1").innerHTML = "";
+  //  document.getElementById("Sh-data-main-container1").innerHTML = "Loding...";
+  //  document.getElementById("Sh-data-main-container1").innerHTML = "";
   data.forEach((ele)=>{
     let card = document.createElement("div");
     card.classList.add("subdiv");
@@ -76,6 +80,7 @@ function  displaydata(data){
 }
 
 
+
 function closePopup() {
   document.getElementById('overlay').style.display = 'none';
   document.getElementById('popup').style.display = 'none';
@@ -86,8 +91,8 @@ let pageCount = 1;
 let seeMoreBtn = document.getElementById("seeMoreCardBtn");
 
 seeMoreBtn.addEventListener('click', () => {
-  console.log("ok")
-  document.getElementById("Sh-data-main-container1").style.paddingBottom = "48%";
+  // document.getElementById("Sh-data-main-container1").innerHTML = "Loding...";
+  document.getElementById("Sh-data-main-container1").style.paddingBottom = "32%";
   document.getElementById("Sh-data-main-container1").style.paddingTop = "0%"
     fetchdata(url, 9, ++pageCount);
 });
@@ -105,6 +110,8 @@ function booknow(ele){
  
   localStorage.setItem("key", JSON.stringify(arr));
 }
+
+
 // ---------------------dropdown menu functionality----------------------------------
 
 let button = document.getElementById("menuBtn");
@@ -112,3 +119,41 @@ let button = document.getElementById("menuBtn");
       let dropdown = document.getElementById("myDropdown");
       dropdown.classList.toggle("show");
 });
+
+
+// Search
+
+let locations = document.getElementById("placeNameInp");
+let check = document.getElementById("checkInDate");
+let visitor = document.getElementById("visitor");
+
+let search = document.getElementById("Sh-searchBtn");
+
+// let searchIcon = document.getElementById("searchIcon");
+// searchIcon.addEventListener("click", ()=>{
+//   console.log("ok")
+// })
+
+search.addEventListener("click", ()=>{
+  let obj2 = {};
+  obj2.locations = locations.value;
+  obj2.check = check.value;
+  obj2.visitor = visitor.value;
+  console.log(obj2);
+  let str = obj2.check;
+  let num=0;
+  let str2 = "";
+  for(let i=0; i<str.length; i++){
+    if(i==5 || i==6){
+      str2+=str[i];
+    }
+  }
+  num = +(str2);
+  console.log(num);
+  let arr = ["January", "February", "April", "May", "June", "July", "Augest", "September", "October", "November", "Dacember"];
+
+  
+  console.log(`${locations.value}&${check.value}&${visitor.value}`);
+  document.getElementById("Sh-data-main-container1").innerText="";
+ // fetchdata(url, 1, 5, `Location=${locations.value}`);
+})
