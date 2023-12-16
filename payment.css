@@ -146,293 +146,215 @@ nav > div{
 .dropdown-item:hover {
   background-color: black;
 }
+/*  ============================================= */
+
+/* single card  csss  */
 
 
+.continentcard{
+ border: 2px solid red;
+ width: 350px;
+ /* text-align: center; */
+border-radius: 25px;
+height: 400px;
+margin: 50px 50px;
+background-color: rgb(227, 255, 245);
+}
+.continentimg{
+  width:100%;
+  height:60%;
+border-top-right-radius: 25px;
+border-top-left-radius: 25px;
 
-/* input from //////////////////////*/
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.continentname{
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
 
+.buttonconfrom{
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+ margin: auto;
+ background-color: rgb(55, 88, 255);
+ font-weight: bold;
+color: white;
+}
 
+.date{
+  position: relative;
+  top: 0px;
+  right: -10px;
+  /* left: 190px; */
+  /* margin: 0px; */
 
-form {
- max-width: 400px;
-  margin: 20px auto;
+  margin: 0px;
+}
+
+.price{
+ text-align: center;
+ position: relative;
+ top: -25px;
+ left: 80px;
+ margin: 0px;
+}
+
+/*  travellor details input tag css */
+.container {
+  width: 30%;
+  margin: auto;
   padding: 20px;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  height: 800px;
+}
+
+
+h2 {
+  text-align: center;
+  color: #333;
 }
 
 label {
   display: block;
   margin-bottom: 8px;
-  font-weight: bold;
+  color: #555;
 }
 
-input, checkbox {
+input[type="text"],
+input[type="email"],
+select {
   width: 100%;
   padding: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   box-sizing: border-box;
 }
 
-button {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
 }
 
-button:hover {
-  background-color: #555;
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
 
-
-/* ============================================ */
-/*API CARD CSS */
-#Sh-alignCont9{
-  width: 100%;
-  height: 220vh;
-  display: flex;
-  justify-content: center;
-}
-#data-Button-cont{
-  width: 80%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#Sh-data-main-container1{
-  width: 100%;
-  padding: 6% 0;
-  height:fit-content;
-  display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  grid-template-rows:auto;
-  gap:4%;
-  justify-content: center; 
+/* billing details input css */
+.billing-container {
+  width: 30%;
   margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  /* height: 700px; */
 }
-.subdiv{
-  width:100%;
-  /* height : 455px; */
-/*   border:1px solid red; */
-  border-radius: 7%;
+
+.billing-title {
   text-align: center;
+  color: #333;
+}
+
+.billing-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.billing-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   box-sizing: border-box;
-  font-family: Poppins;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-.place-detail{
-  margin: 0;
-  padding: 0 2%;
-  color: rgb(159, 156, 156);
-}
-.subdiv>img{
-  width:100%;
-  height:42%;
-  border-radius: 25px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
- .btnR{
-  color:white;
-  background-color: red;
-  padding:12px;
-  border : none;
-  border-radius:10px;
-  position :relative;
-  top: -20px;
-  cursor: pointer;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-} 
-
-.last{
-  display:flex;
-  justify-content:space-around;
-  /* border: 1px solid green; */
-}
-
-.bookdiv{
-  display:flex;
-  justify-content:space-around;
-  align-items: center;
-/*   border:1px solid green; */
-  height : 10%;
-}
-
-.booknow{
-  color:white;
-  background-color: rgb(17, 17, 88); 
-  padding:9px;
-  border : none;
-  border-radius:10px;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-.booknow:hover{
-  color: rgb(17, 17, 88);
-  background-color: white;
-  border: 2px solid rgb(17, 17, 88);
-}
-
-#btnContainer{
-  /* height: 30vh; */
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#seeMoreCardBtn{
-  color:white;
-  background-color: rgb(252, 101, 54); 
-  padding: 2% 3%;
-  border : none;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-#seeMoreCardBtn:hover{
-  background-color: white;
-  border: 2px solid rgb(252, 101, 54);;;
-  color: rgb(252, 101, 54);;;
-}
-
-
-#Sh-alignCont12{
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-}
-#Sh-testimonialCont{
-  width: 80%;
-  height: 100%;
-  display: grid;
-  font-family: Poppins;
-  letter-spacing: 1px;
-  grid-template-columns: repeat(2, 1fr);
-}
-#Sh-testimonialCont > div:nth-child(1){
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#Sh-testimonialCont > div:nth-child(1) > img{
-  width: 100%;
-  height: 80%;
-}
-#Sh-testimonialCont > div:nth-child(2){
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
-#Sh-testimonialCont > div:nth-child(2) > h3{
-  font-size: 300%;
-}
-#Sh-profileNameCont{
-  height: 5vh;
-  width: 25%;
-  display: flex;
-  align-items: center;
-  gap: 3%;
-}
-#Sh-profileNameCont > h5{
-  font-size: 110%;
-  color: rgb(46, 45, 45);
-}
-#Sh-testimonialCont > div:nth-child(2) > p{
-  font-size: 120%;
-  padding-left: 20%;
-  color: rgb(159, 156, 156);
-}
-
-/* footer Styling */
-/* footer css */
-/* after mid */
-.Nafter-mid-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 160px;
-  width: 100%;
-  height: 400px;
-}
-
-.Njoin-membership {
-  background-image: url("./Aboutimages/background3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  height: 400px;
-  width: 80%;
-  background-color: honeydew;
-  border-radius: 20px;
-}
-
-.Njoin-membership p {
-  margin-top: 30px;
-  color: rgb(252, 101, 54);
-  font-size: 30px;
-  font-weight: 700;
-  font-family: Poppins;
-}
-
-.Nmidcontainh3 {
-  width: 800px;
-  display: flex;
-  text-align: center;
-}
-.Njoin-membership h3 {
-  color: black;
-  font-family: Poppins;
-  font-size: 40px;
-  font-weight: 900;
-}
-
-.Nafter-mid-button {
-  background-color: rgb(252, 101, 54);
-  color: white;
+.billing-submit {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
   border: none;
-  border-radius: 14px;
-  height: 60px;
-  width: 200px;
-  font-size: 18px;
-  font-family: Poppins;
-  font-weight: 900;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-/* Explore more packeges */
-#packegeheading{
-  height: 10vh;
-  /* border: 2px solid red; */
-  background-color: rgb(255, 255, 255);
-  width: 80%;
-  margin: 50px auto 0px auto;
-  letter-spacing: 7px;
-  font-weight: bold;
+.billing-submit:hover {
+  background-color: #45a049;
+}
+
+.paymentpagealldetails{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(7, 7, 7);
-  border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: 2px solid red;
+  margin-bottom: 150px;
+
 }
-.exploremoreline{
-  color: black;
+@media (max-width:850px){
+  .paymentpagealldetails{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    margin-bottom: 150px;
+  
+  }
+  .continentcard{
+    border: 2px solid red;
+    width: 350px;
+    /* text-align: center; */
+   border-radius: 25px;
+   height: 400px;
+   margin: auto;
+   background-color: rgb(227, 255, 245);
+   }
+  .container {
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    height: 800px;
+    width: 70%;
+  }
+
+  .billing-container {
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    /* height: 700px; */
+    width: 70%;
+  }
 }
+
+/* billing checkbox css
+ */
+ .billing-checkbox {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+
+
 
 /* /////////////////////////////// */
 /* footer css */

@@ -48,58 +48,91 @@
     </nav>
   </div>
 
-  <!-- payment from -->
+  <!-- indivudaul card user seleceted -->
 
-  <div class="inputform">
+<div class="paymentpagealldetails">
 
 
-  <form action="your_action_url" method="POST">
-    <label for="date">Date:</label>
-    <input type="text" id="date" name="date" placeholder="Enter date">
 
-    <label for="country">Country Name:</label>
-    <input type="text" id="country" name="country" placeholder="Enter country name">
+<div id="siglecard">
 
-    <label for="people">Number of People:</label>
-    <input type="number" id="people" name="people" min="1" placeholder="Enter number of people">
+</div>
+<!-- // travellor details -->
+<div class="container">
+  <h2>Traveler Details</h2>
+  <form id="travelForm">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
 
-    <label for="places">Places:</label>
-    <input type="text" id="places" name="places" placeholder="Enter places">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-    <label for="price">Price:</label>
-    <input type="text" id="price" name="price" placeholder="Enter price">
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" required>
 
-    <button type="submit">Book</button>
-</form>
+    
+    <label for="billingAddress" class="billing-label">Traveler Address:</label>
+    <textarea id="travellorAddress" name="billingAddress" class="billing-input" rows="2" required></textarea>
+    
+    <label for="land">LandLine Number:</label>
+    <input type="text" id="Landline" name="land" required>
+
+    <label for="destination">Destination:</label>
+    <input type="text" id="destination" name="destination" required>
+
+    <label for="departureDate">Departure Date:</label>
+    <input type="text" id="departureDate" name="departureDate" required>
+
+    <!-- <label for="numTravelers">Number of Travelers:</label>
+    <select id="numTravelers" name="numTravelers" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select> -->
+
+    <input type="checkbox" id="includeBilling" class="billing-checkbox">Click here! if Travelor detaile and Billing details are same.
+    <!-- <label for="includeBilling" class="travel-label"></label> -->
+  </form>
 </div>
 
+<!-- billing details -->
 
-<!-- Explore more packege -->
-<!-- <div id="packegeheading">
+<div class="billing-container">
+  <h2 class="billing-title">Billing Details</h2>
+  <form id="billingForm">
+    <label for="billingFullName" class="billing-label">Full Name:</label>
+    <input type="text" id="billingFullName" name="billingFullName" class="billing-input" required>
 
-  <i class="fa fa-hand-o-down" style="font-size:24px"></i>
+    <label for="billingEmail" class="billing-label">Email:</label>
+    <input type="email" id="billingEmail" name="billingEmail" class="billing-input" required>
 
- <h1 class="exploremoreline">  Explore More packege  </h1> 
+    <label for="billingPhone" class="billing-label">Phone Number:</label>
+    <input type="tel" id="billingPhone" name="billingPhone" class="billing-input" required>
 
- <i class="fa fa-hand-o-down" style="font-size:24px"></i>
+    <label for="billingAddress" class="billing-label">Billing Address:</label>
+    <textarea id="billingAddress" name="billingAddress" class="billing-input" rows="2" required></textarea>
 
+    <label for="billingCardNumber" class="billing-label">Card Number:</label>
+    <input type="text" id="billingCardNumber" name="billingCardNumber" class="billing-input" pattern="[0-9]{16}" required>
 
-</div> -->
+    <label for="billingExpiryDate" class="billing-label">Expiry Date:</label>
+    <input type="month" id="billingExpiryDate" name="billingExpiryDate" class="billing-input" required>
 
+    <label for="billingCvv" class="billing-label">CVV:</label>
+    <input type="number" id="billingCvv" name="billingCvv" class="billing-input" min="100" max="999" required>
 
+    <!-- <input id="billsubmit" type="submit" value="Submit" class="billing-submit"> -->
+    <!-- <button type="button" id="billsubmit" class="billing-submit" >Submit</button> -->
+    <input type="button" id="billsubmit" class="billing-submit" value="Submit">
+  </form>
+</div>
 
-
+</div>
 
  <!-- ///////////////////Data Wrapper Container/////////////////// -->
- <div id="Sh-alignCont9">
-  <div id="data-Button-cont">
-
-    <div id="Sh-data-main-container1">
-
-    </div>
-    <div id="btnContainer"><button id="seeMoreCardBtn">See More</button></div>
-  </div>
-</div>
+ 
 
 
 <!-- //////////////////// -->
