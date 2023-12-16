@@ -355,7 +355,6 @@ button:hover {
   color: rgb(159, 156, 156);
 }
 
-/* footer Styling */
 /* footer css */
 /* after mid */
 .Nafter-mid-container {
@@ -539,3 +538,70 @@ button:hover {
   font-family: Poppins;
 }
 
+/* ------------------------For-Responsiveness-Queries--------------------------- */
+
+@media screen and (min-width: 450px) and (max-width: 675px){
+  #Sh-alignCont{
+      height: 15vh;
+  }
+  nav{
+      width: 90%;
+  }
+  #Sh-logoCont > a > img{
+      width: 100%;
+  }
+  #Sh-pageLinksCont, #Sh-navBtnCont{
+      display: none;
+  }
+  /* /////////////////////////dropdown menu CSS////////////////////////////////// */
+
+  .dropdown{
+      width: 85%;
+      margin-top: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  } 
+
+  .show {
+      display: block; /* Use !important to override inline styles */
+      top: 10vh;
+      position: absolute;
+  }
+  
+    /* footer css -----------------------------------------*/
+
+    .Nabout-Footer {
+      height: 40vh;
+    }
+    
+    .Ncontent-Footer {
+      height: 90%;
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2%;
+    }
+    .Ncontent-Footer > div {
+      margin-top: 0;
+      padding-top: 5%;
+      letter-spacing: 1px;
+    }
+    
+    .Ncontent-Footer > :nth-child(2),
+    .Ncontent-Footer > :nth-child(3) {
+      margin-left: 0;
+    }
+    
+    .Ncontent-Footer > :nth-child(4) {
+      margin-left: 0;
+    }
+    #Nline-footer {
+      width: 90%;
+    }
+    .Nafter-line {
+      width: 90%;
+    }
+    .Nfooter-Grey2 {
+      font-size: 15px;
+    }
+}

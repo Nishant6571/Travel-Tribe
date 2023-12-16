@@ -32,8 +32,12 @@
             
           </div>
           <div id="Sh-navBtnCont">
-            <button id="Sh-logInBtn">Log in</button>
-            <button id="Sh-signInBtn">Sign up</button>
+            <button onclick=" redirectToPage('login.html')" id="Sh-logInBtn">
+              Log in
+            </button>
+            <button onclick=" redirectToPage('signup.html')" id="Sh-signInBtn">
+              Sign up
+            </button>
           </div>
     <!-- //////////////////////Dropdown menu///////////////////////////////  -->
     <div class="dropdown">
@@ -227,6 +231,15 @@
         </div>
     </div>
     <script src="Blog.js"></script>
+
+    <script>
+  // -------------------Login page direction---------------------------------
+      function redirectToPage(pagename) {
+        var loginPageUrl = `${pagename}`;
+        window.location.href = loginPageUrl;
+      }
+      
+    </script>
 </body>
 
 </html>

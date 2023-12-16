@@ -33,8 +33,12 @@
 
       </div>
       <div id="Sh-navBtnCont">
-        <button id="Sh-logInBtn">Log in</button>
-        <button id="Sh-signInBtn">Sign up</button>
+        <button onclick=" redirectToPage('login.html')" id="Sh-logInBtn">
+          Log in
+        </button>
+        <button onclick=" redirectToPage('signup.html')" id="Sh-signInBtn">
+          Sign up
+        </button>
       </div>
 <!-- //////////////////////Dropdown menu///////////////////////////////  -->
       <div class="dropdown">
@@ -227,6 +231,17 @@
       <div id="btnContainer"><button id="seeMoreCardBtn">See More</button></div>
     </div>
   </div>
+
+  <!-- --------------------pop up for read more---------------------- -->
+  <div class="overlay" id="overlay"></div>
+  
+  <div class="popup" id="popup">
+    <!-- Popup content goes here -->
+    <p id="poppara"></p>
+    <button onclick="closePopup()" id="close">Close</button>
+  </div>
+
+<!-- ------------------------------------------------------------------- -->
 
   <div id="Sh-alignCont12">
     <div id="Sh-testimonialCont">
