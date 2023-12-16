@@ -44,40 +44,44 @@
     </div>
     <!-- nishant-login-content -->
     <div class="Nlogin-main-container">
-      <h1>Login</h1>
       <div class="Nlogin-inner-container">
-        <form action="login.php" method="post">
-          <div>
-            <label for="Email" style="margin-left: 50px">Email : </label>
-            <input
-              type="email"
-              style="margin-left: 10px"
-              id="Nemail"
-              name="Email"
-              placeholder="email-id"
-              minlength="5"
-              maxlength="20"
-              required
-            />
-          </div>
-          <br />
-
-          <div>
-            <label for="password" style="margin-left: 10px">Password : </label>
-            <input
-              type="password"
-              style="margin-left: 10px"
-              id="Npassword"
-              name="password"
-              placeholder="password"
-              minlength="8"
-              maxlength="20"
-              required
-            />
-          </div>
-          <br />
-          <div><button id="Nlogin-id" type="submit">Login</button></div>
-        </form>
+        <div class="Nlogin-image">
+          <img src="loginimages\loginimage.jpg" alt="" />
+        </div>
+        <div>
+          <form action="login.php" method="post">
+            <h1 style="text-align: center">Welcome</h1>
+            <div class="login-div">
+              <label for="Email" style="margin-left: 50px">Email : </label>
+              <input
+                type="email"
+                style="margin-left: 10px"
+                id="Nemail"
+                name="Email"
+                placeholder="email-id"
+                minlength="5"
+                maxlength="20"
+                required
+              />
+            </div>
+            <br />
+            <div>
+              <label for="password" style="margin-left: 10px"
+                >Password :
+              </label>
+              <input
+                type="password"
+                style="margin-left: 10px"
+                id="Npassword"
+                name="password"
+                placeholder="password"
+                required
+              />
+            </div>
+            <br />
+            <div><button id="Nlogin-id" type="submit">Login</button></div>
+          </form>
+        </div>
       </div>
     </div>
     <!--nishant-login-footer -->

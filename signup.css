@@ -95,6 +95,7 @@ nav > div {
 }
 
 .Nsignup-inner-container {
+  background-image: url("loginimages/Background-Image-Signup-Page.webp");
   display: flex;
   flex-direction: column;
   justify-content: center;
