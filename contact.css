@@ -128,11 +128,19 @@ body{
   .dropdown-item:hover {
     background-color: black;
   }
-  
+/* --------------------contact middle body------------------------------- */
+
+#alignContainer{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .contactUs_49{
     position: relative;
-    width: 100%;
+    width: 95%;
     padding: 40px 100px;
 }
 .contactUs_49 .title_49
@@ -148,6 +156,7 @@ body{
 }
 .form
 {
+    width: 100%;
     grid-area: form;
 
 }
@@ -156,14 +165,14 @@ body{
     grid-area: info;
 }
 .map
-{
+{   
     grid-area: map;
 }
 .contact{
     padding: 40px;
     background:  white;
     box-shadow: 0 5px 35px rgba(0,0,0,0.15);
-
+    border-radius: 20px;
 }
 .box_49
 {
@@ -187,7 +196,7 @@ body{
 /* form */
 .formBox49{
     position: relative;
-    width: 100%;
+    width: 80%;
 }
 .formBox49 .row50 
 {
@@ -218,9 +227,11 @@ body{
     font-size: 1.1em;
     outline: none;
     border: 1px solid #333;
+    border-radius: 10px;
 }
 .inputBox49 textarea
 {
+    border-radius: 10px;
     padding: 10px;
     font-size: 1.1em;
     outline: none;
@@ -232,7 +243,7 @@ body{
 .inputBox49 input[type="submit"]
 {
     background: rgb(252, 101, 52);
-    color: #333;
+    color: white;
     border: none;
     font-size: 1.1em;
     font-weight: 500;
@@ -308,95 +319,9 @@ body{
 .map iframe
 {
   width: 100%;
+  border-radius: 20px;
   height: 100%;  
 }
-/* Footer Styles */
-/* .Nabout-Footer {
-    background-color: #141414;
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-  }
-  
-  .Ncontent-Footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 0;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .Ncontent-footer-col1,
-  .Ncontent-footer-col2,
-  .Ncontent-footer-col3,
-  .Ncontent-footer-col4 {
-    flex: 1;
-  }
-  
-  .Ncontent-footer-col1 a,
-  .Ncontent-footer-col2 a,
-  .Ncontent-footer-col3 a,
-  .Ncontent-footer-col4 a {
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-    margin-bottom: 10px;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .Ncontent-footer-col1 a:hover,
-  .Ncontent-footer-col2 a:hover,
-  .Ncontent-footer-col3 a:hover,
-  .Ncontent-footer-col4 a:hover {
-    color: #f9ab00;
-  }
-  
-  .Ncontent-footer-col2 p,
-  .Ncontent-footer-col4 p {
-    margin-bottom: 10px;
-  }
-  
-  .Nsocial-footer {
-    margin-top: 20px;
-  }
-  
-  .Nsocial-footer a {
-    margin-right: 20px;
-  }
-  
-  .Nfacebookimg,
-  .Ntwitterimg,
-  .Ngoogleimg {
-    width: 20px;
-    height: 20px;
-    fill: #ffffff;
-  }
-  
-  .Ndivider-Footer {
-    height: 1px;
-    background-color: #454545;
-    margin: 30px 0;
-  }
-  
-  .Nbottom-footer {
-    background-color: #0d0d0d;
-    padding: 20px 0;
-  }
-  
-  .Ncontent-bottom-footer {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .Ncopy-text,
-  .Nprivacy-text {
-    margin: 0;
-    font-size: 12px;
-  }
-  
-  .Nprivacy-text {
-    margin-top: 10px;
-  } */
   
 /* footer Styling */
 .Nafter-mid-container {
@@ -557,38 +482,123 @@ body{
 
 
 @media (max-width: 767px) {
-    .box_49 {
-        grid-template-columns: 1fr; 
-        grid-template-areas:
-            "form"
-            "info"
-            "map";
-    }
+  .box_49 {
+      grid-template-columns: 1fr; 
+      grid-template-areas:
+          "form"
+          "info"
+          "map";
+  }
 
-    .form,
-    .info,
-    .map {
-        width: 100%; 
-    }
+  .form,
+  .info,
+  .map {
+      width: 100%; 
+  }
 
-    .formBox49 .row50,
-    .formBox49 .row100 .inputBox49 {
-        flex-direction: column; 
-    }
+  .formBox49 .row50,
+  .formBox49 .row100 .inputBox49 {
+      flex-direction: column; 
+  }
 
-    .inputBox49 {
-        width: 100%;
-        margin-bottom: 10px; 
-    }
+  .inputBox49 {
+      width: 100%;
+      margin-bottom: 10px; 
+  }
 
-    .formBox49 .row50 .inputBox49,
-    .formBox49 .row100 .inputBox49 {
-        width: 100%; 
-    }
+  .formBox49 .row50 .inputBox49,
+  .formBox49 .row100 .inputBox49 {
+      width: 100%; 
+  }
 
-    .info,
-    .map {
-        padding: 20px; 
-    }
+  .info,
+  .map {
+      padding: 20px; 
+  }
 }
 
+/* ------------------------For-Responsiveness-Queries--------------------------- */
+
+@media screen and (min-width: 450px) and (max-width: 675px){
+  #Sh-alignCont{
+      height: 15vh;
+  }
+  nav{
+      width: 90%;
+  }
+  #Sh-logoCont > a > img{
+      width: 100%;
+  }
+  #Sh-pageLinksCont, #Sh-navBtnCont{
+      display: none;
+  }
+  /* /////////////////////////dropdown menu CSS////////////////////////////////// */
+
+  .dropdown{
+      width: 85%;
+      margin-top: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  } 
+
+  .show {
+      display: block; /* Use !important to override inline styles */
+      top: 10vh;
+      position: absolute;
+  }
+
+  /* membership container medie queries*/
+  .Nafter-mid-container {
+    height: 50vh;
+  }
+  .Njoin-membership {
+    width: 90%;
+  }  
+  .Njoin-membership p {
+    font-size: 150%;
+  }
+  .Njoin-membership h3 {
+    font-size: 200%;
+    padding: 0 5%;
+  }
+  .Nmidcontainh3 {
+    width: 100%;
+  }
+
+/* footer css -----------------------------------------*/
+
+    .Nabout-Footer {
+      height: 40vh;
+    }
+    
+    .Ncontent-Footer {
+      height: 90%;
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2%;
+    }
+    .Ncontent-Footer > div {
+      margin-top: 0;
+      padding-top: 5%;
+      letter-spacing: 1px;
+    }
+    
+    .Ncontent-Footer > :nth-child(2),
+    .Ncontent-Footer > :nth-child(3) {
+      margin-left: 0;
+    }
+    
+    .Ncontent-Footer > :nth-child(4) {
+      margin-left: 0;
+    }
+    #Nline-footer {
+      width: 90%;
+    }
+    .Nafter-line {
+      width: 90%;
+    }
+    .Nfooter-Grey2 {
+      font-size: 15px;
+    }
+}

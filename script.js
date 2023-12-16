@@ -1,4 +1,9 @@
+let poppara = document.getElementById("poppara");
+let popup = document.getElementById("popup");
 let url = `https://mock-api-templates-za9u.onrender.com/country`
+
+let close = document.getElementById("close");
+
 async function fetchdata(url, limit, page){
     try{
       let res = await fetch(`${url}?_limit=${limit}&_page=${page}`);
@@ -24,6 +29,15 @@ function  displaydata(data){
     buttonR.classList.add("btnR")
     buttonR.setAttribute("id", ele.id);
     buttonR.innerText = "Read More";
+    buttonR.addEventListener("click", ()=>{
+      document.getElementById('overlay').style.display = 'block';
+      document.getElementById('popup').style.display = 'block';
+      document.getElementById('popup').style.color = "white";
+      document.getElementById('popup').style.fontSize = "20px"
+      poppara.innerText = ele.Details;
+      document.getElementById('popup').style.backgroundImage =  `url(${ele.Image})`;
+      document.getElementById('popup').style.backgroundSize = "cover";
+    });
   
     let head = document.createElement("h2");
     head.innerText = ele.Location;
@@ -50,20 +64,24 @@ function  displaydata(data){
     book.classList.add("booknow");
 
     // ========================================
-    // add eventlistner on book get id of card
-    book.addEventListener('click', (e)=>{
-      getcardid(ele);
-    })
-   
-
-
+   //add eventlistner on book get id of card
     book.setAttribute("id", ele.id);
+    book.addEventListener("click", ()=>{
+      booknow(ele);
+    })
     bookdiv.append(parap, book);
     
     card.append(img, buttonR, head, para, lastdiv, bookdiv);
-    document.getElementById("Sh-data-main-container1").append(card);
-  })
+    document.getElementById("Sh-data-main-container1").append(card);  })
 }
+
+// ----------------------pop close functionality---------------------------
+
+function closePopup() {
+  document.getElementById('overlay').style.display = 'none';
+  document.getElementById('popup').style.display = 'none';
+}
+
 let pageCount = 1;
 let seeMoreBtn = document.getElementById("seeMoreCardBtn");
 
@@ -85,3 +103,24 @@ let button = document.getElementById("menuBtn");
       dropdown.classList.toggle("show");
 });
 
+// --------------------login page attach-----------------------------
+
+function redirectToPage(pagename) {
+  var loginPageUrl = `${pagename}`;
+
+  window.location.href = loginPageUrl;
+}
+
+
+// ADD CARD
+let arr = JSON.parse(localStorage.getItem("key"))||[]
+
+function booknow(ele){
+  if(arr.includes(ele)) {
+    alert("Already Add")
+  } else {
+    arr.push(ele);
+  }
+ 
+  localStorage.setItem("key", JSON.stringify(arr));
+}
