@@ -1,7 +1,7 @@
 let url = `https://mock-api-templates-za9u.onrender.com/country`
-async function fetchdata(url, limit, page){
+async function fetchdata( page, limit,  par=""){
     try{
-      let res = await fetch(`${url}?_limit=${limit}&_page=${page}`);
+      let res = await fetch(`${url}?_page=${page}&_limit=${limit}&${par}`);
         
   let data = await res.json();
       displaydata(data);
@@ -10,7 +10,7 @@ async function fetchdata(url, limit, page){
   console.log(error);
 }
 }
-fetchdata(url, 6, 1);
+fetchdata(1, 6);
 
 function  displaydata(data){
   document.getElementById("Sh-data-main-container1").innerHTML = "";
@@ -84,4 +84,6 @@ let button = document.getElementById("menuBtn");
       let dropdown = document.getElementById("myDropdown");
       dropdown.classList.toggle("show");
 });
+
+
 

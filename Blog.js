@@ -2,15 +2,15 @@
 
 let poppara = document.getElementById("poppara");
 let popup = document.getElementById("popup");
-let url = `https://mock-api-templates-za9u.onrender.com/country`
+let url = `https://deepak-server-dosm.onrender.com/country`
 
 let close = document.getElementById("close");
 
 
-async function fetchdata(url, limit, page, par=""){
+async function fetchdata(page, limit,  par=""){
     try{
-      let res = await fetch(`${url}?_limit=${limit}&_page=${page}&${par}`);
-        
+      let res = await fetch(`${url}?_page=${page}&_limit=${limit}&${par}`);
+       console.log(res); 
   let data = await res.json();
       displaydata(data);
       console.log(data);
@@ -18,7 +18,7 @@ async function fetchdata(url, limit, page, par=""){
   console.log(error);
 }
 }
-fetchdata(url, 9, 1);
+fetchdata(1, 9);
 
 function  displaydata(data){
   //  document.getElementById("Sh-data-main-container1").innerHTML = "Loding...";
@@ -66,12 +66,18 @@ function  displaydata(data){
     parap.innerText = `Rs. ${ele.Price}`;
     
     let book = document.createElement("button");
-    book.innerText = "BOOK NOW";
+    // book.innerText = "BOOK NOW";
     book.classList.add("booknow");
     book.setAttribute("id", ele.id);
     book.addEventListener("click", ()=>{
       booknow(ele);
     })
+    let anchor = document.createElement("a")
+    anchor.innerHTML = "BOOK NOW"
+    anchor.href = "./payment.html";
+    anchor.style.textDecoration = "none";
+    anchor.style.color = "white";
+    book.append(anchor);
     bookdiv.append(parap, book);
     
     card.append(img, buttonR, head, para, lastdiv, bookdiv);
@@ -92,23 +98,27 @@ let seeMoreBtn = document.getElementById("seeMoreCardBtn");
 
 seeMoreBtn.addEventListener('click', () => {
   // document.getElementById("Sh-data-main-container1").innerHTML = "Loding...";
-  document.getElementById("Sh-data-main-container1").style.paddingBottom = "32%";
+  document.getElementById("Sh-data-main-container1").style.paddingBottom = "66%";
   document.getElementById("Sh-data-main-container1").style.paddingTop = "0%"
-    fetchdata(url, 9, ++pageCount);
+    fetchdata( ++pageCount, 9);
 });
 
 
 // ADD CARD
-let arr = JSON.parse(localStorage.getItem("key"))||[]
+// let arr = JSON.parse(localStorage.getItem("key"))||[]
+
+// function booknow(ele){
+//   if(arr.includes(ele)) {
+//     alert("Already Add")
+//   } else {
+//     arr.push(ele);
+//   }
+ 
+//   localStorage.setItem("key", JSON.stringify(arr));
+// }
 
 function booknow(ele){
-  if(arr.includes(ele)) {
-    alert("Already Add")
-  } else {
-    arr.push(ele);
-  }
- 
-  localStorage.setItem("key", JSON.stringify(arr));
+  localStorage.setItem("id", ele.id);
 }
 
 
@@ -143,17 +153,40 @@ search.addEventListener("click", ()=>{
   let str = obj2.check;
   let num=0;
   let str2 = "";
+  let strD = "";
+  let strY = "";
   for(let i=0; i<str.length; i++){
     if(i==5 || i==6){
       str2+=str[i];
+    } else if(i==8||i==9){
+      strD+=str[i];
+    }  else if(i==4||i==7){
+      str2+"";
+    } else {
+      strY+=str[i];
     }
   }
   num = +(str2);
   console.log(num);
-  let arr = ["January", "February", "April", "May", "June", "July", "Augest", "September", "October", "November", "Dacember"];
-
+  let arr = ["", "January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
   
-  console.log(`${locations.value}&${check.value}&${visitor.value}`);
+  let month = "";
+  for(let i=0; i<arr.length; i++){
+      if(num==i){
+      month+=arr[i];
+      }
+  }
+  console.log(month);
+  let DMY = strD+"-"+month+"-"+strY;
+  console.log(DMY);
   document.getElementById("Sh-data-main-container1").innerText="";
- // fetchdata(url, 1, 5, `Location=${locations.value}`);
+
+  seeMoreBtn.addEventListener('click', () => {
+    // document.getElementById("Sh-data-main-container1").innerHTML = "Loding...";
+    document.getElementById("Sh-data-main-container1").style.paddingBottom = "0%";
+    document.getElementById("Sh-data-main-container1").style.paddingTop = "0%"
+      fetchdata( ++pageCount, 9);
+  });
+
+  fetchdata(1, 5, `Location_like=${locations.value}&Date_like=${DMY}`);
 })
