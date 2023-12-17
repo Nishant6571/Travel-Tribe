@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="payment.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="payment.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+  
     href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Open+Sans:wght@500&family=Pixelify+Sans:wght@400;500&family=Poppins:wght@300;400&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&family=Rubik+Pixels&display=swap"
     rel="stylesheet">
   <link rel="stylesheet"
@@ -27,7 +28,6 @@
         <a href="./blog.html">EXPLORE</a>
         <a href="./payment.html">BOOKINGS</a>
         <a href="./contact.html">CONTACT US</a>
-   
       </div>
       <div id="Sh-navBtnCont">
         <button onclick=" redirectToPage('login.html')" id="Sh-logInBtn">
@@ -37,109 +37,177 @@
           Sign up
         </button>
       </div>
-<!-- //////////////////////Dropdown menu///////////////////////////////  -->
+      <!-- //////////////////////Dropdown menu///////////////////////////////  -->
       <div class="dropdown">
-        <button id="menuBtn" class="dropdown-btn"><img src="./home-images/menu-icon.jpg" width="45px" alt="menu"></button>
+        <button id="menuBtn" class="dropdown-btn"><img src="./home-images/menu-icon.jpg" width="45px"
+            alt="menu"></button>
         <div id="myDropdown" class="dropdown-content">
           <a class="dropdown-item" href="./Home.html">HOME</a>
           <a class="dropdown-item" href="./About.html">ABOUT US</a>
           <a class="dropdown-item" href="./blog.html">EXPLORE</a>
           <a class="dropdown-item" href="./payment.html">BOOKINGS</a>
           <a class="dropdown-item" href="./contact.html">CONTACT US</a>
+        </div>
       </div>
-    </div>
 
     </nav>
   </div>
 
   <!-- indivudaul card user seleceted -->
 
-<div class="paymentpagealldetails">
+  <div id="siglecard">
+   
+  </div>
+  <!-- <div class="dmaincontainer"> -->
+  <div class="paymentpagealldetails">
+    <!-- // travellor details -->
+    <div class="container">
+      <h2>Traveler Details</h2>
+      <form id="travelForm">
+        <label for="fullName">Full Name<span style="color: red;">*</span></label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email<span style="color: red;">*</span></label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number<span style="color: red;">*</span></label>
+        <input type="text" id="phone" name="phone" required>
+
+
+        <label for="billingAddress" class="billing-label">Traveler Address<span style="color: red;">*</span></label>
+        <textarea id="travellorAddress" name="billingAddress" class="billing-input" rows="2" required></textarea>
+
+
+        <input type="checkbox" id="includeBilling" class="billing-checkbox">Click here! if Travelor detaile and Billing
+        details are same.
+        <!-- <label for="includeBilling" class="travel-label"></label> -->
+      </form>
+    </div>
+
+    <!-- billing details -->
+
+    <div class="billing-container">
+      <h2 class="billing-title">Billing Details</h2>
+      <form id="billingForm">
+        <label for="billingFullName" class="billing-label">Full Name<span style="color: red;">*</span></label>
+        <input type="text" id="billingFullName" name="billingFullName" class="billing-input" required>
+
+        <label for="billingEmail" class="billing-label">Email<span style="color: red;">*</span></label>
+        <input type="email" id="billingEmail" name="billingEmail" class="billing-input" required>
+
+        <label for="billingPhone" class="billing-label">Phone Number<span style="color: red;">*</span></label>
+        <input type="tel" id="billingPhone" name="billingPhone" class="billing-input" required>
+
+        <label for="billingAddress" class="billing-label">Billing Address</label>
+        <textarea id="billingAddress" name="billingAddress" class="billing-input" rows="2"></textarea>
+
+      
+        <input id="billsubmit" type="submit" value="Submit" class="billing-submit">
+
+      </form>
+    </div>
+  </div>
 
 
 
-<div id="siglecard">
-
-</div>
-<!-- // travellor details -->
-<div class="container">
-  <h2>Traveler Details</h2>
-  <form id="travelForm">
-    <label for="fullName">Full Name:</label>
-    <input type="text" id="fullName" name="fullName" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="phone">Phone Number:</label>
-    <input type="text" id="phone" name="phone" required>
-
-    
-    <label for="billingAddress" class="billing-label">Traveler Address:</label>
-    <textarea id="travellorAddress" name="billingAddress" class="billing-input" rows="2" required></textarea>
-    
-    <label for="land">LandLine Number:</label>
-    <input type="text" id="Landline" name="land" required>
-
-    <label for="destination">Destination:</label>
-    <input type="text" id="destination" name="destination" required>
-
-    <label for="departureDate">Departure Date:</label>
-    <input type="text" id="departureDate" name="departureDate" required>
-
-    <!-- <label for="numTravelers">Number of Travelers:</label>
-    <select id="numTravelers" name="numTravelers" required>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-    </select> -->
-
-    <input type="checkbox" id="includeBilling" class="billing-checkbox">Click here! if Travelor detaile and Billing details are same.
-    <!-- <label for="includeBilling" class="travel-label"></label> -->
-  </form>
-</div>
-
-<!-- billing details -->
-
-<div class="billing-container">
-  <h2 class="billing-title">Billing Details</h2>
-  <form id="billingForm">
-    <label for="billingFullName" class="billing-label">Full Name:</label>
-    <input type="text" id="billingFullName" name="billingFullName" class="billing-input" required>
-
-    <label for="billingEmail" class="billing-label">Email:</label>
-    <input type="email" id="billingEmail" name="billingEmail" class="billing-input" required>
-
-    <label for="billingPhone" class="billing-label">Phone Number:</label>
-    <input type="tel" id="billingPhone" name="billingPhone" class="billing-input" required>
-
-    <label for="billingAddress" class="billing-label">Billing Address:</label>
-    <textarea id="billingAddress" name="billingAddress" class="billing-input" rows="2" required></textarea>
-
-    <label for="billingCardNumber" class="billing-label">Card Number:</label>
-    <input type="text" id="billingCardNumber" name="billingCardNumber" class="billing-input" pattern="[0-9]{16}" required>
-
-    <label for="billingExpiryDate" class="billing-label">Expiry Date:</label>
-    <input type="month" id="billingExpiryDate" name="billingExpiryDate" class="billing-input" required>
-
-    <label for="billingCvv" class="billing-label">CVV:</label>
-    <input type="number" id="billingCvv" name="billingCvv" class="billing-input" min="100" max="999" required>
-
-    <!-- <input id="billsubmit" type="submit" value="Submit" class="billing-submit"> -->
-    <!-- <button type="button" id="billsubmit" class="billing-submit" >Submit</button> -->
-    <input type="button" id="billsubmit" class="billing-submit" value="Submit">
-  </form>
-</div>
-
-</div>
-
- <!-- ///////////////////Data Wrapper Container/////////////////// -->
- 
+  <!-- payment details from -->
+  <div class="payment_and_receipt">
 
 
-<!-- //////////////////// -->
+  <div class="payment-container">
+    <form class="payment-form">
+      <h2>Payment Form</h2>
+
+      <label for="cardNumber">Card Number<span style="color: red;">*</span></label>
+      <input type="number" id="cardNumber" class="payment-input" placeholder="Enter your card number" required>
+
+      <label for="expiryDate">Expiry Date<span style="color: red;">*</span></label>
+      <input type="text" pattern="(0[1-9]|1[0-2])\/[0-9]{4}" placeholder="MM/YYYY" id="expiryDate" class="payment-input" placeholder="MM/YYYY" required>
+
+      <label for="cvv">CVV<span style="color: red;">*</span></label>
+      <input type="number" id="cvv" class="payment-input" placeholder="Enter CVV" required>
+
+      <label for="cardHolder">Card Holder Name<span style="color: red;">*</span></label>
+      <input type="text" id="cardHolder" class="payment-input" placeholder="Enter cardholder name" required>
+
+      <label for="paymentMethod">Payment Method</label>
+      <select id="paymentMethod" class="payment-input">
+        <option value="card">Credit/Debit Card/UPI</option>
+      </select>
+
+      <label for="amounttobePaid">Amount to  be paid</label>
+      <input type="number" id="amounttobePaid" class="payment-input" placeholder="Enter amout to be paid" required>
+
+
+      <button type="button" id="submitPayment" class="payment-submit">Submit Payment</button>
+    </form>
+  </div>
+
+  <!-- receipt for payment///////////////////////// -->
+  <div id="paymentReceipt" class="paymentreceipt">
+    <h2 class="title">Payment Receipt</h2>
+
+    <div id="paymentDetails" class="receipt-section">
+      <h3 class="title">Payment Details</h3>
+      <div id="cardNumberItem" class="receipt-item">
+        <span id="cardNumberLabel">Card Number:</span>
+        <span id="cardNumberValue">**** **** **** 1234</span>
+      </div>
+      <div id="expiryDateItem" class="receipt-item">
+        <span id="expiryDateLabel">Expiry Date:</span>
+        <span id="expiryDateValue">MM/YYYY</span>
+      </div>
+      <div id="cvvItem" class="receipt-item">
+        <span id="cvvLabel">CVV:</span>
+        <span id="cvvValue">***</span>
+      </div>
+      <div id="cardHolderItem" class="receipt-item">
+        <span id="cardHolderLabel">Card Holder Name:</span>
+        <span id="cardHolderValue">John Doe</span>
+      </div>
+      <div id="paymentMethodItem" class="receipt-item payment-method-details">
+        <span id="paymentMethodLabel">Payment Method:</span>
+        <!-- <img id="paymentMethodLogo" src="https://via.placeholder.com/50" alt="Payment Method Logo" class="payment-method-logo"> -->
+        <span id="paymentMethodText">Credit/Debit Card/UPI</span>
+      </div>
+    </div>
+
+  
+
+    <div id="travelDetailsSection" class="receipt-section travel-details-section">
+      <h3 class="title">Travel Details</h3>
+      <div id="packageItem" class="receipt-item">
+        <span id="packageLabel">Package:</span>
+        <span id="packageValue">Explorer's Adventure</span>
+      </div>
+      <div id="flightItem" class="receipt-item">
+        <span id="flightLabel">Date of journey</span>
+        <span id="flightValue">Economy Class</span>
+      </div>
+   
+    </div>
+
+    <div id="amountPaid" class="total-amount">
+      <span id="moneytprice">Amount Paid(Rs): </span>
+      <span id="moneyvalue"></span>
+    </div>
+
+    <div id="thankYouMessage" class="thank-you-message">
+      Thank you for your payment!
+    </div>
+  </div>
+<!-- receipt end here -->
+
+
+  </div>
+  <!-- </div> -->
+
+
+  <!-- ///////////////////Data Wrapper Container/////////////////// -->
+
+
+
+  <!-- //////////////////// -->
   <!-- Footer -->
   <div class="Nabout-Footer">
     <div class="Ncontent-Footer">
@@ -196,24 +264,30 @@
     </div>
   </div>
 
-    <script src="payment.js"></script>
-    <script>
-      // -------------------dropdown menu Click functionality--------------------------------------
-      
-      let button = document.getElementById("menuBtn");
-          button.addEventListener('click', () => {
-            let dropdown = document.getElementById("myDropdown");
-            dropdown.classList.toggle("show");
-      });
+  <script src="payment.js"></script>
+  <script>
+    // -------------------dropdown menu Click functionality--------------------------------------
 
-      // --------------------login page attach-----------------------------
+    let button = document.getElementById("menuBtn");
+    button.addEventListener('click', () => {
+      let dropdown = document.getElementById("myDropdown");
+      dropdown.classList.toggle("show");
+    });
 
-      function redirectToPage(pagename) {
-        var loginPageUrl = `${pagename}`;
+    // --------------------login page attach-----------------------------
 
-        window.location.href = loginPageUrl;
-      }
-    </script>
+    function redirectToPage(pagename) {
+      var loginPageUrl = `${pagename}`;
+
+      window.location.href = loginPageUrl;
+    }
+  </script>
+
+  
+
+<!-- Your existing HTML content goes here -->
+
+
 </body>
 
 </html>
