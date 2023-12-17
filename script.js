@@ -1,10 +1,10 @@
 let poppara = document.getElementById("poppara");
 let popup = document.getElementById("popup");
-let url = `https://mock-api-templates-za9u.onrender.com/country`
+let url = `https://deepak-server-dosm.onrender.com/country`
 
 let close = document.getElementById("close");
 
-async function fetchdata(url, limit, page){
+async function fetchdata(url, limit, page, par=""){
     try{
       let res = await fetch(`${url}?_page=${page}&_limit=${limit}&${par}`);
         
@@ -15,7 +15,7 @@ async function fetchdata(url, limit, page){
       console.log(error);
     }
 }
-fetchdata(1, 6);
+fetchdata(url, 6, 1);
 
 function  displaydata(data){
   // document.getElementById("Sh-data-main-container1").innerHTML = "";
