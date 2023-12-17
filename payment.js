@@ -1,131 +1,205 @@
-// input tag taking
-let date = document.getElementById('date');
-let country = document.getElementById('country');
-let people = document.getElementById('people');
-let places = document.getElementById('places');
-let price = document.getElementById('price');
+let singlecard = document.getElementById('siglecard');
 // ===========================================
 
-let url = `https://mock-api-templates-za9u.onrender.com/country`
+let link = `https://mock-api-templates-za9u.onrender.com/country`
 
-async function fetchdata2(url) {
-  let localid = localStorage.getItem('id')
-  try {
-    let res = await fetch(`${url}/${localid}`);
 
-    let data = await res.json();
-    displaydata2(data);
-   
-    console.log(data);
-  } catch (error) {
-    console.log(error);
-  }
-}
-fetchdata2(url)
 // fetchdata(url)
-
-
-// fetchdata(url);
-//displaey data in input tag
-function displaydata2(data) {
-  date.value = data.Date;
-  country.value = data.Location;
-  people.value = 1
-  places.value = data.Details;
-  price.value = data.Price
-}
-
-//  expolore more places
-
-let maincontainer = document.getElementById('Sh-data-main-container1');
-
-// fetch data function
-async function fetchdata(url, limit, page) {
-  try {
-    let res = await fetch(`${url}?_limit=${limit}&_page=${page}`);
-
-    let data = await res.json();
-    displaydata(data);
-    console.log(data);
-  } catch (error) {
-    console.log(error);
-  }
-}
-fetchdata(url, 6, 1);
-
-function displaydata(data) {
-  document.getElementById("Sh-data-main-container1").innerHTML = "";
-  data.forEach((ele) => {
-    let card = document.createElement("div");
-    card.classList.add("subdiv");
-    let img = document.createElement("img");
-    img.setAttribute("src", ele.Image);
-
-    let buttonR = document.createElement("button");
-    buttonR.classList.add("btnR")
-    buttonR.setAttribute("id", ele.id);
-    buttonR.innerText = "Read More";
-
-    let head = document.createElement("h2");
-    head.innerText = ele.Location;
-    let para = document.createElement("p");
-    para.innerText = ele.Detail;
-    para.className = "place-detail";
-
-    let lastdiv = document.createElement("div");
-    lastdiv.classList.add("last");
-    let lastpara1 = document.createElement("p");
-    lastpara1.innerText = ele.Time;
-    let lastpara2 = document.createElement("p");
-    lastpara2.innerText = ele.Date;
-    lastdiv.append(lastpara1, lastpara2);
-
-
-    let bookdiv = document.createElement("div");
-    bookdiv.classList.add("bookdiv")
-    let parap = document.createElement("h2");
-    parap.innerText = `Rs. ${ele.Price}`;
-
-    let book = document.createElement("button");
-    book.innerText = "BOOK NOW";
-    book.classList.add("booknow");
-    
-
-
-
-    // ========================================
-    // add eventlistner on book get id of card
-    book.addEventListener('click', (e) => {
-      getcardid(ele);
+function countrydata(url) {
+  let dataretuen = localStorage.getItem("id")
+  fetch(`${url}/${dataretuen || 1}`)
+    .then((res) => {
+      return res.json();
     })
-
-
-
-    book.setAttribute("id", ele.id);
-    bookdiv.append(parap, book);
-
-    card.append(img, buttonR, head, para, lastdiv, bookdiv);
-    document.getElementById("Sh-data-main-container1").append(card);
-  })
+    .then((data) => {
+      createcard(data);
+      console.log(data);
+    })
+    .catch((error) => {
+      console.log(error);
+    })
 }
-let pageCount = 1;
-let seeMoreBtn = document.getElementById("seeMoreCardBtn");
+countrydata(link)
+// creata card function 
+let container=document.querySelector('.container');
+let billing_container=document.querySelector('.billing-container');
+function createcard(data) {
 
-seeMoreBtn.addEventListener('click', () => {
-  fetchdata(url, 6, pageCount++);
+  let continentcard = document.createElement('div')
+  continentcard.classList = "continentcard";
+
+  let continentimg = document.createElement('img');
+  continentimg.classList = "continentimg";
+  continentimg.src = data.Image;
+
+  let continentname = document.createElement('h2');
+  continentname.classList = "continentname";
+  continentname.textContent = data.Location;
+
+  let date = document.createElement('p');
+  date.classList = "date";
+  date.textContent = data.Date;
+
+  let price = document.createElement('h4');
+  price.classList = "price";
+  price.textContent = `PRICE(Rs) : ${data.Price}`;
+
+  // second div for overview
+  let overview = document.createElement('div')
+  overview.classList = "overview";
+
+  let overviewcontent = document.createElement('p');
+  overviewcontent.classList = "overviewcontent";
+  overviewcontent.innerHTML = ` <span class="overview-word">Overview :</span>  ${data.Details}`;
+
+  overview.appendChild(overviewcontent);
+
+
+
+  let buttonconfrom = document.createElement('button');
+  buttonconfrom.classList = "buttonconfrom";
+  buttonconfrom.innerText = `Click Here For Booking`;
+  buttonconfrom.addEventListener('click', () => {
+    pipulatedata(data);
+    container.style.display="block";
+    billing_container.style.display="block";
+  })
+
+  continentcard.append(continentimg, continentname, date, price, buttonconfrom,);
+  singlecard.append(continentcard,overview);
+
+}
+// createcard(data)
+
+// get all input tag reference here  
+//  travellor details
+let fullname = document.getElementById('fullName');
+let email = document.getElementById('email');
+let phonenumber = document.getElementById('phone');
+let landline = document.getElementById('Landline');
+let destination = document.getElementById('destination');
+let date = document.getElementById('departureDate');
+let travellorAddress = document.getElementById('travellorAddress');
+
+let checkbox = document.getElementById('includeBilling');
+
+
+//  billing input reference
+let billingFullName = document.getElementById('billingFullName');
+let billingEmail = document.getElementById('billingEmail');
+let billingPhone = document.getElementById('billingPhone');
+let billingAddress = document.getElementById('billingAddress');
+let billingCardNumber = document.getElementById('billingCardNumber');
+let billingExpiryDate = document.getElementById('billingExpiryDate');
+let billingCvv = document.getElementById('billingCvv');
+
+
+let billsubmit = document.getElementById('billsubmit');
+console.log(billsubmit)
+
+
+
+//copy data from travellor details to billimg details if both are same
+
+checkbox.addEventListener('change', () => {
+
+  if (checkbox.checked) {
+    billingFullName.value = fullname.value;
+    billingEmail.value = email.value;
+    billingPhone.value = phonenumber.value;
+    billingAddress.value = travellorAddress.value;
+  } else {
+    billingFullName.value = '';
+    billingEmail.value = '';
+    billingPhone.value = '';
+    billingAddress.value = '';
+  }
+
 });
 
+let paymentcontainer=document.querySelector('.payment-container');
+//  submit click then show window alert
+billsubmit.addEventListener('click', (event) => {
+  
+  event.preventDefault(); // Prevent the form from submitting and refreshing the page
+  // window.alert("Booking was Successful");
+  if (fullname.value=="" || phonenumber.value=="" ||   travellorAddress.value==""  || email.value=="" ||  billingFullName.value=="" || billingEmail.value=="" ||  billingPhone.value==""){
+    alert("please fill all necessary fields");
+  }
+else{
+  window.alert(`${fullname.value} Please complete your payment`);
+  paymentcontainer.style.display="block"
+}
+
+});
+
+
+// function alerta(){
+//   window.alert(`${fullname.value} Your Booking was Successful. Enjoy your journey.
+//  HAPPY TO HELP`);
+// }
+
+// populate data on travellor details only on destination and departure data
+
+
+// payment countainer refernece
+let paymentcardNumber=document.getElementById('cardNumber');
+let paymentexpiryDate=document.getElementById('expiryDate');
+let paymentcvv=document.getElementById('cvv');
+let paymentcardHolder=document.getElementById('cardHolder');
+let submitPayment=document.getElementById('submitPayment');
+
+// receipt container reference
+let receiptcardNumberValue=document.getElementById('cardNumberValue');
+let receiptexpiryDateValue=document.getElementById('expiryDateValue');
+let receiptcvvValue=document.getElementById('cvvValue');
+let receiptcardHolderValue=document.getElementById('cardHolderValue');
+let receiptpaymentMethodText=document.getElementById('paymentMethodText');
+
+let receiptpackageValue=document.getElementById('packageValue');
+let receiptflightValue=document.getElementById('flightValue');
+let receiptmoneyvalue=document.getElementById('moneyvalue');
+
+
+// capture paymentreceipt class
+let paymentreceipt = document.querySelector('.paymentreceipt');
+
+submitPayment.addEventListener('click' , (event)=>{
+  event.preventDefault(); 
+  console.log(paymentcardNumber.value.length!==16 )
+  console.log(paymentcardNumber.value.length);
+  if (paymentcardNumber.value=="" || paymentexpiryDate.value=="" || paymentcardHolder.value=="" || paymentcardHolder.value==""){
+    window.alert("Please fill required field");
+  }
+  
+  else if(paymentcardNumber.value.length!=16 ){
+    window.alert("Card number must be 16 digit");
+  }
+  else if(paymentcvv.value.length!==3 ){
+    window.alert("CVV number must be 3 digit");
+  }
+  else{
+    receiptcardNumberValue.textContent=paymentcardNumber.value;
+    receiptexpiryDateValue.textContent=paymentexpiryDate.value;
+    receiptcardHolderValue.textContent=paymentcardHolder.value;
+    paymentreceipt.style.display="block";
+    window.alert("Payment was succesful");
+  }
+})
+// update amount in payment from 
+let amounttobePaid=document.getElementById('amounttobePaid');
+
+
+function pipulatedata(data) {
+  receiptpackageValue.textContent =data.Location;
+  receiptflightValue.textContent = data.Date;
+  receiptmoneyvalue.textContent=data.Price;
+  amounttobePaid.value=data.Price
+}
 
 
 // to store a id in local storage 
 function getcardid(ele) {
   localStorage.setItem("id", ele.id);
-  fetchdata2(url)
+  fetchdata2(url);
 }
-
-
-
-
-
-
-

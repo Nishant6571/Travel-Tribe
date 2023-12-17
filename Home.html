@@ -33,8 +33,12 @@
 
       </div>
       <div id="Sh-navBtnCont">
-        <button id="Sh-logInBtn">Log in</button>
-        <button id="Sh-signInBtn">Sign up</button>
+        <button onclick=" redirectToPage('login.html')" id="Sh-logInBtn">
+          Log in
+        </button>
+        <button onclick=" redirectToPage('signup.html')" id="Sh-signInBtn">
+          Sign up
+        </button>
       </div>
 <!-- //////////////////////Dropdown menu///////////////////////////////  -->
       <div class="dropdown">
@@ -80,38 +84,45 @@
     <div>
       <div>
         <div class="Sh-packageLogoCont"><img src="./home-images/kona-logo.webp" alt="logo"></div>
-        <div class="Sh-packageNames"><a href="">Kona Package</a></div>
+        <div class="Sh-packageNames"><a href="#">Kona Package</a></div>
       </div>
       <div>
         <div class="Sh-packageLogoCont"><img src="./home-images/historical-log.webp" alt="logo"></div>
-        <div class="Sh-packageNames"><a href="">Historical Destination</a></div>
+        <div class="Sh-packageNames"><a id="HistoricalPackageLInk" href="#">Historical Destination</a></div>
       </div>
       <div>
         <div class="Sh-packageLogoCont"><img src="./home-images/camping-logo.webp" alt="logo"></div>
-        <div class="Sh-packageNames"><a href="">Camping Package</a></div>
+        <div class="Sh-packageNames"><a id="CampingPackageLink" href="#">Camping Package</a></div>
       </div>
       <div>
         <div class="Sh-packageLogoCont"><img src="./home-images/asia-logo.webp" alt="logo"></div>
-        <div class="Sh-packageNames"><a href="">Asia Destination</a></div>
+        <div class="Sh-packageNames"><a href="#">Asia Destination</a></div>
       </div>
       <div>
         <div class="Sh-packageLogoCont"><img src="./home-images/desert-logo.webp" alt="logo"></div>
-        <div class="Sh-packageNames"><a href="">Desert Oasis Package</a></div>
+        <div class="Sh-packageNames"><a id="DesertPackageLink" href="#">Desert Oasis Package</a></div>
       </div>
       <div>
         <div class="Sh-packageLogoCont"><img src="./home-images/hiking-logo.jpg" alt="logo"></div>
-        <div class="Sh-packageNames"><a href="">Hiking Package</a></div>
+        <div class="Sh-packageNames"><a id="HikingPackageLink" href="#">Hiking Package</a></div>
       </div>
       <div>
         <div class="Sh-packageLogoCont"><img src="./home-images/Europe-logo.jpg" alt="logo"></div>
-        <div class="Sh-packageNames"><a href="">Europa Destination</a></div>
+        <div class="Sh-packageNames"><a id="EuropePackageLink" href="#">Europe Destination</a></div>
       </div>
       <div>
         <div class="Sh-packageLogoCont"><img src="./home-images/beach-logo.webp" alt="logo"></div>
-        <div class="Sh-packageNames"><a href="">Beach Package</a></div>
+        <div class="Sh-packageNames"><a href="#">Beach Package</a></div>
       </div>
     </div>
   </section>
+
+  <div id="placesOuterContainer">
+    <div id="placesCont"></div>
+    <div id="buttonCont"><button id="backToPageBtn">BACK TO PAGE</button></div>
+  </div>
+
+  <!-- ------------------------------------------------------------------------------ -->
 
   <div id="Sh-blankCont"></div>
 
@@ -227,6 +238,17 @@
       <div id="btnContainer"><button id="seeMoreCardBtn">See More</button></div>
     </div>
   </div>
+
+  <!-- --------------------pop up for read more---------------------- -->
+  <div class="overlay" id="overlay"></div>
+  
+  <div class="popup" id="popup">
+    <!-- Popup content goes here -->
+    <p id="poppara"></p>
+    <button onclick="closePopup()" id="close">Close</button>
+  </div>
+
+<!-- ------------------------------------------------------------------- -->
 
   <div id="Sh-alignCont12">
     <div id="Sh-testimonialCont">

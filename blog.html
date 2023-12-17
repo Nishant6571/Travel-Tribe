@@ -17,29 +17,31 @@
 </head>
 
 <body>
-  <header>
-    <div id="Sh-fadeCont"></div>
-  </header>
-  <div id="Sh-alignCont">
-    <nav>
-      <div id="Sh-logoCont"><a href="./Home.html"><img
-            src="http://traveltribes.in/wp-content/uploads/2022/07/Travel-Tribes-White-Logo-1.png" alt="Logo"></a></div>
-      <div id="Sh-pageLinksCont">
-        <a href="./Home.html">HOME</a>
-        <a href="./About.html">ABOUT US</a>
-        <a href="./blog.html">BLOG</a>
-        <a href="./payment.html">BOOKINGS</a>
-        <a href="./contact.html">CONTACT US</a>
-
-      </div>
-      <div id="Sh-navBtnCont">
-        <button id="Sh-logInBtn">Log in</button>
-        <button id="Sh-signInBtn">Sign up</button>
-      </div>
-      <!-- //////////////////////Dropdown menu///////////////////////////////  -->
-      <div class="dropdown">
-        <button id="menuBtn" class="dropdown-btn"><img src="./home-images/menu-icon.jpg" width="45px"
-            alt="menu"></button>
+    <header>
+        <div id="Sh-fadeCont"></div>
+      </header>
+      <div id="Sh-alignCont">
+        <nav>
+          <div id="Sh-logoCont"><a href="./Home.html"><img src="http://traveltribes.in/wp-content/uploads/2022/07/Travel-Tribes-White-Logo-1.png" alt="Logo"></a></div>
+          <div id="Sh-pageLinksCont">
+            <a href="./Home.html">HOME</a>
+            <a href="./About.html">ABOUT US</a>
+            <a href="./blog.html">BLOG</a>
+            <a href="./payment.html">BOOKINGS</a>
+            <a href="./contact.html">CONTACT US</a>
+            
+          </div>
+          <div id="Sh-navBtnCont">
+            <button onclick=" redirectToPage('login.html')" id="Sh-logInBtn">
+              Log in
+            </button>
+            <button onclick=" redirectToPage('signup.html')" id="Sh-signInBtn">
+              Sign up
+            </button>
+          </div>
+    <!-- //////////////////////Dropdown menu///////////////////////////////  -->
+    <div class="dropdown">
+        <button id="menuBtn" class="dropdown-btn"><img src="./home-images/menu-icon.jpg" width="45px" alt="menu"></button>
         <div id="myDropdown" class="dropdown-content">
           <a class="dropdown-item" href="./Home.html">HOME</a>
           <a class="dropdown-item" href="./About.html">ABOUT US</a>
@@ -230,6 +232,16 @@
     </div>
   </div>
   <script src="Blog.js"></script>
+
+  <script>
+    // -------------------Login page direction---------------------------------
+        function redirectToPage(pagename) {
+          var loginPageUrl = `${pagename}`;
+          window.location.href = loginPageUrl;
+        }
+        
+  </script>
+
 </body>
 
 </html>

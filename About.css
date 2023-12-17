@@ -1,7 +1,7 @@
-*{
-  font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
-body{
+body {
   margin: 0;
   padding: 0;
 }
@@ -138,7 +138,7 @@ nav > div {
   background-color: black;
 }
 /* ----------------------header part---------------------------------- */
-#headerAlignCont{
+#headerAlignCont {
   width: 100%;
   height: 90vh;
   top: 20vh;
@@ -150,13 +150,13 @@ nav > div {
 
 #NheadingInpContainer {
   height: 100%;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Poppins;
-    letter-spacing: 2px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  letter-spacing: 2px;
 }
 #NheadingInpContainer > h3 {
   color: white;
@@ -181,42 +181,48 @@ nav > div {
   box-sizing: border-box;
 }
 .NlabelCont {
-    box-sizing: border-box;
-    box-shadow: rgba(92, 89, 89, 0.35) 0px 5px 15px;
-    height: 100%;
-    border-radius: 10px;
-    width: 31%;
-    padding: 2%;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: rgba(92, 89, 89, 0.35) 0px 5px 15px;
+  height: 100%;
+  border-radius: 10px;
+  width: 31%;
+  padding: 2%;
+  box-sizing: border-box;
 }
 #NheadingInpContainer > div > div > input {
-    padding: 8% 0;
-    border: none;
-    background: none;
-    outline: none;
-    font-size: 15px;
+  padding: 8% 0;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 15px;
 }
 .Nlabels {
-    display: block;
-    font-size: 18px;
-    font-weight: 600;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
 }
 #Sh-btnCont {
-    width: 13%;
-    height: 100%;
-    box-sizing: border-box;
+  width: 13%;
+  height: 100%;
+  box-sizing: border-box;
 }
 #Sh-searchBtn {
-    border-radius: 10px;
-    padding-top: 18%;
-    padding-bottom: 18%;
-    width: 100%;
-    border: none;
-    background-color: rgb(252, 101, 54);
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding-top: 18%;
+  padding-bottom: 18%;
+  width: 100%;
+  border: none;
+  background-color: rgb(252, 101, 54);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+a:hover {
+  color: rgb(252, 101, 54);
 }
 
+#NpageLinksCont > a:hover {
+  color: rgb(252, 101, 54);
+}
 .NalignContainer {
   width: 100%;
   height: 20vh;
@@ -403,26 +409,26 @@ nav > div {
 
 /*nishant - after mid */
 .Nafter-mid-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
 }
 
 .Njoin-membership {
-    background-image: url("./Aboutimages/background3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    height: 80%;
-    width: 80%;
-    background-color: honeydew;
-    border-radius: 20px;
+  background-image: url("./Aboutimages/background3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 80%;
+  width: 80%;
+  background-color: honeydew;
+  border-radius: 20px;
 }
 
 .Njoin-membership p {
@@ -561,114 +567,115 @@ nav > div {
 
 /* ---------------------------------------------- */
 
-@media screen and (min-width: 450px) and (max-width: 675px){
-  header{
-      width: 100vw;
-      height: 70vh;
+@media screen and (min-width: 450px) and (max-width: 675px) {
+  header {
+    width: 100vw;
+    height: 70vh;
   }
-  #NalignCont{
-      height: 15vh;
+  #NalignCont {
+    height: 15vh;
   }
-  nav{
-      width: 90%;
+  nav {
+    width: 90%;
   }
-  #NlogoCont > a > img{
-      width: 100%;
+  #NlogoCont > a > img {
+    width: 100%;
   }
-  #NpageLinksCont, #NnavBtnCont{
-      display: none;
+  #NpageLinksCont,
+  #NnavBtnCont {
+    display: none;
   }
   /* /////////////////////////dropdown menu CSS////////////////////////////////// */
 
-  .dropdown{
-      width: 85%;
-      margin-top: 0;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-  } 
+  .dropdown {
+    width: 85%;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
   .show {
-      display: block; /* Use !important to override inline styles */
-      top: 10vh;
-      position: absolute;
+    display: block; /* Use !important to override inline styles */
+    top: 10vh;
+    position: absolute;
   }
   /* ----------------------header part---------------------------------- */
-  #headerAlignCont{
-      height: 40vh;
+  #headerAlignCont {
+    height: 40vh;
   }
-  #NheadingInpContainer{
-      width: 90%;
+  #NheadingInpContainer {
+    width: 90%;
   }
-  #NheadingInpContainer > h3{
-      font-size: 130%;
-      text-align: center;
+  #NheadingInpContainer > h3 {
+    font-size: 130%;
+    text-align: center;
   }
-  #NheadingInpContainer > h1{
-      font-size: 250%;
-      text-align: center;
+  #NheadingInpContainer > h1 {
+    font-size: 250%;
+    text-align: center;
   }
-  #NheadingInpContainer > div{
-      height: 20%;
-      width: 90%;
-      padding-right: 5%;
+  #NheadingInpContainer > div {
+    height: 25%;
+    width: 90%;
+    padding-right: 5%;
   }
-  .Nlabels{
-      font-size: 16px;
+  .Nlabels {
+    font-size: 16px;
   }
-  #Sh-searchBtn{
-      padding-top: 11%;
-      padding-bottom: 11%;
+  #Sh-searchBtn {
+    padding-top: 11%;
+    padding-bottom: 11%;
   }
-/*---------------------package media queries-------------------------- */
-  .NalignContainer{
-      height: 35vh;
-      top: 60vh;
+  /*---------------------package media queries-------------------------- */
+  .NalignContainer {
+    height: 35vh;
+    top: 60vh;
   }
-  .NalignContainer > div{
-      width: 90%;
-      height: 100%;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, 1fr);
+  .NalignContainer > div {
+    width: 90%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
-  #NblankCont{
-      height: 25vh;
+  #NblankCont {
+    height: 25vh;
   }
-  .NcommonAlignCont{
-      height: 15vh;
+  .NcommonAlignCont {
+    height: 15vh;
   }
-  .NtransparentCont{
-      height: 100%;
-      width: 90%;
-      align-items: flex-end;
+  .NtransparentCont {
+    height: 100%;
+    width: 90%;
+    align-items: flex-end;
   }
-  .NtransparentCont > h1{
-      font-size: 280%;
+  .NtransparentCont > h1 {
+    font-size: 280%;
   }
-  #Noverlap1stCont{
-      top: 95vh;
-      height: 15vh;
-      width: 90%;
-      align-items: flex-end;
+  #Noverlap1stCont {
+    top: 95vh;
+    height: 15vh;
+    width: 90%;
+    align-items: flex-end;
   }
-  .NoverlapCont > h2{
-      font-size: 180%;
-  }   
+  .NoverlapCont > h2 {
+    font-size: 180%;
+  }
   /* ------------------partner Section---------------- */
-  
-  .NalignCont5{
-      height: 50vh;
+
+  .NalignCont5 {
+    height: 50vh;
   }
-  #NpartnerSection{
-      height: 100%;
-      width: 90%;
+  #NpartnerSection {
+    height: 100%;
+    width: 90%;
   }
-  #NpartnerSection > div{
-      margin-top: 10%;
-      grid-template-columns: repeat(2, 1fr);
+  #NpartnerSection > div {
+    margin-top: 10%;
+    grid-template-columns: repeat(2, 1fr);
   }
-  #NpartnerSection > article > p{
-      font-size: 130%;
+  #NpartnerSection > article > p {
+    font-size: 130%;
   }
 
   .Nmid-container {
@@ -676,7 +683,7 @@ nav > div {
     box-sizing: border-box;
     padding: 8% 0;
   }
-  
+
   .Nmid-container-content {
     height: 100%;
     display: grid;
@@ -692,7 +699,7 @@ nav > div {
   .Nmid-container-content h4 {
     font-size: 200%;
   }
-  
+
   .Nmid-container-content p {
     font-size: 120%;
   }
@@ -703,7 +710,7 @@ nav > div {
   }
   .Njoin-membership {
     width: 90%;
-  }  
+  }
   .Njoin-membership p {
     font-size: 150%;
   }
@@ -719,7 +726,7 @@ nav > div {
   .Nabout-Footer {
     height: 40vh;
   }
-  
+
   .Ncontent-Footer {
     height: 90%;
     width: 90%;
@@ -731,12 +738,12 @@ nav > div {
     padding-top: 5%;
     letter-spacing: 1px;
   }
-  
+
   .Ncontent-Footer > :nth-child(2),
   .Ncontent-Footer > :nth-child(3) {
     margin-left: 0;
   }
-  
+
   .Ncontent-Footer > :nth-child(4) {
     margin-left: 0;
   }
@@ -749,5 +756,4 @@ nav > div {
   .Nfooter-Grey2 {
     font-size: 15px;
   }
-
 }
