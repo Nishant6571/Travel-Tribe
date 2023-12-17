@@ -41,6 +41,13 @@ nav > div {
   align-items: center;
   gap: 5%;
 }
+a:hover {
+  color: rgb(252, 101, 54);
+}
+
+#NpageLinksCont > a:hover {
+  color: rgb(252, 101, 54);
+}
 #NpageLinksCont > a {
   text-decoration: none;
   color: white;
@@ -84,65 +91,100 @@ nav > div {
 }
 
 /* nishant-login-content */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+}
 
-.Nlogin-main-container {
+.login-main-container {
+  margin-top: 130px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("loginimages/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-inner-container {
+  width: 80%;
+  display: flex;
+}
+
+.login-col1 {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  margin-top: 110px;
-  height: 563px;
+  justify-content: center;
+  padding: 1rem;
+  color: white;
+}
+
+.login-col1 h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.login-col1 p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.login-col2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-col2 h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.login-col2 label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.login-col2 input {
   width: 100%;
-  font-family: Poppins;
-  align-items: center;
-  justify-content: center;
-}
-.Nlogin-main-container h1 {
-  font-size: 50px;
-  font-weight: 700;
-}
-.Nlogin-main-container label {
-  font-size: 20px;
-  font-weight: 500;
-}
-.Nlogin-main-container input {
-  width: 280px;
-  height: 40px;
-  font-size: 20px;
-  font-weight: 500;
-  border: 1px solid black;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.Nlogin-inner-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  height: 300px;
-  width: 40%;
-  gap: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.Nlogin-inner-container div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#Nlogin-id {
-  background-color: rgb(252, 101, 54);
+.login-button {
+  background-color: #fc6536;
   color: white;
   border: none;
-  border-radius: 14px;
-  height: 50px;
-  width: 109px;
-  font-size: 18px;
-  font-weight: 500;
+  border-radius: 8px;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #e0522d;
 }
 
 /* nishant-login-footer */
 .Nabout-Footer {
-  margin-top: 60px;
+  /* margin-top: 60px; */
   display: flex;
   justify-content: center;
   align-items: center;
