@@ -11,11 +11,13 @@ Github
 Local storage (to store data)
 Our team of five members, during the Construct Week of Unit 4 at Masai School, completed this project in just five days. Here are the authors:
 
-Nishant Bhargava:
-Deepak Wayzode
-Surbhi Haldar
-Sachin Mohite:[GitHub](https://github.com/sachin708)
-Abhishak
+Nishant Bhargava:[GitHub](https://github.com/Nishant6571)<br>
+Deepak Wayzode:[GitHub](https://github.com/sachin708)<br>
+Surbhi Haldar:[GitHub](https://github.com/sur-123-bhi)<br>
+Sachin Mohite:[GitHub](https://github.com/sachin708)<br>
+[linkedin](https://www.linkedin.com/in/sachin-mohite-0893a7203/)<br>
+Abhishak Kumar:[GitHub](https://github.com/sachin708)<br>
+
 Libraries Used in the Project:
 
 Fonts and Icons:
