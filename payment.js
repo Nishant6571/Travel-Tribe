@@ -1,7 +1,7 @@
 let singlecard = document.getElementById('siglecard');
 // ===========================================
 
-let link = `https://mock-api-templates-za9u.onrender.com/country`
+let link = `https://deepak-server-dosm.onrender.com/country`
 
 
 // fetchdata(url)
