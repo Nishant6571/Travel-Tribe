@@ -7,7 +7,6 @@ body {
   height: 20vh;
   width: 100%;
   top: 0;
-  /* position: absolute; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +21,13 @@ nav {
 }
 nav > div {
   height: 100%;
+}
+a:hover {
+  color: rgb(252, 101, 54);
+}
+
+#NpageLinksCont > a:hover {
+  color: rgb(252, 101, 54);
 }
 #NlogoCont {
   width: 15%;
@@ -47,6 +53,7 @@ nav > div {
   font-size: 18px;
   font-weight: 600;
 }
+
 #NnavBtnCont {
   width: 20%;
   display: flex;
@@ -89,12 +96,14 @@ nav > div {
   flex-direction: column;
   height: 700px;
   width: 100%;
-  font-family: Poppins;
+  background-image: url("loginimages/Background-Image-Signup-Page.webp");
+  background-size: cover;
+  background-position: center center;
   align-items: center;
   justify-items: center;
-  background-image: url("loginimages/Background-Image-Signup-Page.webp");
 }
 
+/* Inner Container Styles */
 .Nsignup-inner-container {
   background-color: white;
   display: flex;
@@ -104,7 +113,6 @@ nav > div {
   border-radius: 10px;
   height: 473px;
   width: 80%;
-  gap: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   gap: 20px;
 }
@@ -113,10 +121,10 @@ nav > div {
   justify-content: space-between;
 }
 
+/* Form Styles */
 form {
   height: 100px;
   width: 80%;
-  display: grid;
   display: grid;
   grid-template: repeat(4, 1fr) / repeat(2, 1fr);
   gap: 10px;
@@ -124,16 +132,20 @@ form {
   align-items: center;
 }
 
+/* Heading Styles */
 .Nsignup-main-container h1 {
   font-size: 50px;
   font-weight: 700;
 }
 
+/* Label Styles */
 .Nsignup-main-container label {
   font-size: 20px;
   font-weight: 500;
+  color: rgb(88, 82, 82);
 }
 
+/* Input Styles */
 .Nsignup-main-container input {
   width: 280px;
   height: 40px;
@@ -142,12 +154,14 @@ form {
   border: 1px solid black;
 }
 
+/* Inner Container Div Styles */
 .Nsinup-inner-container div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Sign Id Button Styles */
 #Nsign-id {
   margin-top: 140px;
   background-color: rgb(252, 101, 54);
