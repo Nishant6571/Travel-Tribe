@@ -92,16 +92,17 @@ nav > div {
   font-family: Poppins;
   align-items: center;
   justify-items: center;
+  background-image: url("loginimages/Background-Image-Signup-Page.webp");
 }
 
 .Nsignup-inner-container {
-  background-image: url("loginimages/Background-Image-Signup-Page.webp");
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  height: 470px;
+  height: 473px;
   width: 80%;
   gap: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
