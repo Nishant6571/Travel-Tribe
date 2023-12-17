@@ -1,17 +1,17 @@
-*{
-  font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
-body{
+body {
   margin: 0;
   padding: 0;
 }
-.box{
+.box {
   height: 500px;
   width: 500px;
   border: 2px solid red;
 }
 
-header{
+header {
   width: 100%;
   height: 20vh;
   /* background-image: url("https://cdn.pixabay.com/photo/2018/08/16/08/39/hallstatt-3609863_1280.jpg");
@@ -19,15 +19,14 @@ header{
   background-size: cover; */
   background-color: black;
 }
-#Sh-fadeCont{
+#Sh-fadeCont {
   background-color: rgb(71, 47, 37);
   width: 100%;
   height: 100%;
   opacity: 0.3;
 }
 
-
-#Sh-alignCont{
+#Sh-alignCont {
   height: 20vh;
   width: 100%;
   display: flex;
@@ -35,16 +34,16 @@ header{
   justify-content: center;
   align-items: center;
 }
-nav{
+nav {
   height: 100%;
   width: 80%;
   display: flex;
   letter-spacing: 1px;
 }
-nav > div{
+nav > div {
   height: 100%;
 }
-#Sh-logoCont{
+#Sh-logoCont {
   width: 15%;
   height: 100%;
   display: flex;
@@ -52,33 +51,32 @@ nav > div{
   align-items: center;
   box-sizing: border-box;
 }
-#Sh-logoCont > a > img{
+#Sh-logoCont > a > img {
   width: 60%;
   height: 100%;
-
 }
-#Sh-pageLinksCont{
+#Sh-pageLinksCont {
   width: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5%;
 }
-#Sh-pageLinksCont > a{
+#Sh-pageLinksCont > a {
   text-decoration: none;
   color: white;
   font-family: Poppins;
   font-size: 18px;
   font-weight: 600;
 }
-#Sh-navBtnCont{
+#Sh-navBtnCont {
   width: 20%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 8%;
 }
-#Sh-navBtnCont > button{
+#Sh-navBtnCont > button {
   padding: 5%;
   font-size: 18px;
   font-weight: 600;
@@ -86,24 +84,31 @@ nav > div{
   border-radius: 30px;
   cursor: pointer;
 }
-#Sh-logInBtn{
+#Sh-logInBtn {
   background: none;
   color: white;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#Sh-signInBtn{
+#Sh-signInBtn {
   background-color: rgb(252, 101, 54);
   border: none;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#Sh-logInBtn:hover{
+#Sh-logInBtn:hover {
   background-color: rgb(252, 101, 54);
   color: white;
 }
-#Sh-signInBtn:hover{
+#Sh-signInBtn:hover {
   background: white;
+  color: rgb(252, 101, 54);
+}
+a:hover {
+  color: rgb(252, 101, 54);
+}
+
+#Sh-pageLinksCont > a:hover {
   color: rgb(252, 101, 54);
 }
 /* /////////////////////////dropdown menu CSS////////////////////////////////// */
@@ -150,43 +155,44 @@ nav > div{
 
 /* single card  csss  */
 
-
-.continentcard{
- /* border: 2px solid red; */
- width: 350px;
- /* text-align: center; */
-border-radius: 25px;
-height: 400px;
-margin: 50px 50px;
-background-color: rgb(227, 255, 245);
-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+.continentcard {
+  /* border: 2px solid red; */
+  width: 350px;
+  /* text-align: center; */
+  border-radius: 25px;
+  height: 400px;
+  margin: 50px 50px;
+  background-color: rgb(227, 255, 245);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-.continentimg{
-  width:100%;
-  height:60%;
-border-top-right-radius: 25px;
-border-top-left-radius: 25px;
+.continentimg {
+  width: 100%;
+  height: 60%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
 
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-.continentname{
+.continentname {
   text-align: center;
   margin-bottom: 10px;
   margin-top: 0px;
 }
 
-.buttonconfrom{
+.buttonconfrom {
   padding: 10px;
   border-radius: 10px;
   display: block;
   text-align: center;
- margin: auto;
- background-color: rgb(55, 88, 255);
- font-weight: bold;
-color: white;
+  margin: auto;
+  background-color: rgb(55, 88, 255);
+  font-weight: bold;
+  color: white;
 }
 
-.date{
+.date {
   position: relative;
   top: 0px;
   right: -10px;
@@ -196,12 +202,12 @@ color: white;
   margin: 0px;
 }
 
-.price{
- text-align: center;
- position: relative;
- top: -25px;
- left: 80px;
- margin: 0px;
+.price {
+  text-align: center;
+  position: relative;
+  top: -25px;
+  left: 80px;
+  margin: 0px;
 }
 
 /*  travellor details input tag css */
@@ -215,7 +221,6 @@ color: white;
   margin-top: 50px;
   height: 800px;
 }
-
 
 h2 {
   text-align: center;
@@ -299,29 +304,27 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-.paymentpagealldetails{
+.paymentpagealldetails {
   display: flex;
   /* border: 2px solid red; */
   margin-bottom: 150px;
-
 }
-@media (max-width:850px){
-  .paymentpagealldetails{
+@media (max-width: 850px) {
+  .paymentpagealldetails {
     display: flex;
     flex-direction: column;
     /* border: 2px solid red; */
     margin-bottom: 150px;
-  
   }
-  .continentcard{
+  .continentcard {
     /* border: 2px solid red; */
     width: 350px;
     /* text-align: center; */
-   border-radius: 25px;
-   height: 400px;
-   margin: auto;
-   background-color: rgb(227, 255, 245);
-   }
+    border-radius: 25px;
+    height: 400px;
+    margin: auto;
+    background-color: rgb(227, 255, 245);
+  }
   .container {
     width: 30%;
     margin: auto;
@@ -349,13 +352,10 @@ input[type="submit"]:hover {
 
 /* billing checkbox css
  */
- .billing-checkbox {
+.billing-checkbox {
   margin-bottom: 15px;
   color: #555;
 }
-
-
-
 
 /* /////////////////////////////// */
 /* footer css */
@@ -464,68 +464,69 @@ input[type="submit"]:hover {
 
 /* ------------------------For-Responsiveness-Queries--------------------------- */
 
-@media screen and (min-width: 450px) and (max-width: 675px){
-  #Sh-alignCont{
-      height: 15vh;
+@media screen and (min-width: 450px) and (max-width: 675px) {
+  #Sh-alignCont {
+    height: 15vh;
   }
-  nav{
-      width: 90%;
+  nav {
+    width: 90%;
   }
-  #Sh-logoCont > a > img{
-      width: 100%;
+  #Sh-logoCont > a > img {
+    width: 100%;
   }
-  #Sh-pageLinksCont, #Sh-navBtnCont{
-      display: none;
+  #Sh-pageLinksCont,
+  #Sh-navBtnCont {
+    display: none;
   }
   /* /////////////////////////dropdown menu CSS////////////////////////////////// */
 
-  .dropdown{
-      width: 85%;
-      margin-top: 0;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-  } 
+  .dropdown {
+    width: 85%;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
   .show {
-      display: block; /* Use !important to override inline styles */
-      top: 10vh;
-      position: absolute;
+    display: block; /* Use !important to override inline styles */
+    top: 10vh;
+    position: absolute;
   }
-  
-    /* footer css -----------------------------------------*/
 
-    .Nabout-Footer {
-      height: 40vh;
-    }
-    
-    .Ncontent-Footer {
-      height: 90%;
-      width: 90%;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2%;
-    }
-    .Ncontent-Footer > div {
-      margin-top: 0;
-      padding-top: 5%;
-      letter-spacing: 1px;
-    }
-    
-    .Ncontent-Footer > :nth-child(2),
-    .Ncontent-Footer > :nth-child(3) {
-      margin-left: 0;
-    }
-    
-    .Ncontent-Footer > :nth-child(4) {
-      margin-left: 0;
-    }
-    #Nline-footer {
-      width: 90%;
-    }
-    .Nafter-line {
-      width: 90%;
-    }
-    .Nfooter-Grey2 {
-      font-size: 15px;
-    }
+  /* footer css -----------------------------------------*/
+
+  .Nabout-Footer {
+    height: 40vh;
+  }
+
+  .Ncontent-Footer {
+    height: 90%;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+  }
+  .Ncontent-Footer > div {
+    margin-top: 0;
+    padding-top: 5%;
+    letter-spacing: 1px;
+  }
+
+  .Ncontent-Footer > :nth-child(2),
+  .Ncontent-Footer > :nth-child(3) {
+    margin-left: 0;
+  }
+
+  .Ncontent-Footer > :nth-child(4) {
+    margin-left: 0;
+  }
+  #Nline-footer {
+    width: 90%;
+  }
+  .Nafter-line {
+    width: 90%;
+  }
+  .Nfooter-Grey2 {
+    font-size: 15px;
+  }
 }

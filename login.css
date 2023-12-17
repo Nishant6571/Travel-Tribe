@@ -41,6 +41,13 @@ nav > div {
   align-items: center;
   gap: 5%;
 }
+a:hover {
+  color: rgb(252, 101, 54);
+}
+
+#NpageLinksCont > a:hover {
+  color: rgb(252, 101, 54);
+}
 #NpageLinksCont > a {
   text-decoration: none;
   color: white;
