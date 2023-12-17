@@ -27,9 +27,11 @@ header {
 }
 
 #Sh-alignCont {
-  height: 20vh;
+  height: 15vh;
   width: 100%;
   display: flex;
+  top: 0;
+  position: sticky;
   background-color: black;
   justify-content: center;
   align-items: center;

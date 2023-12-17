@@ -10,8 +10,10 @@ body {
 }
 
 #Sh-alignCont {
-  height: 20vh;
+  height: 15vh;
   width: 100%;
+  top: 0;
+  position: sticky;
   display: flex;
   background-color: black;
   justify-content: center;
@@ -145,7 +147,6 @@ a:hover {
 }
 
 .contactUs_49 {
-  position: relative;
   width: 95%;
   padding: 40px 100px;
 }
@@ -176,7 +177,6 @@ a:hover {
   border-radius: 20px;
 }
 .box_49 {
-  position: relative;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 5fr 4fr;
@@ -194,7 +194,6 @@ a:hover {
 }
 /* form */
 .formBox49 {
-  position: relative;
   width: 80%;
 }
 .formBox49 .row50 {
@@ -314,7 +313,6 @@ a:hover {
   background-image: url("./Aboutimages/background3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;

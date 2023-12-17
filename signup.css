@@ -4,9 +4,10 @@ body {
 }
 /* nishant-signup-navbar */
 #NalignCont {
-  height: 20vh;
+  height: 15vh;
   width: 100%;
   top: 0;
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;

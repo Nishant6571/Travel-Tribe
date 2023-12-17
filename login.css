@@ -4,10 +4,10 @@ body {
 }
 /* nishant-login-navbar */
 #NalignCont {
-  height: 20vh;
+  height: 15vh;
   width: 100%;
   top: 0;
-  position: absolute;
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +98,6 @@ body {
 }
 
 .login-main-container {
-  margin-top: 130px;
   height: 100vh;
   display: flex;
   justify-content: center;
