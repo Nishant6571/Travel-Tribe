@@ -1,477 +1,601 @@
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
-header{
-    width: 100%;
-    height: 120vh;
-    background-image: url("./home-images/headerBackGroundImg.jpg");
-    background-size: cover;
+header {
+  width: 100%;
+  height: 120vh;
+  background-image: url("./home-images/headerBackGroundImg.jpg");
+  background-size: cover;
 }
-#Sh-fadeCont{
-    background-color: rgb(71, 47, 37);
-    width: 100%;
-    height: 100%;
-    opacity: 0.3;
+#Sh-fadeCont {
+  background-color: rgb(71, 47, 37);
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
 }
-#Sh-alignCont{
-    height: 20vh;
-    width: 100%;
-    top: 0;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#Sh-alignCont {
+  height: 20vh;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-nav{
-    height: 100%;
-    width: 80%;
-    display: flex;
-    letter-spacing: 1px;
-    font-family: Poppins;
+nav {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  letter-spacing: 1px;
+  font-family: Poppins;
 }
-nav > div{
-    height: 100%;
+nav > div {
+  height: 100%;
 }
-#Sh-logoCont{
-    width: 15%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    box-sizing: border-box;
+#Sh-logoCont {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
 }
-#Sh-logoCont > a > img{
-    width: 60%;
-    height: 100%;
+#Sh-logoCont > a > img {
+  width: 60%;
+  height: 100%;
+}
+#Sh-pageLinksCont {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+#Sh-pageLinksCont > a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+#Sh-navBtnCont {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8%;
+}
+#Sh-navBtnCont > button {
+  padding: 5%;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#Sh-logInBtn {
+  background: none;
+  color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#Sh-signInBtn {
+  background-color: rgb(252, 101, 54);
+  border: none;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#Sh-logInBtn:hover {
+  background-color: rgb(252, 101, 54);
+  color: white;
+}
+#Sh-signInBtn:hover {
+  background: white;
+  color: rgb(252, 101, 54);
+}
+a:hover {
+  color: rgb(252, 101, 54);
+}
 
-}
-#Sh-pageLinksCont{
-    width: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-}
-#Sh-pageLinksCont > a{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-}
-#Sh-navBtnCont{
-    width: 20%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 8%;
-}
-#Sh-navBtnCont > button{
-    padding: 5%;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-#Sh-logInBtn{
-    background: none;
-    color: white;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-#Sh-signInBtn{
-    background-color: rgb(252, 101, 54);
-    border: none;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-#Sh-logInBtn:hover{
-    background-color: rgb(252, 101, 54);
-    color: white;
-}
-#Sh-signInBtn:hover{
-    background: white;
-    color: rgb(252, 101, 54);
+#Sh-pageLinksCont > a:hover {
+  color: rgb(252, 101, 54);
 }
 /* /////////////////////////dropdown menu CSS////////////////////////////////// */
 
 .dropdown {
-    position: relative;
-    margin-top: 4.5%;
-    display: none;
-  }
+  position: relative;
+  margin-top: 4.5%;
+  display: none;
+}
 
-  /* Style for the dropdown button */
-  .dropdown-btn {
-    background-color: rgb(44, 25, 25);
-    border: none;
-    cursor: pointer;
-  }
+/* Style for the dropdown button */
+.dropdown-btn {
+  background-color: rgb(44, 25, 25);
+  border: none;
+  cursor: pointer;
+}
 
-  /* Style for the dropdown content */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(252, 101, 54);
-    min-width: 16vh;
-    border-radius: 5px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
+/* Style for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(252, 101, 54);
+  min-width: 16vh;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-  /* Style for the dropdown items */
-  .dropdown-item {
-    padding: 12px 16px;
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    cursor: pointer;
-  }
+/* Style for the dropdown items */
+.dropdown-item {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
 
-  /* Change color on hover */
-  .dropdown-item:hover {
-    background-color: black;
-  }
+/* Change color on hover */
+.dropdown-item:hover {
+  background-color: black;
+}
 
 /* ----------------------header part---------------------------------- */
-#headerAlignCont{
-    width: 100%;
-    height: 90vh;
-    top: 20vh;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#headerAlignCont {
+  width: 100%;
+  height: 90vh;
+  top: 20vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#Sh-headingInpContainer{
-    height: 100%;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Poppins;
-    letter-spacing: 2px;
+#Sh-headingInpContainer {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  letter-spacing: 2px;
 }
-#Sh-headingInpContainer > h3{
-    color: white;
-    font-size: 200%;
-    margin: 0;
-    text-shadow: 1px 1px black;
+#Sh-headingInpContainer > h3 {
+  color: white;
+  font-size: 200%;
+  margin: 0;
+  text-shadow: 1px 1px black;
 }
-#Sh-headingInpContainer > h1{
-    color: white;
-    font-size: 400%;
-    margin: 1%;
-    text-shadow: 1px 1px black;   
+#Sh-headingInpContainer > h1 {
+  color: white;
+  font-size: 400%;
+  margin: 1%;
+  text-shadow: 1px 1px black;
 }
-#Sh-headingInpContainer > div{
-    margin-top: 3%;
-    height: 14%;
-    width: 57%;
-    background-color: white;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
+#Sh-headingInpContainer > div {
+  margin-top: 3%;
+  height: 14%;
+  width: 57%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 }
-.Sh-labelCont{
-    box-sizing: border-box;
-    box-shadow: rgba(92, 89, 89, 0.35) 0px 5px 15px;
-    height: 100%;
-    border-radius: 10px;
-    width: 31%;
-    padding: 2%;
-    box-sizing: border-box;
+.Sh-labelCont {
+  box-sizing: border-box;
+  box-shadow: rgba(92, 89, 89, 0.35) 0px 5px 15px;
+  height: 100%;
+  border-radius: 10px;
+  width: 31%;
+  padding: 2%;
+  box-sizing: border-box;
 }
 #Sh-headingInpContainer > div > div > input {
-    padding: 8% 0;
-    border: none;
-    background: none;
-    outline: none;
-    font-size: 15px;
+  padding: 8% 0;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 15px;
 }
-.Sh-labels{
-    display: block;
-    font-size: 18px;
-    font-weight: 600;
+.Sh-labels {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
 }
-#Sh-btnCont{
-    width: 13%;
-    height: 100%;
-    box-sizing: border-box;
+#Sh-btnCont {
+  width: 13%;
+  height: 100%;
+  box-sizing: border-box;
 }
-#Sh-searchBtn{
-    border-radius: 10px;
-    padding-top: 18%;
-    padding-bottom: 18%;
-    width: 100%;
-    border: none;
-    background-color: rgb(252, 101, 54);
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+#Sh-searchBtn {
+  border-radius: 10px;
+  padding-top: 18%;
+  padding-bottom: 18%;
+  width: 100%;
+  border: none;
+  background-color: rgb(252, 101, 54);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /* -------------------------package cards CSS-------------------------------------- */
-.Sh-alignContainer{
-    width: 100%;
-    height: 20vh;
-    top: 110vh;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
+.Sh-alignContainer {
+  width: 100%;
+  height: 20vh;
+  top: 110vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
 }
-.Sh-alignContainer > div{
-    width: 80%;
-    height: 20vh;
-    display: grid;
-    background-color: white;
-    border-radius: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.Sh-alignContainer > div {
+  width: 80%;
+  height: 20vh;
+  display: grid;
+  background-color: white;
+  border-radius: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.Sh-alignContainer > div > div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    padding-left: 3%;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.Sh-alignContainer > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding-left: 3%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.Sh-packageLogoCont{
-    width: 20%;
-    height: 80%;
+.Sh-packageLogoCont {
+  width: 20%;
+  height: 80%;
 }
-.Sh-packageLogoCont > img{
+.Sh-packageLogoCont > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30%;
+}
+.Sh-packageNames {
+  width: 80%;
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 600;
+}
+.Sh-packageNames > a {
+  text-decoration: none;
+  color: rgb(133, 127, 127);
+}
+#Sh-blankCont {
+  width: 100%;
+  height: 10vh;
+}
+.Sh-commonAlignCont {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+}
+.Sh-transparentCont {
+  height: 30vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.Sh-transparentCont > h1 {
+  font-size: 600%;
+  margin: 0;
+  opacity: 0.1;
+}
+.Sh-commoneAlignforOverlapCont {
+  width: 100%;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+}
+#Sh-overlap1stCont {
+  top: 130vh;
+  position: absolute;
+  height: 30vh;
+  width: 80%;
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.Sh-overlapCont > h2 {
+  font-size: 300%;
+  letter-spacing: 1px;
+}
+/* ///////////////////////////package container CSS/////////////////////////////// */
+#placesOuterContainer{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 30%;
-}
-.Sh-packageNames{
-    width: 80%;
-    font-family: Poppins;
-    font-size: 17px;
-    font-weight: 600;  
-}
-.Sh-packageNames > a{
-    text-decoration: none;
-    color: rgb(133, 127, 127);
-}
-#Sh-blankCont{
-    width: 100%;
-    height: 10vh;
-}
-.Sh-commonAlignCont{
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-}
-.Sh-transparentCont{
-    height: 30vh;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.Sh-transparentCont > h1{
-    font-size: 600%;
-    margin: 0;
-    opacity: 0.1;
-}
-.Sh-commoneAlignforOverlapCont{
-    width: 100%;
-    height: 1px;
-    display: flex;
-    justify-content: center;
-}
-#Sh-overlap1stCont{
-    top: 130vh;
-    position: absolute;
-    height: 30vh;
-    width: 80%;
-    font-family: Poppins;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.Sh-overlapCont > h2{
-    font-size: 300%;
-    letter-spacing: 1px;
+    box-sizing: border-box;
+    background-color: rgb(102, 89, 89);
 }
 
-/* ------------------partner Section---------------- */
-
-.Sh-alignCont5{
-    height: 50vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-#Sh-partnerSection{
-    height: 50vh;
+#placesCont{
+    top: 0%;
+    left: 10%;
+    position: fixed;
     width: 80%;
-    text-align: center;
-    font-family: Poppins;
-}
-#Sh-partnerSection > div{
-    margin-top: 5%;
-    height: 20vh;
-    width: 100%;
+    height: 90%;
+    padding: 2% 0;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2%;
 }
-#Sh-partnerSection > article{
-    height: fit-content;
-    width: 100%;
-    padding: 0 5%;
-    box-sizing: border-box;
-}
-#Sh-partnerSection > article > p{
-    font-size: 150%;
-    letter-spacing: 1px;
-    color: gray;
-}
-#Sh-partnerSection > div > div{
+#buttonCont{
+    width: 80%;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    top: 90%;
+    left: 10%;
+    position: fixed;
+}
+#buttonCont > button{
+    background-color:  rgb(230, 69, 20);
+    color: white;
+    cursor: pointer;
+    padding: 2%;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#buttonCont > button:hover{
+    background-color: white;
+    border: 2px solid  rgb(252, 101, 54);
+    color:  rgb(252, 101, 54);
+}
+
+.placeCard{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
     border-radius: 10px;
 }
-#Sh-partnerSection > div > div > h5{
-    font-size: 150%;
+.imgCont{
+    width: 100%;
+    height: 30%;
+}
+.imgCont > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.placeDetailCont{
+    height: 47%;
+    width: 100%;
+    text-align: center;
     letter-spacing: 1px;
+    word-spacing: 1px;
+    box-sizing: border-box;
+    padding: 0 1%;
+}
+.placeDetailCont > p{
+    font-size: smaller;
+}
+.priceAndBtnCont, .timeAndDateCont{
+    width: 100%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.timeAndDateCont > div{
+    text-align: center;
+    color: orangered;
+    font-size: small;
+}
+.priceAndBtnCont > div{
+    font-size: 20px;
+    text-align: center;
+}
+.priceAndBtnCont > div > button{
+    padding: 5% 3%;
+    cursor: pointer;
+    color:white;
+    background-color: rgb(17, 17, 88); 
+    border : none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .priceAndBtnCont > div > button:hover{
+    color: rgb(17, 17, 88);
+    background-color: white;
+    border: 2px solid rgb(17, 17, 88);
+  }
+
+
+
+
+/* ------------------partner Section---------------- */
+
+.Sh-alignCont5 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#Sh-partnerSection {
+  height: 50vh;
+  width: 80%;
+  text-align: center;
+  font-family: Poppins;
+}
+#Sh-partnerSection > div {
+  margin-top: 5%;
+  height: 20vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2%;
+}
+#Sh-partnerSection > article {
+  height: fit-content;
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+#Sh-partnerSection > article > p {
+  font-size: 150%;
+  letter-spacing: 1px;
+  color: gray;
+}
+#Sh-partnerSection > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+#Sh-partnerSection > div > div > h5 {
+  font-size: 150%;
+  letter-spacing: 1px;
 }
 
 /* ------------------About section CSS--------------------------- */
-#Sh-alignCont6{
-    height: 75vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+#Sh-alignCont6 {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-#Sh-aboutSection{
-    height: 100%;
-    width: 80%;
-    display: grid;
-    font-family: Poppins;
-    grid-template-columns: repeat(2, 1fr);
+#Sh-aboutSection {
+  height: 100%;
+  width: 80%;
+  display: grid;
+  font-family: Poppins;
+  grid-template-columns: repeat(2, 1fr);
 }
-#Sh-aboutSection > div{
-    display: flex;
-    padding: 15% 0;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+#Sh-aboutSection > div {
+  display: flex;
+  padding: 15% 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-#Sh-aboutSection > div > h3, #Sh-ServiceCont > h3{
-    font-size: 400%;
-    margin: 0;
-    color: black;
+#Sh-aboutSection > div > h3,
+#Sh-ServiceCont > h3 {
+  font-size: 400%;
+  margin: 0;
+  color: black;
 }
-#Sh-aboutSection > div > h4, #Sh-ServiceCont > h4{
-    font-size: 200%;
-    color: rgb(100, 90, 90);
-    margin: 0;
-}
-
-#Sh-aboutSection > div > p{
-    font-size: 120%;
-    color: rgb(159, 156, 156);
-    padding-right: 20%;
-    margin: 0;
-    letter-spacing: 1px;
-}
-#Sh-aboutSection > div > button, #Sh-ServiceCont > button{
-    background-color: rgb(252, 101, 54);
-    border: none;
-    color: white;
-    font-size: 20px;
-    letter-spacing: 1px;
-    padding: 3%;
-    border-radius: 10px;
-    cursor: pointer;
+#Sh-aboutSection > div > h4,
+#Sh-ServiceCont > h4 {
+  font-size: 200%;
+  color: rgb(100, 90, 90);
+  margin: 0;
 }
 
-#Sh-aboutSection > div > img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+#Sh-aboutSection > div > p {
+  font-size: 120%;
+  color: rgb(159, 156, 156);
+  padding-right: 20%;
+  margin: 0;
+  letter-spacing: 1px;
+}
+#Sh-aboutSection > div > button,
+#Sh-ServiceCont > button {
+  background-color: rgb(252, 101, 54);
+  border: none;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 3%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#Sh-aboutSection > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 /* --------------------Our service section styling------------------- */
-#Sh-alignCont7{
-    width: 100%;
-    height: 75vh;
-    display: flex;
-    justify-content: center;
+#Sh-alignCont7 {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
 }
-#Sh-alignCont7 > section{
-    width: 80%;
-    height: 100%;
-    font-family: Poppins;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+#Sh-alignCont7 > section {
+  width: 80%;
+  height: 100%;
+  font-family: Poppins;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-#Sh-gridCont{
-    padding: 10% 0;
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-column-gap: 3%;
-   grid-row-gap: 3%;
+#Sh-gridCont {
+  padding: 10% 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3%;
+  grid-row-gap: 3%;
 }
-#Sh-gridCont > div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    box-sizing: border-box;
+#Sh-gridCont > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-sizing: border-box;
 }
-#Sh-gridCont > div > h3{
-    font-size: 350%;
-    margin: 0;
+#Sh-gridCont > div > h3 {
+  font-size: 350%;
+  margin: 0;
 }
-#Sh-gridCont > div > h4{
-    font-size: 120%;
-    margin: 0;
-    color: gray;
-}
-
-#Sh-ServiceCont{
-    display: flex;
-    padding: 10% 0;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
+#Sh-gridCont > div > h4 {
+  font-size: 120%;
+  margin: 0;
+  color: gray;
 }
 
-#Sh-ServiceCont > p{
-    font-size: 130%;
-    color: rgb(159, 156, 156);
-    padding-left: 15%;
-    text-align: right;
-    margin: 0;
+#Sh-ServiceCont {
+  display: flex;
+  padding: 10% 0;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#Sh-ServiceCont > p {
+  font-size: 130%;
+  color: rgb(159, 156, 156);
+  padding-left: 15%;
+  text-align: right;
+  margin: 0;
 }
 
 /* --------------price heading-------------------- */
 
 #Sh-overlap2ndCont{
+    display: block;
     top: 360vh;
     position: absolute;
     height: 30vh;
@@ -482,655 +606,678 @@ nav > div{
     align-items: flex-end;
 }
 
-.paraGraph{
-    width: 80%; height: 100%; text-align: center; padding: 0 10%; box-sizing: border-box;
+.paraGraph {
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  padding: 0 10%;
+  box-sizing: border-box;
 }
-.paraGraph > p{
-    font-size: 150%; color: rgb(109, 95, 95); font-family: Poppins;
+.paraGraph > p {
+  font-size: 150%;
+  color: rgb(109, 95, 95);
+  font-family: Poppins;
 }
 
 /* --------------------data wrapper styling-------------------------- */
 #Sh-alignCont9{
     width: 100%;
-    height: 220vh;
+    height: 1520px;
+    /* border: 1px solid black; */
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
 }
 #data-Button-cont{
     width: 80%;
     height: fit-content;
     display: flex;
+    box-sizing: border-box;
+    /* border: 5px solid blue; */
     flex-direction: column;
     align-items: center;
 }
 #Sh-data-main-container1{
     width: 100%;
-    padding: 6% 0;
-    height:fit-content;
+    padding: 5% 0;
+    height: 1300px;
+    /* border: 1px solid green; */
     display:grid;
+    box-sizing: border-box;
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows:auto;
-    gap:4%;
+    gap: 40px;
     justify-content: center; 
     margin: auto;
 }
-  .subdiv{
-    width:100%;
-    /* height : 455px; */
+.subdiv {
+  width: 100%;
+  /* height : 455px; */
   /*   border:1px solid red; */
-    border-radius: 7%;
-    text-align: center;
-    box-sizing: border-box;
-    font-family: Poppins;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  }
-  .place-detail{
-    margin: 0;
-    padding: 0 2%;
-    color: rgb(159, 156, 156);
-  }
-  .subdiv>img{
-    width:100%;
-    height:42%;
-    border-radius: 25px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  }
-  
-   .btnR{
-    color:white;
-    background-color: red;
-    padding:12px;
-    border : none;
-    border-radius:10px;
-    position :relative;
-    top: -20px;
-    cursor: pointer;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  } 
-  
-  .last{
-    display:flex;
-    justify-content:space-around;
-    /* border: 1px solid green; */
-  }
-  
-  .bookdiv{
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
-  /*   border:1px solid green; */
-    height : 10%;
-  }
-  
-  .booknow{
-    color:white;
-    background-color: rgb(17, 17, 88); 
-    padding:9px;
-    border : none;
-    border-radius:10px;
+  border-radius: 7%;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: Poppins;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.place-detail {
+  margin: 0;
+  padding: 0 2%;
+  color: rgb(159, 156, 156);
+}
+.subdiv > img {
+  width: 100%;
+  height: 42%;
+  border-radius: 25px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.btnR {
+  color: white;
+  background-color: red;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  top: -20px;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.last {
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid green; */
+}
+
+.booknow {
+    color: white;
+    background-color: rgb(17, 17, 88);
+    padding: 9px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
-  .booknow:hover{
+  .booknow:hover {
     color: rgb(17, 17, 88);
     background-color: white;
     border: 2px solid rgb(17, 17, 88);
   }
 
+.bookdiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*   border:1px solid green; */
+  height: 10%;
+}
+
   #btnContainer{
-    height: 30vh;
+    height: 220px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid red; */
   }
 
-  #seeMoreCardBtn{
-    color:white;
-    background-color: rgb(252, 101, 54); 
-    padding: 2% 3%;
-    border : none;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  }
-  #seeMoreCardBtn:hover{
-    background-color: white;
-    border: 2px solid rgb(252, 101, 54);;;
-    color: rgb(252, 101, 54);;;
-  }
+#btnContainer {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-      /* pop */
-      .overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); 
-      }
-  .popup {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 25px 25px;
-      background-color: white;
-      border: 1px solid #ccc;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-      
-  }
-  .popup{
-  
-      width: 380px;
-      height: 250px;
-      background-size: cover;
-  
-  }
-  
-  #close{
-    color:white;
-      background-color: blue;
-      padding:12px;
-      margin-top: 25px;
-      border : none;
-      border-radius:10px;
-      position :relative;
-      top: -20px;
-      cursor: pointer;
-      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  }
-  
-  #line{
-    margin-top: 120px;
-    padding-top: 0.2%;
+#seeMoreCardBtn {
+  color: white;
+  background-color: rgb(252, 101, 54);
+  padding: 2% 3%;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#seeMoreCardBtn:hover {
+  background-color: white;
+  border: 2px solid rgb(252, 101, 54);
+  color: rgb(252, 101, 54);
+}
+
+/* pop */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px 25px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.popup {
+  width: 380px;
+  height: 250px;
+  background-size: cover;
+}
+
+#close {
+  color: white;
+  background-color: blue;
+  padding: 12px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  top: -20px;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#line {
+  margin-top: 120px;
+  padding-top: 0.2%;
   background-color: black;
-    width:92%
-  }
+  width: 92%;
+}
 /* ----------------------------------------------------   */
 
-#Sh-alignCont12{
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
+#Sh-alignCont12 {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
 }
-#Sh-testimonialCont{
-    width: 80%;
-    height: 100%;
-    display: grid;
-    font-family: Poppins;
-    letter-spacing: 1px;
-    grid-template-columns: repeat(2, 1fr);
+#Sh-testimonialCont {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  font-family: Poppins;
+  letter-spacing: 1px;
+  grid-template-columns: repeat(2, 1fr);
 }
-#Sh-testimonialCont > div:nth-child(1){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#Sh-testimonialCont > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#Sh-testimonialCont > div:nth-child(1) > img{
-    width: 100%;
-    height: 80%;
+#Sh-testimonialCont > div:nth-child(1) > img {
+  width: 100%;
+  height: 80%;
 }
-#Sh-testimonialCont > div:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+#Sh-testimonialCont > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
-#Sh-testimonialCont > div:nth-child(2) > h3{
-    font-size: 300%;
+#Sh-testimonialCont > div:nth-child(2) > h3 {
+  font-size: 300%;
 }
-#Sh-profileNameCont{
-    height: 5vh;
-    width: 25%;
-    display: flex;
-    align-items: center;
-    gap: 3%;
+#Sh-profileNameCont {
+  height: 5vh;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  gap: 3%;
 }
-#Sh-profileNameCont > h5{
-    font-size: 110%;
-    color: rgb(46, 45, 45);
+#Sh-profileNameCont > h5 {
+  font-size: 110%;
+  color: rgb(46, 45, 45);
 }
-#Sh-testimonialCont > div:nth-child(2) > p{
-    font-size: 120%;
-    padding-left: 20%;
-    text-align:right;
-    color: rgb(159, 156, 156);
+#Sh-testimonialCont > div:nth-child(2) > p {
+  font-size: 120%;
+  padding-left: 20%;
+  text-align: right;
+  color: rgb(159, 156, 156);
 }
 
 /* footer Styling */
 .Nafter-mid-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.Njoin-membership {
+  background-image: url("./Aboutimages/background3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 80%;
+  width: 80%;
+  background-color: honeydew;
+  border-radius: 20px;
+}
+
+.Njoin-membership p {
+  margin-top: 30px;
+  color: rgb(252, 101, 54);
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Poppins;
+}
+
+.Nmidcontainh3 {
+  width: 800px;
+  display: flex;
+  text-align: center;
+}
+.Njoin-membership h3 {
+  color: black;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.Nafter-mid-button {
+  background-color: rgb(252, 101, 54);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  height: 60px;
+  width: 200px;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 900;
+}
+/* footer css -----------------------------------------*/
+.Nabout-Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-color: black;
+}
+
+.Ncontent-Footer {
+  display: grid;
+  height: 250px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.Ncontent-Footer > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  gap: 30px;
+}
+
+.Ncontent-Footer > :nth-child(2),
+.Ncontent-Footer > :nth-child(3) {
+  margin-left: 80px;
+}
+
+.Ncontent-Footer > :nth-child(4) {
+  margin-left: 150px;
+}
+.Ncontent-Footer p {
+  margin: 0px;
+}
+#Nmargin-for-this {
+  margin-top: 42px;
+}
+
+.Nfooter-Bold {
+  color: white;
+  font-size: larger;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Poppins;
+}
+.Nfooter-Grey {
+  color: rgb(159, 156, 156);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Poppins;
+}
+
+.Nsocial-footer {
+  display: flex;
+  gap: 20px;
+  margin-top: -10px;
+}
+.Nfacebookimg {
+  width: 25px;
+  height: 35px;
+}
+
+.Ntwitterimg {
+  width: 25px;
+  height: 35px;
+}
+
+.Ninstaimg {
+  width: 25px;
+  height: 35px;
+}
+.Nline-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+}
+
+#Nline-footer {
+  width: 80%;
+  height: 0.1px;
+  border-radius: 10px;
+  background-color: rgb(159, 156, 156);
+}
+.Nafter-line {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 10px;
+  align-items: center;
+}
+.Nfooter-Grey2 {
+  color: rgb(159, 156, 156);
+  text-decoration: none;
+  font-size: 13px;
+  font-family: Poppins;
+}
+
+/* ------------------------For-Responsiveness-Queries--------------------------- */
+
+@media screen and (min-width: 450px) and (max-width: 675px) {
+  header {
+    width: 100vw;
+    height: 70vh;
+  }
+  #Sh-alignCont {
+    height: 15vh;
+  }
+  nav {
+    width: 90%;
+  }
+  #Sh-logoCont > a > img {
     width: 100%;
-    height: 80vh;
   }
-  
-  .Njoin-membership {
-    background-image: url("./Aboutimages/background3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  #Sh-pageLinksCont,
+  #Sh-navBtnCont {
+    display: none;
+  }
+  /* /////////////////////////dropdown menu CSS////////////////////////////////// */
+
+  .dropdown {
+    width: 85%;
+    margin-top: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: start;
-    height: 80%;
-    width: 80%;
-    background-color: honeydew;
-    border-radius: 20px;
   }
-  
-  .Njoin-membership p {
-    margin-top: 30px;
-    color: rgb(252, 101, 54);
-    font-size: 30px;
-    font-weight: 700;
-    font-family: Poppins;
+
+  .show {
+    display: block; /* Use !important to override inline styles */
+    top: 10vh;
+    position: absolute;
   }
-  
-  .Nmidcontainh3 {
-    width: 800px;
-    display: flex;
+  /* ----------------------header part---------------------------------- */
+  #headerAlignCont {
+    height: 40vh;
+  }
+  #Sh-headingInpContainer {
+    width: 90%;
+  }
+  #Sh-headingInpContainer > h3 {
+    font-size: 130%;
     text-align: center;
   }
-  .Njoin-membership h3 {
-    color: black;
-    font-family: Poppins;
-    font-size: 40px;
-    font-weight: 900;
+  #Sh-headingInpContainer > h1 {
+    font-size: 250%;
+    text-align: center;
   }
-  
-  .Nafter-mid-button {
-    background-color: rgb(252, 101, 54);
-    color: white;
-    border: none;
-    border-radius: 14px;
-    height: 60px;
-    width: 200px;
-    font-size: 18px;
-    font-family: Poppins;
-    font-weight: 900;
+  #Sh-headingInpContainer > div {
+    height: 25%;
+    width: 90%;
+    padding-right: 5%;
+  }
+  .Sh-labels {
+    font-size: 16px;
+  }
+  #Sh-searchBtn {
+    padding-top: 11%;
+    padding-bottom: 11%;
+  }
+  /*---------------------package media queries-------------------------- */
+  .Sh-alignContainer {
+    height: 35vh;
+    top: 60vh;
+  }
+  .Sh-alignContainer > div {
+    width: 90%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  #Sh-blankCont {
+    height: 25vh;
+  }
+  .Sh-commonAlignCont {
+    height: 15vh;
+  }
+  .Sh-transparentCont {
+    height: 100%;
+    width: 90%;
+    align-items: flex-end;
+  }
+  .Sh-transparentCont > h1 {
+    font-size: 280%;
+  }
+  #Sh-overlap1stCont {
+    top: 95vh;
+    height: 15vh;
+    width: 90%;
+    align-items: flex-end;
+  }
+  .Sh-overlapCont > h2 {
+    font-size: 180%;
+  }
+  /* ------------------partner Section---------------- */
+
+  .Sh-alignCont5 {
+    height: 50vh;
+  }
+  #Sh-partnerSection {
+    height: 100%;
+    width: 90%;
+  }
+  #Sh-partnerSection > div {
+    margin-top: 10%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #Sh-partnerSection > article > p {
+    font-size: 130%;
+  }
+  /* -----------------About section media queries---------------------------- */
+
+  #Sh-alignCont6 {
+    height: 50vh;
+  }
+
+  #Sh-aboutSection {
+    width: 90%;
+  }
+  #Sh-aboutSection > div {
+    justify-content: space-around;
+  }
+  #Sh-aboutSection > div > h3,
+  #Sh-ServiceCont > h3 {
+    font-size: 250%;
+  }
+  #Sh-aboutSection > div > h4,
+  #Sh-ServiceCont > h4 {
+    font-size: 150%;
+  }
+  #Sh-aboutSection > div > p {
+    font-size: 110%;
+    padding-right: 15%;
+  }
+
+  #Sh-aboutSection > div > img {
+    height: 95%;
+  }
+
+  /* --------------------Our service section styling------------------- */
+
+  #Sh-alignCont7 > section {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #Sh-gridCont > div > h3 {
+    font-size: 280%;
+  }
+  #Sh-ServiceCont {
+    padding: 5% 0;
+    align-items: center;
+  }
+  #Sh-ServiceCont > p {
+    padding-left: 0%;
+    text-align: center;
+  }
+
+  /* --------------price heading-------------------- */
+
+  #Sh-overlap2ndCont {
+    top: 285vh;
+    height: 15vh;
+    width: 90%;
+  }
+
+  .paraGraph {
+    width: 90%;
+    padding: 0;
+  }
+  /* --------------------data wrapper styling-------------------------- */
+  #Sh-alignCont9 {
+    height: 202vh;
+  }
+  #data-Button-cont {
+    width: 90%;
+  }
+  #Sh-data-main-container1 {
+    grid-template-columns: repeat(2, 1fr);
+    height: 175vh;
+    grid-row-gap: 1%;
+  }
+  .place-detail {
+    padding: 0 1%;
+  }
+  .subdiv > img {
+    height: 38%;
+  }
+  #btnContainer {
+    height: 20vh;
+  }
+  /* ---------------------testimonial section media queries--------------------------- */
+  #Sh-alignCont12 {
+    height: 75vh;
+  }
+  #Sh-testimonialCont {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #Sh-testimonialCont > div:nth-child(1) > img {
+    height: 100%;
+  }
+  #Sh-testimonialCont > div:nth-child(2) {
+    align-items: center;
+  }
+  #Sh-testimonialCont > div:nth-child(2) > h3 {
+    font-size: 250%;
+  }
+  #Sh-profileNameCont {
+    width: 100%;
+    justify-content: center;
+  }
+  #Sh-testimonialCont > div:nth-child(2) > p {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  /* membership container medie queries*/
+  .Nafter-mid-container {
+    height: 50vh;
+  }
+  .Njoin-membership {
+    width: 90%;
+  }
+  .Njoin-membership p {
+    font-size: 150%;
+  }
+  .Njoin-membership h3 {
+    font-size: 200%;
+    padding: 0 5%;
+  }
+  .Nmidcontainh3 {
+    width: 100%;
   }
   /* footer css -----------------------------------------*/
+
   .Nabout-Footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 100%;
-    background-color: black;
+    height: 40vh;
   }
-  
+
   .Ncontent-Footer {
-    display: grid;
-    height: 250px;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    height: 90%;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
   }
   .Ncontent-Footer > div {
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-    gap: 30px;
+    margin-top: 0;
+    padding-top: 5%;
+    letter-spacing: 1px;
   }
-  
+
   .Ncontent-Footer > :nth-child(2),
   .Ncontent-Footer > :nth-child(3) {
-    margin-left: 80px;
+    margin-left: 0;
   }
-  
+
   .Ncontent-Footer > :nth-child(4) {
-    margin-left: 150px;
+    margin-left: 0;
   }
-  .Ncontent-Footer p {
-    margin: 0px;
-  }
-  #Nmargin-for-this {
-    margin-top: 42px;
-  }
-  
-  .Nfooter-Bold {
-    color: white;
-    font-size: larger;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Poppins;
-  }
-  .Nfooter-Grey {
-    color: rgb(159, 156, 156);
-    text-decoration: none;
-    font-size: 18px;
-    font-family: Poppins;
-  }
-  
-  .Nsocial-footer {
-    display: flex;
-    gap: 20px;
-    margin-top: -10px;
-  }
-  .Nfacebookimg {
-    width: 25px;
-    height: 35px;
-  }
-  
-  .Ntwitterimg {
-    width: 25px;
-    height: 35px;
-  }
-  
-  .Ninstaimg {
-    width: 25px;
-    height: 35px;
-  }
-  .Nline-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    background-color: black;
-  }
-  
   #Nline-footer {
-    width: 80%;
-    height: 0.1px;
-    border-radius: 10px;
-    background-color: rgb(159, 156, 156);
+    width: 90%;
   }
   .Nafter-line {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin-top: 10px;
-    align-items: center;
+    width: 90%;
   }
   .Nfooter-Grey2 {
-    color: rgb(159, 156, 156);
-    text-decoration: none;
-    font-size: 13px;
-    font-family: Poppins;
+    font-size: 15px;
   }
-
-
-  /* ------------------------For-Responsiveness-Queries--------------------------- */
-
-@media screen and (min-width: 450px) and (max-width: 675px){
-    header{
-        width: 100vw;
-        height: 70vh;
-    }
-    #Sh-alignCont{
-        height: 15vh;
-    }
-    nav{
-        width: 90%;
-    }
-    #Sh-logoCont > a > img{
-        width: 100%;
-    }
-    #Sh-pageLinksCont, #Sh-navBtnCont{
-        display: none;
-    }
-    /* /////////////////////////dropdown menu CSS////////////////////////////////// */
- 
-    .dropdown{
-        width: 85%;
-        margin-top: 0;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    } 
-
-    .show {
-        display: block; /* Use !important to override inline styles */
-        top: 10vh;
-        position: absolute;
-    }
-    /* ----------------------header part---------------------------------- */
-    #headerAlignCont{
-        height: 40vh;
-    }
-    #Sh-headingInpContainer{
-        width: 90%;
-    }
-    #Sh-headingInpContainer > h3{
-        font-size: 130%;
-        text-align: center;
-    }
-    #Sh-headingInpContainer > h1{
-        font-size: 250%;
-        text-align: center;
-    }
-    #Sh-headingInpContainer > div{
-        height: 25%;
-        width: 90%;
-        padding-right: 5%;
-    }
-    .Sh-labels{
-        font-size: 16px;
-    }
-    #Sh-searchBtn{
-        padding-top: 11%;
-        padding-bottom: 11%;
-    }
-/*---------------------package media queries-------------------------- */
-    .Sh-alignContainer{
-        height: 35vh;
-        top: 60vh;
-    }
-    .Sh-alignContainer > div{
-        width: 90%;
-        height: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-    #Sh-blankCont{
-        height: 25vh;
-    }
-    .Sh-commonAlignCont{
-        height: 15vh;
-    }
-    .Sh-transparentCont{
-        height: 100%;
-        width: 90%;
-        align-items: flex-end;
-    }
-    .Sh-transparentCont > h1{
-        font-size: 280%;
-    }
-    #Sh-overlap1stCont{
-        top: 95vh;
-        height: 15vh;
-        width: 90%;
-        align-items: flex-end;
-    }
-    .Sh-overlapCont > h2{
-        font-size: 180%;
-    }   
-    /* ------------------partner Section---------------- */
-    
-    .Sh-alignCont5{
-        height: 50vh;
-    }
-    #Sh-partnerSection{
-        height: 100%;
-        width: 90%;
-    }
-    #Sh-partnerSection > div{
-        margin-top: 10%;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    #Sh-partnerSection > article > p{
-        font-size: 130%;
-    }
-    /* -----------------About section media queries---------------------------- */
-
-    #Sh-alignCont6{
-        height: 50vh;
-    }
-    
-    #Sh-aboutSection{
-        width: 90%;
-    }
-    #Sh-aboutSection > div{
-        justify-content: space-around;
-    }
-    #Sh-aboutSection > div > h3, #Sh-ServiceCont > h3{
-        font-size: 250%;
-    }
-    #Sh-aboutSection > div > h4, #Sh-ServiceCont > h4{
-        font-size: 150%;
-    }
-    #Sh-aboutSection > div > p{
-        font-size: 110%;
-        padding-right: 15%;
-    }
-    
-    #Sh-aboutSection > div > img{
-        height: 95%;
-    }
-    
-    /* --------------------Our service section styling------------------- */
-    
-    #Sh-alignCont7 > section{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        
-    }
-    #Sh-gridCont > div > h3{
-        font-size: 280%;
-    }
-    #Sh-ServiceCont{
-        padding: 5% 0;
-        align-items: center;
-    } 
-    #Sh-ServiceCont > p{
-        padding-left: 0%;
-        text-align: center;
-    }
-    
-    /* --------------price heading-------------------- */
-    
-    #Sh-overlap2ndCont{
-        top: 285vh;
-        height: 15vh;
-        width: 90%;
-    }
-    
-    .paraGraph{
-        width: 90%; padding: 0;
-    }
-    /* --------------------data wrapper styling-------------------------- */
-    #Sh-alignCont9{
-        height: 202vh;
-    }
-    #data-Button-cont{
-        width: 90%;
-    }
-    #Sh-data-main-container1{
-        grid-template-columns:repeat(2, 1fr);
-        height: 175vh;
-        grid-row-gap: 1%;
-    }
-      .place-detail{
-        padding: 0 1%;
-      }
-      .subdiv>img{
-        height:38%;
-      }
-      #btnContainer{
-        height: 20vh;
-      }
-/* ---------------------testimonial section media queries--------------------------- */
-    #Sh-alignCont12{
-        height: 75vh;
-    }
-    #Sh-testimonialCont{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    #Sh-testimonialCont > div:nth-child(1) > img{
-        height: 100%;
-    }
-    #Sh-testimonialCont > div:nth-child(2){
-        align-items: center;
-    }
-    #Sh-testimonialCont > div:nth-child(2) > h3{
-        font-size: 250%;
-    }
-    #Sh-profileNameCont{
-        width: 100%;
-        justify-content: center;
-    }
-    #Sh-testimonialCont > div:nth-child(2) > p{
-        padding-left: 0;
-        text-align: center;
-    }
-    
-    /* membership container medie queries*/
-    .Nafter-mid-container {
-        height: 50vh;
-      }
-      .Njoin-membership {
-        width: 90%;
-      }  
-      .Njoin-membership p {
-        font-size: 150%;
-      }
-      .Njoin-membership h3 {
-        font-size: 200%;
-        padding: 0 5%;
-      }
-      .Nmidcontainh3 {
-        width: 100%;
-      }
-      /* footer css -----------------------------------------*/
-
-      .Nabout-Footer {
-        height: 40vh;
-      }
-      
-      .Ncontent-Footer {
-        height: 90%;
-        width: 90%;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2%;
-      }
-      .Ncontent-Footer > div {
-        margin-top: 0;
-        padding-top: 5%;
-        letter-spacing: 1px;
-      }
-      
-      .Ncontent-Footer > :nth-child(2),
-      .Ncontent-Footer > :nth-child(3) {
-        margin-left: 0;
-      }
-      
-      .Ncontent-Footer > :nth-child(4) {
-        margin-left: 0;
-      }
-      #Nline-footer {
-        width: 90%;
-      }
-      .Nafter-line {
-        width: 90%;
-      }
-      .Nfooter-Grey2 {
-        font-size: 15px;
-      }
-
 }
