@@ -1,14 +1,10 @@
 let poppara = document.getElementById("poppara");
 let popup = document.getElementById("popup");
 let url = `https://mock-api-templates-za9u.onrender.com/country`
-<<<<<<< HEAD
-async function fetchdata( page, limit,  par=""){
-=======
 
 let close = document.getElementById("close");
 
 async function fetchdata(url, limit, page){
->>>>>>> main
     try{
       let res = await fetch(`${url}?_page=${page}&_limit=${limit}&${par}`);
         
@@ -121,8 +117,6 @@ let button = document.getElementById("menuBtn");
       dropdown.classList.toggle("show");
 });
 
-<<<<<<< HEAD
-=======
 // --------------------login page attach-----------------------------
 
 function redirectToPage(pagename) {
@@ -281,6 +275,5 @@ document.getElementById("backToPageBtn").addEventListener('click', () => {
   document.getElementById('Sh-overlap1stCont').style.display = 'block';
 });
 
->>>>>>> main
 
 
