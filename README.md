@@ -11,13 +11,23 @@ Github
 Local storage (to store data)
 Our team of five members, during the Construct Week of Unit 4 at Masai School, completed this project in just five days. Here are the authors:
 
+\*\*Authors:<br>
+
 Nishant Bhargava:[GitHub](https://github.com/Nishant6571)<br>
+[linkedin](www.linkedin.com/in/nishant6571)<br>
+<br>
 Deepak Wayzode:[GitHub](https://github.com/sachin708)<br>
+[linkedin]
+<br>
 Surbhi Haldar:[GitHub](https://github.com/sur-123-bhi)<br>
+[linkedin]
+<br>
 Sachin Mohite:[GitHub](https://github.com/sachin708)<br>
 [linkedin](https://www.linkedin.com/in/sachin-mohite-0893a7203/)<br>
+<br>
 Abhishak Kumar:[GitHub](https://github.com/sachin708)<br>
-
+[linkedin]
+<br>
 Libraries Used in the Project:
 
 Fonts and Icons:
@@ -35,7 +45,7 @@ Our project primarily consists of the UI for booking travel packages, providing 
 
 The landing page features category names and essential options like login, register, cart, and account pages. It incorporates captivating animations and carousels to enhance the overall project vibe, inspired by the original site.
 
-![Alt Text](<Screenshot%20(79).png>)
+![Alt Text](Screenshot.png)
 
 To ensure a seamless booking experience, we've created a blog page where users can explore and book packages. Users can easily find their desired packages by using the search bar based on location, enhancing the overall user experience.
 
