@@ -4,7 +4,7 @@ body {
 }
 header {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   background-image: url("./Blogs/Images.jpg");
   background-size: cover;
 }
@@ -15,10 +15,11 @@ header {
   opacity: 0.3;
 }
 #Sh-alignCont {
-  height: 20vh;
+  height: 15vh;
   width: 100%;
   top: 0;
-  position: absolute;
+  background-color: black;
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,8 +146,6 @@ a:hover {
 #headerAlignCont {
   width: 100%;
   height: 90vh;
-  top: 20vh;
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,8 +223,6 @@ a:hover {
 .Sh-alignContainer {
   width: 100%;
   height: 20vh;
-  top: 110vh;
-  position: absolute;
   display: flex;
   justify-content: center;
   border-radius: 20px;
@@ -400,7 +397,6 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   /*   border:1px solid green; */
-<<<<<<< HEAD
     height : 10%;
   }
   
@@ -418,10 +414,6 @@ a:hover {
     background-color: rgb(94, 92, 231);
     border: 1px solid rgb(17, 88, 23);
   }
-=======
-  height: 10%;
-}
->>>>>>> main
 
 .booknow {
   color: white;
@@ -478,7 +470,6 @@ a:hover {
   background-image: url("./Aboutimages/background3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -674,12 +665,6 @@ a:hover {
 
 /*  top Screen */
 
-<<<<<<< HEAD
- 
- 
-
-
-
 
   @media screen and (min-width: 450px) and (max-width: 675px){ 
   
@@ -699,26 +684,6 @@ a:hover {
    #Sh-pageLinksCont, #Sh-navBtnCont{
       display: none;
   } 
-=======
-@media screen and (min-width: 450px) and (max-width: 675px) {
-  header {
-    width: 100vw;
-    height: 70vh;
-  }
-  #Sh-alignCont {
-    height: 15vh;
-  }
-  nav {
-    width: 90%;
-  }
-  #Sh-logoCont > a > img {
-    width: 100%;
-  }
-  #Sh-pageLinksCont,
-  #Sh-navBtnCont {
-    display: none;
-  }
->>>>>>> main
   /* /////////////////////////dropdown menu CSS////////////////////////////////// */
 
   .dropdown {

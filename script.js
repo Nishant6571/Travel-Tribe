@@ -129,13 +129,18 @@ function redirectToPage(pagename) {
 // ADD CARD
 let arr = JSON.parse(localStorage.getItem("key"))||[]
 
+// function booknow(ele){
+//   if(arr.includes(ele)) {
+//     alert("Already Add")
+//   } else {
+//     arr.push(ele);
+//   }
+//   localStorage.setItem("key", JSON.stringify(arr));
+//   
+// }
+
 function booknow(ele){
-  if(arr.includes(ele)) {
-    alert("Already Add")
-  } else {
-    arr.push(ele);
-  }
-  localStorage.setItem("key", JSON.stringify(arr));
+  localStorage.setItem("id", ele.id);
   redirectToPage('payment.html');
 }
 
@@ -179,14 +184,14 @@ function createCardForDisplay(placesDataArr){
 
     let timeAndDateCont = document.createElement("div");
     timeAndDateCont.className = "timeAndDateCont";
-    let time = document.createElement("div");
-    time.textContent = placeObj.Time;
+    // let time = document.createElement("div");
+    // time.textContent = placeObj.Time;
     let date = document.createElement("div");
     date.textContent = placeObj.Date;
-    timeAndDateCont.append(time);
+    // timeAndDateCont.append(time);
     timeAndDateCont.append(date);
-    console.log(placeObj.Date);
-    console.log(placeObj.Time);
+    // console.log(placeObj.Date);
+    // console.log(placeObj.Time);
 
     let priceAndBookBtnCont = document.createElement("div");
     priceAndBookBtnCont.className = "priceAndBtnCont";
@@ -271,7 +276,7 @@ EuropePackageLink.addEventListener('click', (e) => {
 
 document.getElementById("backToPageBtn").addEventListener('click', () => {
   document.getElementById('placesOuterContainer').style.display = 'none';
-  document.getElementsById('Sh-overlap2ndCont').style.display = 'block';
+  document.getElementById('Sh-overlap2ndCont').style.display = 'block';
   document.getElementById('Sh-overlap1stCont').style.display = 'block';
 });
 
