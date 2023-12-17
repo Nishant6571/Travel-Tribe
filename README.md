@@ -25,8 +25,8 @@ Surbhi Haldar:[GitHub](https://github.com/sur-123-bhi)<br>
 Sachin Mohite:[GitHub](https://github.com/sachin708)<br>
 [linkedin](https://www.linkedin.com/in/sachin-mohite-0893a7203/)<br>
 <br>
-Abhishak Kumar:[GitHub](https://github.com/sachin708)<br>
-[linkedin]
+Abhishak Kumar:[GitHub](https://github.com/Abhishak-Kumar)<br>
+[linkedin](https://www.linkedin.com/in/abhishek-dahiya-4a3a86270)
 <br>
 Libraries Used in the Project:
 
@@ -44,13 +44,15 @@ About Project:
 Our project primarily consists of the UI for booking travel packages, providing an end-to-end flow.
 
 The landing page features category names and essential options like login, register, cart, and account pages. It incorporates captivating animations and carousels to enhance the overall project vibe, inspired by the original site.
-
-![Alt Text](Screenshot.png)
+![Screenshot (79)](https://github.com/Nishant6571/Tech-zenith-6541/assets/146922474/e5e0d749-3374-4956-ba49-bdc2c01d234f)
+![Screenshot (80)](https://github.com/Nishant6571/Tech-zenith-6541/assets/146922474/b7d7f006-9be4-4811-9492-0bb45862b35b)
 
 To ensure a seamless booking experience, we've created a blog page where users can explore and book packages. Users can easily find their desired packages by using the search bar based on location, enhancing the overall user experience.
 
-Clicking the "Read More" button on any booking card reveals additional information about the location. Users can directly jump to the booking page by clicking "Book Now," verify the price with added items, and proceed to make the payment.
+![Screenshot (81)](https://github.com/Nishant6571/Tech-zenith-6541/assets/146922474/766ad579-85e0-4d3e-ade8-77d74e40a0f9)
 
+Clicking the "Read More" button on any booking card reveals additional information about the location. Users can directly jump to the booking page by clicking "Book Now," verify the price with added package, and proceed to make the payment.
+![Screenshot (82)](https://github.com/Nishant6571/Tech-zenith-6541/assets/146922474/d80b63bd-c49a-4e06-ac71-9e17415e872d)
 Finally, users can complete the checkout process, providing their address and payment details to book the package.
 
 This summarizes our efforts to create the best possible project within the given time limit, incorporating the knowledge we've acquired.
