@@ -38,6 +38,7 @@ header {
   align-items: center;
   /* position: fixed;
   top: 0; */
+  z-index: 1;
 
   
 }
@@ -173,21 +174,28 @@ a:hover {
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color:rgb(255, 249, 249) ;
+  opacity: 0.9;
 }
 
+.continentcard:hover {
+  transform: scale(1.05);
+  transition: all 0.5s linear;
+}
 .overview {
   width: 350px;
   border-radius: 25px;
   margin: 50px 0px;
-  background-color: #fff;
+  /* background-color: #fff; */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 15px;
   background-color:rgb(255, 249, 249) ;
+  opacity: 0.7;
 }
 
 .overview:hover {
   transform: scale(1.05);
-  transition: all 0.4s linear;
+  transition: all 0.5s linear;
+  /* z-index: 1; */
 }
 
 .overview-word {
@@ -203,12 +211,15 @@ a:hover {
 .overviewcontent {
   font-size: 20px;
   margin: 0px;
+  font-family: Poppins;
+
+
 }
 
-.continentcard:hover {
+/* .continentcard:hover {
   transform: scale(1.05);
   transition: all 0.4s linear;
-}
+} */
 /* .continentcard:hover .continentname{
   font-size: 30px;
 
@@ -236,6 +247,10 @@ a:hover {
   top: 70px;
   left: 0px;
   z-index: -1; */
+background-image: url(https://cdn.pixabay.com/photo/2016/11/29/06/20/blonde-1867768_640.jpg);
+background-size: cover;
+border-radius: 10px;
+
 }
 
 .continentname {
@@ -290,9 +305,9 @@ a:hover {
   width: 40%;
   margin: auto;
   padding: 10px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   margin-top: 50px;
   /* height: 500px; */
   /* border: 10px solid yellow; */
@@ -340,13 +355,14 @@ input[type="submit"]:hover {
   width: 40%;
   margin: 0px auto 10px auto;
   padding: 10px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
   display: none;
   /* height: 700px; */
   /* border: 10px solid blue; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .billing-title {
@@ -379,8 +395,15 @@ input[type="submit"]:hover {
   font-size: 16px;
 }
 
+
 .billing-submit:hover {
   background-color: #45a049;
+}
+
+#includeBilling{
+padding: 3px;
+transform: scale(1.5);
+margin-right: 15px;
 }
 
 .paymentpagealldetails {
@@ -391,6 +414,12 @@ input[type="submit"]:hover {
   justify-content: space-around;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: rgb(255, 255, 255);
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/29/06/20/blonde-1867768_640.jpg);
+  background-size: cover;
+  /* opacity: 0.7; */
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* all 3 container details */
@@ -402,16 +431,17 @@ input[type="submit"]:hover {
 }
 
 .payment-container {
-  border: 5px solid green;
+  /* border: 5px solid green; */
   width: 30%;
   /* max-height: 680px; */
   /* margin: auto; */
+
   padding: 20px;
-  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
   margin-bottom: 30px;
   /* height: 1000px; */
+  /* height: 20px; */
 }
 
 
@@ -431,15 +461,17 @@ input[type="submit"]:hover {
 
 
 .payment-container {
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* background-color: #fff; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   padding: 10px;
   border-radius: 8px;
   display: none;
   width: 40%;
-  background-color: #fff;
+  /* background-color: #fff; */
   margin: 20px auto 20px auto;
   border: none;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .payment-form {
@@ -468,18 +500,25 @@ label {
 }
 
 .payment-submit {
-  width: 100%;
-  background-color: #4caf50;
+  width: 30%;
+  background-color: #f1841e;
   color: #fff;
   padding: 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 10px;
+  margin: 10px auto;
+  display: block;
+  border-radius:10px;
+  font-size: 16px;
+ 
 }
 
 .payment-submit:hover {
-  background-color: #45a049;
+  transition: all 0.3s linear;
+  background-color: #43a53a;
+  /* width: 30%;
+  background-color: #f1841e; */
 }
 
 /* ///////////receipt css */
@@ -494,12 +533,16 @@ label {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   /* justify-content: space-evenly; */
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/29/06/20/blonde-1867768_640.jpg);
+  background-size:cover;
+
+  
 
 }
 
 .paymentreceipt {
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* background-color: #fff; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   padding: 10px;
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -508,13 +551,20 @@ label {
   height: 550px;
   /* background-color: red; */
   display: none;
-  background-color: #fff;
+  background-color: #ffffff;
+  opacity: 0.7;
   margin: auto;
+  /* background-color: red; */
 
 }
 
 .payment-receipt:hover {
   transform: scale(1.05);
+}
+.payment_and_receipt:hover .thank-you-message{
+  transform: scale(1.09);
+  color: rgb(93, 93, 93);
+  transition: all 0.7s linear;
 }
 
 .title {
@@ -544,6 +594,8 @@ label {
   text-align: center;
   font-size: 18px;
   color: #555;
+  font-weight: bold;
+
 }
 
 .payment-method-logo {
@@ -569,19 +621,28 @@ label {
 }
 #billsubmit{
   /* margin-top: 140px; */
-  background-color: rgb(252, 101, 54);
-  color: white;
+  width: 30%;
+  background-color: #f1841e;
+  color: #fff;
+  padding: 10px;
   border: none;
-  border-radius: 14px;
-  height: 50px;
-  width: 109px;
-  font-size: 18px;
-  font-weight:500;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+  border-radius:10px;
+  font-size: 16px;
+
 }
+
 #billsubmit:hover{
-  color: red;
-  background-color: white;
-  border: 1px solid red;
+  
+    transition: all 0.3s linear;
+    background-color: #43a53a;
+    /* width: 30%;
+    background-color: #f1841e; */
+ 
+  
 }
 
 
@@ -780,13 +841,6 @@ label {
 
 /* for payment part css self */
 @media (max-width:850px) {
-  .paymentpagealldetails {
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 150px;
-
-  }
 
 
 
@@ -802,7 +856,7 @@ label {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    border-radius: 20px;
-   
+   margin-top: 40px;
   }
 
   .continentcard {
@@ -814,7 +868,7 @@ label {
     margin: 50px 0px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 30px auto 0px auto;
+    margin: 30px auto 30px auto;
   }
 
   .overview {
@@ -828,28 +882,35 @@ label {
     background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    margin: auto;
+    margin: 30px auto 0px auto;
   }
+
+  /* 2contauner  start////////////////////////////////////// */
+  .paymentpagealldetails {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+  }
+
 
   .container {
     display: none;
     width: 80%;
     margin: auto;
     padding: 10px;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
     /* height: 500px; */
     /* border: 10px solid yellow; */
-
   }
 
   .billing-container {
     width: 80%;
     margin: 0px auto 40px auto;
     padding: 10px;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
@@ -858,32 +919,51 @@ label {
     /* border: 10px solid blue; */
   }
 
-  .payment_and_receipt {
-    /* border: 5px solid rgb(4, 4, 4); */
-    width: 80%;
-    height: 860px;
-    margin: -150px auto 30px auto;
+   /* 2 contauner  end////////////////////////////////////*/
 
-    background-color: #fff;
+
+/* 3 contauner  start////////////////////////////////////*/
+  .payment_and_receipt {
+    width: 80%;
+    margin: -110px auto 30px auto;
+    /* background-color: #fff; */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
-    display: none;
-
+    /* display: none; */
+    max-height: 2300px;
   }
 
   .payment-container {
-    background-color: #fff;
+    /* background-color: #fff; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 8px;
     display: none;
     width: 80%;
-    background-color: #fff;
-    margin: auto;
+    /* background-color: #fff; */
+    margin:30px auto;
   }
 
-
+  .paymentreceipt {
+    /* background-color: #fff; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    max-width: 500px;
+    width: 80%;
+    height: 550px;
+    /* background-color: red; */
+    display: none;
+    background-color: #ffffff;
+    opacity: 0.7;
+    margin: 0px auto 30px auto;
+    /* background-color: red; */
+  }
+ /* 3 container end herer */
 }
+
+
+
