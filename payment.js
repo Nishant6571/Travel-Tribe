@@ -50,7 +50,7 @@ function createcard(data) {
 
   let overviewcontent = document.createElement('p');
   overviewcontent.classList = "overviewcontent";
-  overviewcontent.innerHTML = ` <span class="overview-word">Overview :</span>  ${data.Details}`;
+  overviewcontent.innerHTML = ` <span class="overview-word">Overview </span>  ${data.Details}`;
 
   overview.appendChild(overviewcontent);
 
@@ -66,9 +66,11 @@ function createcard(data) {
   })
 
   continentcard.append(continentimg, continentname, date, price, buttonconfrom,);
-  singlecard.append(continentcard,overview);
+  singlecard.append(overview,continentcard);
 
 }
+
+
 // createcard(data)
 
 // get all input tag reference here  
@@ -127,8 +129,12 @@ billsubmit.addEventListener('click', (event) => {
     alert("please fill all necessary fields");
   }
 else{
-  window.alert(`${fullname.value} Please complete your payment`);
+  // window.alert(`${fullname.value} Please complete your payment`);
+  // paymentcontainer.style.display="block"
+  setTimeout(function () {
+    window.alert(`${fullname.value} Please complete your payment`);
   paymentcontainer.style.display="block"
+}, 1000);
 }
 
 });
@@ -182,10 +188,16 @@ submitPayment.addEventListener('click' , (event)=>{
     receiptcardNumberValue.textContent=paymentcardNumber.value;
     receiptexpiryDateValue.textContent=paymentexpiryDate.value;
     receiptcardHolderValue.textContent=paymentcardHolder.value;
-    paymentreceipt.style.display="block";
-    window.alert("Payment was succesful");
+    // paymentreceipt.style.display="block";
+    // window.alert("Payment was succesful");
+    setTimeout(function () {
+      window.alert("Payment was successful");
+      paymentreceipt.style.display="block";
+  }, 2000);
   }
 })
+
+
 // update amount in payment from 
 let amounttobePaid=document.getElementById('amounttobePaid');
 
@@ -203,3 +215,12 @@ function getcardid(ele) {
   localStorage.setItem("id", ele.id);
   fetchdata2(url);
 }
+
+// download in pdf 
+// let pdfdownload=document.getElementById('downloadpdf');
+// let receiptpageall=document.getElementById('receiptpageall');
+
+// pdfdownload.addEventListener('click' , ()=>{
+//   console.log(receiptpageall);
+// })
+

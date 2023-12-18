@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="payment.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link
-  
     href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Open+Sans:wght@500&family=Pixelify+Sans:wght@400;500&family=Poppins:wght@300;400&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&family=Rubik+Pixels&display=swap"
     rel="stylesheet">
   <link rel="stylesheet"
@@ -56,13 +55,13 @@
   <!-- indivudaul card user seleceted -->
 
   <div id="siglecard">
-   
+
   </div>
   <!-- <div class="dmaincontainer"> -->
   <div class="paymentpagealldetails">
     <!-- // travellor details -->
     <div class="container">
-      <h2>Traveler Details</h2>
+      <h2 class="billing-title">Traveler Details</h2>
       <form id="travelForm">
         <label for="fullName">Full Name<span style="color: red;">*</span></label>
         <input type="text" id="fullName" name="fullName" required>
@@ -96,12 +95,12 @@
         <input type="email" id="billingEmail" name="billingEmail" class="billing-input" required>
 
         <label for="billingPhone" class="billing-label">Phone Number<span style="color: red;">*</span></label>
-        <input type="tel" id="billingPhone" name="billingPhone" class="billing-input" required>
+        <input type="number" id="billingPhone" name="billingPhone" class="billing-input" required>
 
         <label for="billingAddress" class="billing-label">Billing Address</label>
         <textarea id="billingAddress" name="billingAddress" class="billing-input" rows="2"></textarea>
 
-      
+
         <input id="billsubmit" type="submit" value="Submit" class="billing-submit">
 
       </form>
@@ -114,89 +113,96 @@
   <div class="payment_and_receipt">
 
 
-  <div class="payment-container">
-    <form class="payment-form">
-      <h2>Payment Form</h2>
+    <div class="payment-container">
+      <form class="payment-form">
+        <h2 class="billing-title">Payment Form</h2>
 
-      <label for="cardNumber">Card Number<span style="color: red;">*</span></label>
-      <input type="number" id="cardNumber" class="payment-input" placeholder="Enter your card number" required>
+        <label for="cardNumber">Card Number<span style="color: red;">*</span></label>
+        <input type="number" id="cardNumber" class="payment-input" placeholder="Enter your card number" required>
 
-      <label for="expiryDate">Expiry Date<span style="color: red;">*</span></label>
-      <input type="text" pattern="(0[1-9]|1[0-2])\/[0-9]{4}" placeholder="MM/YYYY" id="expiryDate" class="payment-input" placeholder="MM/YYYY" required>
+        <label for="expiryDate">Expiry Date<span style="color: red;">*</span></label>
+        <input type="text" pattern="(0[1-9]|1[0-2])\/[0-9]{4}" placeholder="MM/YYYY" id="expiryDate"
+          class="payment-input" required>
 
-      <label for="cvv">CVV<span style="color: red;">*</span></label>
-      <input type="number" id="cvv" class="payment-input" placeholder="Enter CVV" required>
+        <label for="cvv">CVV<span style="color: red;">*</span></label>
+        <input type="number" id="cvv" class="payment-input" placeholder="Enter CVV" required>
 
-      <label for="cardHolder">Card Holder Name<span style="color: red;">*</span></label>
-      <input type="text" id="cardHolder" class="payment-input" placeholder="Enter cardholder name" required>
+        <label for="cardHolder">Card Holder Name<span style="color: red;">*</span></label>
+        <input type="text" id="cardHolder" class="payment-input" placeholder="Enter cardholder name" required>
 
-      <label for="paymentMethod">Payment Method</label>
-      <select id="paymentMethod" class="payment-input">
-        <option value="card">Credit/Debit Card/UPI</option>
-      </select>
+        <label for="paymentMethod">Payment Method</label>
+        <select id="paymentMethod" class="payment-input">
+          <option value="card">Select</option>
+          <option value="card">Credit Card</option>
+          <option value="card">Debit Card</option>
+          <option value="card">UPI</option>
+        </select>
 
-      <label for="amounttobePaid">Amount to  be paid</label>
-      <input type="number" id="amounttobePaid" class="payment-input" placeholder="Enter amout to be paid" required>
+        <label for="amounttobePaid">Amount to be paid</label>
+        <input type="number" id="amounttobePaid" class="payment-input" placeholder="Enter amout to be paid" required>
 
 
-      <button type="button" id="submitPayment" class="payment-submit">Submit Payment</button>
-    </form>
-  </div>
-
-  <!-- receipt for payment///////////////////////// -->
-  <div id="paymentReceipt" class="paymentreceipt">
-    <h2 class="title">Payment Receipt</h2>
-
-    <div id="paymentDetails" class="receipt-section">
-      <h3 class="title">Payment Details</h3>
-      <div id="cardNumberItem" class="receipt-item">
-        <span id="cardNumberLabel">Card Number:</span>
-        <span id="cardNumberValue">**** **** **** 1234</span>
-      </div>
-      <div id="expiryDateItem" class="receipt-item">
-        <span id="expiryDateLabel">Expiry Date:</span>
-        <span id="expiryDateValue">MM/YYYY</span>
-      </div>
-      <div id="cvvItem" class="receipt-item">
-        <span id="cvvLabel">CVV:</span>
-        <span id="cvvValue">***</span>
-      </div>
-      <div id="cardHolderItem" class="receipt-item">
-        <span id="cardHolderLabel">Card Holder Name:</span>
-        <span id="cardHolderValue">John Doe</span>
-      </div>
-      <div id="paymentMethodItem" class="receipt-item payment-method-details">
-        <span id="paymentMethodLabel">Payment Method:</span>
-        <!-- <img id="paymentMethodLogo" src="https://via.placeholder.com/50" alt="Payment Method Logo" class="payment-method-logo"> -->
-        <span id="paymentMethodText">Credit/Debit Card/UPI</span>
-      </div>
+        <button type="button" id="submitPayment" class="payment-submit">Submit</button>
+      </form>
     </div>
 
-  
+    <!-- receipt for payment///////////////////////// -->
+    <div id="paymentReceipt" class="paymentreceipt">
+      <h2  class="billing-title">Payment Receipt</h2>
 
-    <div id="travelDetailsSection" class="receipt-section travel-details-section">
-      <h3 class="title">Travel Details</h3>
-      <div id="packageItem" class="receipt-item">
-        <span id="packageLabel">Package:</span>
-        <span id="packageValue">Explorer's Adventure</span>
+      <div id="paymentDetails" class="receipt-section">
+        <h3 class="title">Payment Details</h3>
+        <div id="cardNumberItem" class="receipt-item">
+          <span id="cardNumberLabel">Card Number:</span>
+          <span id="cardNumberValue">**** **** **** 1234</span>
+        </div>
+        <div id="expiryDateItem" class="receipt-item">
+          <span id="expiryDateLabel">Expiry Date:</span>
+          <span id="expiryDateValue">MM/YYYY</span>
+        </div>
+        <div id="cvvItem" class="receipt-item">
+          <span id="cvvLabel">CVV:</span>
+          <span id="cvvValue">***</span>
+        </div>
+        <div id="cardHolderItem" class="receipt-item">
+          <span id="cardHolderLabel">Card Holder Name:</span>
+          <span id="cardHolderValue">John Doe</span>
+        </div>
+        <div id="paymentMethodItem" class="receipt-item payment-method-details">
+          <span id="paymentMethodLabel">Payment Method:</span>
+          <!-- <img id="paymentMethodLogo" src="https://via.placeholder.com/50" alt="Payment Method Logo" class="payment-method-logo"> -->
+          <span id="paymentMethodText">Credit Card</span>
+        </div>
       </div>
-      <div id="flightItem" class="receipt-item">
-        <span id="flightLabel">Date of journey</span>
-        <span id="flightValue">Economy Class</span>
+
+
+       <div id="receiptpageall">
+      <div id="travelDetailsSection" class="receipt-section travel-details-section">
+        <h3 class="title">Travel Details</h3>
+        <div id="packageItem" class="receipt-item">
+          <span id="packageLabel">Package:</span>
+          <span id="packageValue">Explorer's Adventure</span>
+        </div>
+        <div id="flightItem" class="receipt-item">
+          <span id="flightLabel">Date of journey</span>
+          <span id="flightValue">Economy Class</span>
+        </div>
+
       </div>
-   
+
+      <div id="amountPaid" class="total-amount">
+        <span id="moneytprice">Amount Paid(Rs): </span>
+        <span id="moneyvalue"></span>
+      </div>
+
+      <div id="thankYouMessage" class="thank-you-message">
+        Thank you for your payment!
+      </div>
+      <!-- <button id="downloadpdf">Download PDF</button> -->
     </div>
 
-    <div id="amountPaid" class="total-amount">
-      <span id="moneytprice">Amount Paid(Rs): </span>
-      <span id="moneyvalue"></span>
     </div>
-
-    <div id="thankYouMessage" class="thank-you-message">
-      Thank you for your payment!
-    </div>
-  </div>
-<!-- receipt end here -->
+    <!-- receipt end here -->
 
 
   </div>
@@ -282,10 +288,12 @@
       window.location.href = loginPageUrl;
     }
   </script>
+  <!-- for receipt downlod in pdf  required script file-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.js"></script>
 
-  
 
-<!-- Your existing HTML content goes here -->
+
+  <!-- Your existing HTML content goes here -->
 
 
 </body>
