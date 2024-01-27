@@ -2,7 +2,7 @@
 
 Travel Tribe is an online travel agency that offers travel packages around the world.
 
-Visit our website at https://Travel-Tribe.com. Here, we showcase our knowledge in HTML, CSS, and Javascript.
+Visit our website at [https://Travel-Tribe.com](https://velvety-maamoul-e37b50.netlify.app/). Here, we showcase our knowledge in HTML, CSS, and Javascript.
 
 Tools Used:
 
