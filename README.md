@@ -20,7 +20,7 @@ Deepak Wayzode:[GitHub](https://github.com/sachin708)<br>
 [linkedin](https://www.linkedin.com/in/deepak-wayzode-b06776188/)<br>
 <br>
 Surbhi Haldar:[GitHub](https://github.com/sur-123-bhi)<br>
-[linkedin](https://www.linkedin.com/in/surbhi-haldar/);
+[linkedin](https://www.linkedin.com/in/surbhi-haldar/);<br>
 <br>
 Sachin Mohite:[GitHub](https://github.com/sachin708)<br>
 [linkedin](https://www.linkedin.com/in/sachin-mohite-0893a7203/)<br>
