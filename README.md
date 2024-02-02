@@ -45,7 +45,7 @@ Our project primarily consists of the UI for booking travel packages, providing 
 
 The landing page features category names and essential options like login, register, blog, bookings, and account pages. It incorporates captivating data from the server deployed render.com.<br>
 
-![Screenshot (79)](https://github.com/Nishant6571/Tech-zenith-6541/assets/146922474/e5e0d749-3374-4956-ba49-bdc2c01d234f)
+![Screenshot (100)](https://github.com/Nishant6571/Travel-Tribe/assets/146922474/14b8eb32-5107-455a-bcbe-7c2569176831)
 
 To ensure a seamless booking experience, we've created a Explore page where users can explore and book packages. Users can easily find their desired packages by using the search bar based on location, enhancing the overall user experience.
 
