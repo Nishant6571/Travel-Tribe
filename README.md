@@ -49,12 +49,17 @@ The landing page features category names and essential options like login, regis
 
 To ensure a seamless booking experience, we've created a Explore page where users can explore and book packages. Users can easily find their desired packages by using the search bar based on location, enhancing the overall user experience.
 
-![Screenshot (81)](https://github.com/Nishant6571/Tech-zenith-6541/assets/146922474/766ad579-85e0-4d3e-ade8-77d74e40a0f9)
+![Screenshot (102)](https://github.com/Nishant6571/Travel-Tribe/assets/146922474/92be5e11-30a8-4823-b74e-25c75717aa66)
+
 
 Clicking the "Read More" button on any booking card reveals additional information about the location. Users can directly jump to the booking page by clicking "Book Now," verify the price with added package, and proceed to make the payment.
 
-![Screenshot (82)](https://github.com/Nishant6571/Tech-zenith-6541/assets/146922474/d80b63bd-c49a-4e06-ac71-9e17415e872d)
+![Screenshot (108)](https://github.com/Nishant6571/Travel-Tribe/assets/146922474/180ad9d1-a3b5-4243-9e86-ae2c71c3bc18)
+
 Finally, users can complete the checkout process, providing their address and payment details to book the package.<br>
+![Screenshot (104)](https://github.com/Nishant6571/Travel-Tribe/assets/146922474/e4a4a316-5730-4168-9398-d2c72eb57690)
+![Screenshot (105)](https://github.com/Nishant6571/Travel-Tribe/assets/146922474/ee586800-2eea-4ddc-9507-3950230db766)
+![Screenshot (107)](https://github.com/Nishant6571/Travel-Tribe/assets/146922474/bd86e37d-612d-4a8e-b212-ac7c132aea41)
 
 This summarizes our efforts to create the best possible project within the given time limit, incorporating the knowledge we've acquired.
 
