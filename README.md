@@ -1,4 +1,4 @@
-# Tech-Zenith-6541 (Travel Tribe)
+# Travel Tribe
 
 Travel Tribe is an online travel agency that offers travel packages around the world.
 
